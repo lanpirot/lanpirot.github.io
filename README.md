@@ -1,3 +1,5 @@
 # Publication List of Alexander Boll
 
-A. Boll, F. Brokhausen, T. Amorim, A. Vogelsang [Characteristics, Potentials, and Limitations of Open Source Simulink Projects for Empirical Research](https://doi.org/10.1007/s10270-021-00883-0) 2021 [![pdf](pdf_icon.png)](publications/Characteristics,_Potentials,_and_Limitations_of_Open_Source_Simulink_Projects_for_Empirical_Research.pdf) [![bibtex](bibtex_icon.png)](publications/Characteristics,_Potentials,_and_Limitations_of_Open_Source_Simulink_Projects_for_Empirical_Research.bib)
+A. Boll, F. Brokhausen, T. Amorim, A. Vogelsang, T. Kehrer [Characteristics, Potentials, and Limitations of Open Source Simulink Projects for Empirical Research](https://doi.org/10.1007/s10270-021-00883-0) 2021 [![pdf](pdf_icon.png)](publications/Characteristics,_Potentials,_and_Limitations_of_Open_Source_Simulink_Projects_for_Empirical_Research.pdf) [![bibtex](bibtex_icon.png)](publications/Characteristics,_Potentials,_and_Limitations_of_Open_Source_Simulink_Projects_for_Empirical_Research.bib)
+
+A. Schultheiß, A. Boll, T. Kehrer [Comparison of Graph-based Model Transformation Rules](http://dx.doi.org/10.5381/jot.2020.19.2.a3) 2020 [![pdf](pdf_icon.png)](publications/Comparison_of_graph-based_model_transformation_rules.pdf) [![bibtex](bibtex_icon.png)](publications/Comparison_of_graph-based_model_transformation_rules.bib)
