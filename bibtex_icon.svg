@@ -26,7 +26,7 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="29.133333"
-     inkscape:cx="14.364989"
+     inkscape:cx="14.347826"
      inkscape:cy="12.254005"
      inkscape:window-width="1920"
      inkscape:window-height="1112"
@@ -56,12 +56,12 @@
      style="fill:#999999" />
   <!-- PDF text -->
   <text
-     x="14.739705"
-     y="13.026425"
+     x="14.5496"
+     y="13.661867"
      font-family="Arial, sans-serif"
-     font-size="7.05882px"
+     font-size="8.98128px"
      fill="#ff0000"
      text-anchor="middle"
      id="text1"
-     style="stroke-width:0.294118;fill:#0000ff">BibTeX</text>
+     style="fill:#0000ff;stroke-width:0.374221">BibTeX</text>
 </svg>
