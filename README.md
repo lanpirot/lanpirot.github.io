@@ -1,6 +1,6 @@
 # Publication List of Alexander Boll
 
-A. Boll, Y. van Dok, M. Ohrndorf, A. Schultheiß, T. Kehrer: [Towards Semi-Automated Merge Conflict Resolution: Is It Easier Than We Expected?](), 2024. [![.pdf](pdf_icon.png)](publications/Towards_Semi-Automated_Merge_Conflict_Resolution_Is_It_Easier_Than_We_Expected.pdf) [![BibTeX](bibtex_icon.png)](publications/Towards_Semi-Automated_Merge_Conflict_Resolution_Is_It_Easier_Than_We_Expected.bib)
+A. Boll, Y. van Dok, M. Ohrndorf, A. Schultheiß, T. Kehrer: [Towards Semi-Automated Merge Conflict Resolution: Is It Easier Than We Expected?](https://doi.org/10.1145/3661167.3661197), 2024. [![.pdf](pdf_icon.png)](publications/Towards_Semi-Automated_Merge_Conflict_Resolution_Is_It_Easier_Than_We_Expected.pdf) [![BibTeX](bibtex_icon.png)](publications/Towards_Semi-Automated_Merge_Conflict_Resolution_Is_It_Easier_Than_We_Expected.bib)
 
 A. Boll, P. Rani, A. Schultheiß, T. Kehrer [Beyond code: Is there a difference between comments in visual and textual languages?](https://doi.org/10.1016/j.jss.2024.112087), 2024. [![.pdf](pdf_icon.png)](publications/Beyond_Code_Is_There_a_Difference_Between_Comments.pdf) [![BibTeX](bibtex_icon.png)](publications/Beyond_Code_Is_There_a_Difference_Between_Comments.bib)
 
