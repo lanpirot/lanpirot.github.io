@@ -1,6 +1,6 @@
 # Publication List of Alexander Boll
 
-A. Boll, T. Kehrer, M. Goedicke: SMOKE - Simulink Model Obfuscation Keeping Structure [![.pdf](pdf_icon.png)](publications/SMOKE - Simulink Model Obfuscation Keeping Structure.pdf)
+A. Boll, T. Kehrer, M. Goedicke: SMOKE - Simulink Model Obfuscation Keeping Structure [comment]: <> ([![.pdf](pdf_icon.png)](publications/SMOKE - Simulink Model Obfuscation Keeping Structure.pdf))
 
 A. Boll, Y. van Dok, M. Ohrndorf, A. Schultheiß, T. Kehrer: [Towards Semi-Automated Merge Conflict Resolution: Is It Easier Than We Expected?](https://doi.org/10.1145/3661167.3661197), 2024. [![Distinguished Paper Award](distinguished_paper_mini.png)](https://seg.inf.unibe.ch/news/2405_ease) [![.pdf](pdf_icon.png)](publications/Towards_Semi-Automated_Merge_Conflict_Resolution_Is_It_Easier_Than_We_Expected.pdf) [![BibTeX](bibtex_icon.png)](publications/Towards_Semi-Automated_Merge_Conflict_Resolution_Is_It_Easier_Than_We_Expected.bib)
 
