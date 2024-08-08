@@ -2,13 +2,13 @@
 
 A. Schultheiß, A. Boll, P. Bittner, S. Greiner, T. Thüm, T. Kehrer: Pushing the Boundaries of Patch Automation. [![.pdf](pdf_icon.png)](publications/Pushing_the_Boundaries_of_Patch_Automation.pdf)
 
-A. Boll, T. Kehrer, M. Goedicke: SMOKE: Simulink Model Obfuscation Keeping Structure, MODELS 2024. [![.pdf](pdf_icon.png)](publications/SMOKE_-_Simulink_Model_Obfuscation_Keeping_Structure.pdf)
+A. Boll, T. Kehrer, M. Goedicke: SMOKE: Simulink Model Obfuscation Keeping Structure, MODELS 2024. [![.pdf](pdf_icon.png)](publications/SMOKE_-_Simulink_Model_Obfuscation_Keeping_Structure.pdf) [![YouTube](yt_icon.png)](https://youtu.be/TFeFNKHSlAw)
 
 A. Boll, Y. van Dok, M. Ohrndorf, A. Schultheiß, T. Kehrer: [Towards Semi-Automated Merge Conflict Resolution: Is It Easier Than We Expected?](https://doi.org/10.1145/3661167.3661197), EASE 2024. [![Distinguished Paper Award](distinguished_paper_mini.png)](https://seg.inf.unibe.ch/news/2405_ease) [![.pdf](pdf_icon.png)](publications/Towards_Semi-Automated_Merge_Conflict_Resolution_Is_It_Easier_Than_We_Expected.pdf) [![BibTeX](bibtex_icon.png)](publications/Towards_Semi-Automated_Merge_Conflict_Resolution_Is_It_Easier_Than_We_Expected.bib)
 
 A. Boll, P. Rani, A. Schultheiß, T. Kehrer [Beyond code: Is there a difference between comments in visual and textual languages?](https://doi.org/10.1016/j.jss.2024.112087), JSS 2024. [![.pdf](pdf_icon.png)](publications/Beyond_Code_Is_There_a_Difference_Between_Comments.pdf) [![BibTeX](bibtex_icon.png)](publications/Beyond_Code_Is_There_a_Difference_Between_Comments.bib)
 
-S. Shrestha, A. Boll, T. Kehrer, C. Csallner: [ScoutSL: An Open-Source Simulink Search Engine](https://doi.org/10.1109/MODELS-C59198.2023.00022), MODELS 2023. [![.pdf](pdf_icon.png)](publications/ScoutSL_An_Open-source_Simulink_Search_Engine.pdf) [![BibTeX](bibtex_icon.png)](publications/ScoutSL_An_Open-source_Simulink_Search_Engine.bib) [![YouTube](yt_icon.png)](https://youtu.be/HwsHL8LrVCM?si=pHj_KDg-2CRLyEVZ)
+S. Shrestha, A. Boll, T. Kehrer, C. Csallner: [ScoutSL: An Open-Source Simulink Search Engine](https://doi.org/10.1109/MODELS-C59198.2023.00022), MODELS 2023. [![.pdf](pdf_icon.png)](publications/ScoutSL_An_Open-source_Simulink_Search_Engine.pdf) [![BibTeX](bibtex_icon.png)](publications/ScoutSL_An_Open-source_Simulink_Search_Engine.bib) [![YouTube](yt_icon.png)](https://youtu.be/HwsHL8LrVCM)
 
 S. Shrestha, A. Boll, S. Chowdhury, T. Kehrer, C. Csallner: [EvoSL: A Large Open-Source Corpus of Changes in Simulink Models & Projects](https://doi.org/10.1109/MODELS58315.2023.00024), MODELS 2023. [![.pdf](pdf_icon.png)](publications/EvoSL_A_Large_Open-Source_Corpus_of_Changes_in_Simulink_Models_&_Projects.pdf) [![BibTeX](bibtex_icon.png)](publications/EvoSL_A_Large_Open-Source_Corpus_of_Changes_in_Simulink_Models_&_Projects.bib)
 
