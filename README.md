@@ -2,7 +2,7 @@
 
 A. Schultheiß, A. Boll, P. Bittner, S. Greiner, T. Thüm, T. Kehrer: Pushing the Boundaries of Patch Automation. [![.pdf](pdf_icon.png)](publications/Pushing_the_Boundaries_of_Patch_Automation.pdf)
 
-A. Boll, T. Kehrer, M. Goedicke: SMOKE: Simulink Model Obfuscation Keeping Structure, MODELS 2024. [![.pdf](pdf_icon.png)](publications/SMOKE_-_Simulink_Model_Obfuscation_Keeping_Structure.pdf) [![YouTube](yt_icon.png)](https://youtu.be/TFeFNKHSlAw)
+A. Boll, T. Kehrer, M. Goedicke: [SMOKE: Simulink Model Obfuscator Keeping Structure](https://doi.org/10.1145/3652620.3687788), MODELS 2024. [![.pdf](pdf_icon.png)](publications/SMOKE_-_Simulink_Model_Obfuscation_Keeping_Structure.pdf) [![YouTube](yt_icon.png)](https://youtu.be/TFeFNKHSlAw)
 
 A. Boll, Y. van Dok, M. Ohrndorf, A. Schultheiß, T. Kehrer: [Towards Semi-Automated Merge Conflict Resolution: Is It Easier Than We Expected?](https://doi.org/10.1145/3661167.3661197), EASE 2024. [![Distinguished Paper Award](distinguished_paper_mini.png)](https://seg.inf.unibe.ch/news/2405_ease) [![.pdf](pdf_icon.png)](publications/Towards_Semi-Automated_Merge_Conflict_Resolution_Is_It_Easier_Than_We_Expected.pdf) [![BibTeX](bibtex_icon.png)](publications/Towards_Semi-Automated_Merge_Conflict_Resolution_Is_It_Easier_Than_We_Expected.bib)
 
@@ -23,3 +23,5 @@ A. Boll, F. Brokhausen, T. Amorim, A. Vogelsang, T. Kehrer: [Characteristics, Po
 A. Boll, T. Kehrer: [On the Replicability of Experimental Tool Evaluations in Model-Based Development](https://doi.org/10.1007/978-3-030-58167-1_9), ICSMM 2020. [![.pdf](pdf_icon.png)](publications/On_the_Replicability_of_Experimental_Tool_Evaluations_in_Model-based_Development.pdf) [![BibTeX](bibtex_icon.png)](publications/On_the_Replicability_of_Experimental_Tool_Evaluations_in_Model-based_Development.bib)
 
 A. Schultheiß, A. Boll, T. Kehrer: [Comparison of Graph-based Model Transformation Rules](http://dx.doi.org/10.5381/jot.2020.19.2.a3), JOT 2020. [![.pdf](pdf_icon.png)](publications/Comparison_of_graph-based_model_transformation_rules.pdf) [![BibTeX](bibtex_icon.png)](publications/Comparison_of_graph-based_model_transformation_rules.bib)
+
+A. Boll Formale Instanzverifikation zertifizierender verteilter Algorithmen, MSc Thesis 2019. (in German) [![.pdf](pdf_icon.png)](publications/Diplomarbeit_Formale_Instanzverifikation_zertifizierender_verteilter_Algorithmen.pdf)
