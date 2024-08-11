@@ -7,7 +7,7 @@
    id="svg1"
    sodipodi:docname="pdf_icon.svg"
    inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
-   inkscape:export-filename="bibtex_icon.png"
+   inkscape:export-filename="pdf_icon.png"
    inkscape:export-xdpi="129.29294"
    inkscape:export-ydpi="129.29294"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -25,35 +25,24 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="29.133333"
-     inkscape:cx="14.347826"
-     inkscape:cy="12.254005"
-     inkscape:window-width="1920"
-     inkscape:window-height="1112"
+     inkscape:zoom="20.600377"
+     inkscape:cx="3.1795534"
+     inkscape:cy="9.3687604"
+     inkscape:window-width="3200"
+     inkscape:window-height="1712"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg1" />
+     inkscape:current-layer="svg1"
+     showgrid="false" />
   <!-- Document shape -->
-  <rect
-     x="-20.726982"
-     y="-29.426981"
-     width="20.453964"
-     height="29.153963"
-     fill="#ffffff"
-     stroke="#000000"
-     stroke-width="0.546037"
+  <path
      id="rect1"
-     transform="matrix(0,-1,-1,0,0,0)" />
+     transform="matrix(0,-1,-1,0,0,0)"
+     style="fill:#ffffff;stroke:#000000;stroke-width:0.544252;stroke-dasharray:none"
+     d="M -20.726982,-29.426981 -2.5,-29.427 l 2.227,2.577 -1.788e-5,26.57698212 H -20.726982 Z"
+     sodipodi:nodetypes="cccccc" />
   <!-- Folded corner -->
-  <polygon
-     points="70,10 90,30 90,10 "
-     fill="#d3d3d3"
-     stroke="#000000"
-     stroke-width="2"
-     id="polygon1"
-     transform="matrix(0,-0.29411765,-0.29411765,0,32.347058,26.764709)"
-     style="fill:#999999" />
   <!-- PDF text -->
   <text
      x="14.709667"
@@ -66,4 +55,9 @@
      style="fill:#0000ff;stroke-width:0.374221"><tspan
        style="fill:#ff0000"
        id="tspan1">PDF</tspan></text>
+  <path
+     style="fill:#b3b3b3;stroke:#000000;stroke-width:0.544252;stroke-dasharray:none;stroke-opacity:1"
+     d="M 26.85,0.273 26.85036,2.5 H 29.427"
+     id="path1"
+     sodipodi:nodetypes="ccc" />
 </svg>
