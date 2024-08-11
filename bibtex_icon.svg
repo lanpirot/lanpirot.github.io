@@ -28,25 +28,29 @@
      inkscape:zoom="29.133333"
      inkscape:cx="14.364989"
      inkscape:cy="12.254005"
-     inkscape:window-width="1920"
-     inkscape:window-height="1112"
-     inkscape:window-x="3192"
+     inkscape:window-width="3200"
+     inkscape:window-height="1712"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg1" />
   <g
-     id="g1"
-     transform="translate(-0.09610978,-0.06407328)">
-    <path
-       id="rect1"
-       style="fill:#ffffff;stroke:#000000;stroke-width:0.544252;stroke-dasharray:none"
-       d="m 29.522199,20.790181 1.9e-5,-18.2269817 -2.577,-2.22699996 -26.57698223,1.788e-5 V 20.790181 Z"
-       sodipodi:nodetypes="cccccc" />
-    <path
-       style="fill:#b3b3b3;stroke:#000000;stroke-width:0.544252;stroke-dasharray:none;stroke-opacity:1"
-       d="m 26.945218,0.33619934 3.6e-4,2.22699996 h 2.57664"
-       id="path1"
-       sodipodi:nodetypes="ccc" />
+     id="g3"
+     transform="translate(-8.918908e-4,-8.7393337e-4)">
+    <g
+       id="g2">
+      <path
+         id="rect1"
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.544252;stroke-dasharray:none"
+         d="M -20.726982,-29.426981 -4.5,-29.427 l 4.227,4.577 -1.788e-5,24.57698212 H -20.726982 Z"
+         sodipodi:nodetypes="cccccc"
+         transform="matrix(0,-1,-1,0,0,0)" />
+      <path
+         style="fill:#b3b3b3;stroke:#000000;stroke-width:0.544252;stroke-dasharray:none;stroke-opacity:1"
+         d="M 24.85,0.273 24.85036,4.5 H 29.427"
+         id="path1"
+         sodipodi:nodetypes="ccc" />
+    </g>
   </g>
   <!-- Document shape -->
   <!-- Folded corner -->

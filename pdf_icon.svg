@@ -26,8 +26,8 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="20.600377"
-     inkscape:cx="3.1795534"
-     inkscape:cy="9.3687604"
+     inkscape:cx="7.3056915"
+     inkscape:cy="7.0387061"
      inkscape:window-width="3200"
      inkscape:window-height="1712"
      inkscape:window-x="-8"
@@ -35,13 +35,24 @@
      inkscape:window-maximized="1"
      inkscape:current-layer="svg1"
      showgrid="false" />
+  <g
+     id="g2">
+    <g
+       id="g1">
+      <path
+         id="rect1"
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.544252;stroke-dasharray:none"
+         d="M -20.726982,-29.426981 -4.5,-29.427 l 4.227,4.577 -1.788e-5,24.57698212 H -20.726982 Z"
+         sodipodi:nodetypes="cccccc"
+         transform="matrix(0,-1,-1,0,0,0)" />
+      <path
+         style="fill:#b3b3b3;stroke:#000000;stroke-width:0.544252;stroke-dasharray:none;stroke-opacity:1"
+         d="M 24.85,0.273 24.85036,4.5 H 29.427"
+         id="path1"
+         sodipodi:nodetypes="ccc" />
+    </g>
+  </g>
   <!-- Document shape -->
-  <path
-     id="rect1"
-     transform="matrix(0,-1,-1,0,0,0)"
-     style="fill:#ffffff;stroke:#000000;stroke-width:0.544252;stroke-dasharray:none"
-     d="M -20.726982,-29.426981 -2.5,-29.427 l 2.227,2.577 -1.788e-5,26.57698212 H -20.726982 Z"
-     sodipodi:nodetypes="cccccc" />
   <!-- Folded corner -->
   <!-- PDF text -->
   <text
@@ -55,9 +66,4 @@
      style="fill:#0000ff;stroke-width:0.374221"><tspan
        style="fill:#ff0000"
        id="tspan1">PDF</tspan></text>
-  <path
-     style="fill:#b3b3b3;stroke:#000000;stroke-width:0.544252;stroke-dasharray:none;stroke-opacity:1"
-     d="M 26.85,0.273 26.85036,2.5 H 29.427"
-     id="path1"
-     sodipodi:nodetypes="ccc" />
 </svg>
