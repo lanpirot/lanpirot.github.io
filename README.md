@@ -1,6 +1,6 @@
 # Publication List of Alexander Boll
 
-A. Boll, T. Kehrer: Multi-Modal Community Quest for Open Data. [![.pdf](pdf_icon.png)](publications/IDCC_Multi-Modal_Community_Quest_for_Open_Data.pdf)
+A. Boll, T. Kehrer: A Multi-Modal Community Quest for Open Data. [![.pdf](pdf_icon.png)](publications/IDCC_Multi-Modal_Community_Quest_for_Open_Data.pdf)
 
 A. Schultheiß, A. Boll, P. Bittner, S. Greiner, T. Thüm, T. Kehrer: Pushing the Boundaries of Patch Automation. [![.pdf](pdf_icon.png)](publications/Pushing_the_Boundaries_of_Patch_Automation.pdf)
 
