@@ -1,5 +1,7 @@
 # Publication List of Alexander Boll
 
+A. Boll, T. Kehrer: Multi-Modal Community Quest for Open Data. [![.pdf](pdf_icon.png)](publications/IDCC_Multi-Modal_Community_Quest_for_Open_Data.pdf)
+
 A. Schultheiß, A. Boll, P. Bittner, S. Greiner, T. Thüm, T. Kehrer: Pushing the Boundaries of Patch Automation. [![.pdf](pdf_icon.png)](publications/Pushing_the_Boundaries_of_Patch_Automation.pdf)
 
 A. Boll, T. Kehrer, M. Goedicke: [SMOKE: Simulink Model Obfuscator Keeping Structure](https://doi.org/10.1145/3652620.3687788), MODELS 2024. [![.pdf](pdf_icon.png)](publications/SMOKE_-_Simulink_Model_Obfuscation_Keeping_Structure.pdf) [![YouTube](yt_icon.png)](https://youtu.be/TFeFNKHSlAw)
