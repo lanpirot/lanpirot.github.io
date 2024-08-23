@@ -26,4 +26,8 @@ A. Boll, T. Kehrer: [On the Replicability of Experimental Tool Evaluations in Mo
 
 A. Schultheiß, A. Boll, T. Kehrer: [Comparison of Graph-based Model Transformation Rules](http://dx.doi.org/10.5381/jot.2020.19.2.a3), JOT 2020. [![.pdf](pdf_icon.png)](publications/Comparison_of_graph-based_model_transformation_rules.pdf) [![BibTeX](bibtex_icon.png)](publications/Comparison_of_graph-based_model_transformation_rules.bib)
 
+------------
+
+A. Boll: Limitations of Self Citation, Fun Short Paper 2023. [![.pdf](pdf_icon.png)](publications/Limitations_of_Self_Citation.pdf)
+
 A. Boll: Formale Instanzverifikation zertifizierender verteilter Algorithmen, MSc Thesis 2019. (in German) [![.pdf](pdf_icon.png)](publications/Diplomarbeit_Formale_Instanzverifikation_zertifizierender_verteilter_Algorithmen.pdf)
