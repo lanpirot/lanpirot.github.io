@@ -1,6 +1,10 @@
 # Publication List of Alexander Boll
 
-A. Boll, T. Kehrer: A Multi-Modal Community Quest for Open Data. [![.pdf](pdf_icon.png)](publications/IDCC_Multi-Modal_Community_Quest_for_Open_Data.pdf)
+R. Bögli, A. Boll, A. Schultheiß, T. Kehrer. Community Driven Variability, FSE 2025. [![.pdf](pdf_icon.png)](publications/Community_Driven_Variability.pdf)
+
+P. Valenzuela-Toledo, C. Wu, S. Hernández, A. Boll, R. Machacek, S. Panichella, T. Kehrer. Explaining GitHub Actions Failures with Large Language Models: Challenges, Insights, and Limitations, ICPC 2025. [![.pdf](pdf_icon.png)](publications/Can_LLMs_Explain_GA_Failures.pdf)
+
+A. Boll, T. Kehrer: A Multi-Modal Community Quest for Open Data. [![.pdf](pdf_icon.png)](publications/Multi-Modal_Community_Quest_for_Open_Data.pdf)
 
 A. Schultheiß, A. Boll, P. Bittner, S. Greiner, T. Thüm, T. Kehrer: Pushing the Boundaries of Patch Automation. [![.pdf](pdf_icon.png)](publications/Pushing_the_Boundaries_of_Patch_Automation.pdf)
 
@@ -26,8 +30,13 @@ A. Boll, T. Kehrer: [On the Replicability of Experimental Tool Evaluations in Mo
 
 A. Schultheiß, A. Boll, T. Kehrer: [Comparison of Graph-based Model Transformation Rules](http://dx.doi.org/10.5381/jot.2020.19.2.a3), JOT 2020. [![.pdf](pdf_icon.png)](publications/Comparison_of_graph-based_model_transformation_rules.pdf) [![BibTeX](bibtex_icon.png)](publications/Comparison_of_graph-based_model_transformation_rules.bib)
 
-------------
+## Non-Academic
 
 A. Boll: Limitations of Self Citation, Fun Short Paper 2023. [![.pdf](pdf_icon.png)](publications/Limitations_of_Self_Citation.pdf)
 
 A. Boll: Formale Instanzverifikation zertifizierender verteilter Algorithmen, MSc Thesis 2019. (in German) [![.pdf](pdf_icon.png)](publications/Diplomarbeit_Formale_Instanzverifikation_zertifizierender_verteilter_Algorithmen.pdf)
+
+## Contact
+
+email: alexander.boll@unibe.ch
+ORCID: 0000-0002-9881-9748
