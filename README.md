@@ -6,7 +6,7 @@ P. Valenzuela-Toledo, C. Wu, S. Hernández, A. Boll, R. Machacek, S. Panichella,
 
 A. Boll, T. Kehrer: A Multi-Modal Community Quest for Open Data. [![.pdf](pdf_icon.png)](publications/Multi-Modal_Community_Quest_for_Open_Data.pdf)
 
-A. Schultheiß, A. Boll, P. Bittner, S. Greiner, T. Thüm, T. Kehrer: Pushing the Boundaries of Patch Automation. [![.pdf](pdf_icon.png)](publications/Pushing_the_Boundaries_of_Patch_Automation.pdf)
+A. Schultheiß, A. Boll, P. Bittner, S. Greiner, T. Thüm, T. Kehrer: Decades of GNU Patch and Git Cherry-Pick: Can We Do Better?. [![.pdf](pdf_icon.png)](publications/Decades_of_GNU_Patch_and_Git_Cherry-Pick_Can_We_Do_Better.pdf)
 
 A. Boll, T. Kehrer, M. Goedicke: [SMOKE: Simulink Model Obfuscator Keeping Structure](https://doi.org/10.1145/3652620.3687788), MODELS 2024. [![.pdf](pdf_icon.png)](publications/SMOKE_-_Simulink_Model_Obfuscation_Keeping_Structure.pdf) [![YouTube](yt_icon.png)](https://youtu.be/TFeFNKHSlAw)
 
