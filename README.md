@@ -1,6 +1,6 @@
 # Publication List of Alexander Boll
 
-A. Boll, M. Ohrndorf, T. Kehrer. SMOKE2.0 Whitebox Anonymizing Intellectual Property in Models While Preserving Structure. [![.pdf](pdf_icon.png)](publications/SMOKE2.0_Whitebox_Anonymizing_Intellectual_Property_in_Models_While_Preserving_Structure.pdf) [![YouTube](yt_icon.png)}(https://youtu.be/0i42BzgJAUA)
+A. Boll, M. Ohrndorf, T. Kehrer. SMOKE2.0 Whitebox Anonymizing Intellectual Property in Models While Preserving Structure. [![.pdf](pdf_icon.png)](publications/SMOKE2.0_Whitebox_Anonymizing_Intellectual_Property_in_Models_While_Preserving_Structure.pdf) [![YouTube](yt_icon.png)](https://youtu.be/0i42BzgJAUA)
 
 A. Schultheiß, A. Boll, P. Bittner, S. Greiner, T. Thüm, T. Kehrer: Decades of GNU Patch and Git Cherry-Pick: Can We Do Better?, ICSE 2026. [![.pdf](pdf_icon.png)](publications/Decades_of_GNU_Patch_and_Git_Cherry-Pick_Can_We_Do_Better.pdf)
 
