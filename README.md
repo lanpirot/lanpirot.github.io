@@ -1,8 +1,12 @@
 # Publication List of Alexander Boll
 
-R. Bögli, A. Boll, A. Schultheiß, T. Kehrer. Community Driven Variability, FSE 2025. [![.pdf](pdf_icon.png)](publications/Community_Driven_Variability.pdf)
+A. Boll, M. Ohrndorf, T. Kehrer. SMOKE2.0 Whitebox Anonymizing Intellectual Property in Models While Preserving Structure. [![.pdf](pdf_icon.png)](publications/SMOKE2.0_Whitebox_Anonymizing_Intellectual_Property_in_Models_While_Preserving_Structure.pdf)
 
-P. Valenzuela-Toledo, C. Wu, S. Hernández, A. Boll, R. Machacek, S. Panichella, T. Kehrer. Explaining GitHub Actions Failures with Large Language Models: Challenges, Insights, and Limitations, ICPC 2025. [![.pdf](pdf_icon.png)](publications/Can_LLMs_Explain_GA_Failures.pdf)
+R. Bögli, A. Boll, A. Schultheiß, T. Kehrer. [Beyond Software Families: Community Driven Variability](https://doi.org/10.1145/3696630.3728501), FSE 2025. [![.pdf](pdf_icon.png)](publications/Community_Driven_Variability.pdf)
+
+P. Valenzuela-Toledo, C. Wu, S. Hernández, A. Boll, R. Machacek, S. Panichella, T. Kehrer. [Explaining GitHub Actions Failures with Large Language Models: Challenges, Insights, and Limitations](https://doi.org/10.1109/ICPC66645.2025.00037), ICPC 2025. [![.pdf](pdf_icon.png)](publications/Can_LLMs_Explain_GA_Failures.pdf)
+
+P. Rani, J.-A. Bard, J. Sallou, A. Boll, T. Kehrer, A. Bacchelli, [Can We Make Code Green? Understanding Trade-Offs in LLMs vs. Human Code Optimizations](https://doi.org/10.48550/arXiv.2503.20126), arxiv 2025. [![.pdf](pdf_icon.png)](publications/Can_We_Make_Code_Green?_Understanding_Trade-Offs_in_LLMs_vs._Human_Code_Optimizations.pdf)
 
 A. Boll, T. Kehrer: A Multi-Modal Community Quest for Open Data. [![.pdf](pdf_icon.png)](publications/Multi-Modal_Community_Quest_for_Open_Data.pdf)
 
