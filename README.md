@@ -10,8 +10,6 @@ P. Valenzuela-Toledo, C. Wu, S. Hernández, A. Boll, R. Machacek, S. Panichella,
 
 P. Rani, J.-A. Bard, J. Sallou, A. Boll, T. Kehrer, A. Bacchelli, [Can We Make Code Green? Understanding Trade-Offs in LLMs vs. Human Code Optimizations](https://doi.org/10.48550/arXiv.2503.20126), arxiv 2025. [![.pdf](pdf_icon.png)](publications/Can_We_Make_Code_Green_Understanding_Trade-Offs_in_LLMs_vs_Human_Code_Optimizations.pdf)
 
-A. Boll, T. Kehrer: A Multi-Modal Community Quest for Open Data. [![.pdf](pdf_icon.png)](publications/Multi-Modal_Community_Quest_for_Open_Data.pdf)
-
 A. Boll, T. Kehrer, M. Goedicke: [SMOKE: Simulink Model Obfuscator Keeping Structure](https://doi.org/10.1145/3652620.3687788), MODELS 2024. [![.pdf](pdf_icon.png)](publications/SMOKE_-_Simulink_Model_Obfuscation_Keeping_Structure.pdf) [![YouTube](yt_icon.png)](https://youtu.be/TFeFNKHSlAw)
 
 A. Boll, Y. van Dok, M. Ohrndorf, A. Schultheiß, T. Kehrer: [Towards Semi-Automated Merge Conflict Resolution: Is It Easier Than We Expected?](https://doi.org/10.1145/3661167.3661197), EASE 2024. [![Distinguished Paper Award](distinguished_paper_mini.png)](https://seg.inf.unibe.ch/news/2405_ease) [![.pdf](pdf_icon.png)](publications/Towards_Semi-Automated_Merge_Conflict_Resolution_Is_It_Easier_Than_We_Expected.pdf) [![BibTeX](bibtex_icon.png)](publications/Towards_Semi-Automated_Merge_Conflict_Resolution_Is_It_Easier_Than_We_Expected.bib)
@@ -34,7 +32,9 @@ A. Boll, T. Kehrer: [On the Replicability of Experimental Tool Evaluations in Mo
 
 A. Schultheiß, A. Boll, T. Kehrer: [Comparison of Graph-based Model Transformation Rules](http://dx.doi.org/10.5381/jot.2020.19.2.a3), JOT 2020. [![.pdf](pdf_icon.png)](publications/Comparison_of_graph-based_model_transformation_rules.pdf) [![BibTeX](bibtex_icon.png)](publications/Comparison_of_graph-based_model_transformation_rules.bib)
 
-## Non-Academic
+## Other work
+
+A. Boll, T. Kehrer: A Multi-Modal Community Quest for Open Data, rejected at IDCC25. [![.pdf](pdf_icon.png)](publications/Multi-Modal_Community_Quest_for_Open_Data.pdf)
 
 A. Boll: Limitations of Self Citation, Fun Short Paper 2023. [![.pdf](pdf_icon.png)](publications/Limitations_of_Self_Citation.pdf)
 
