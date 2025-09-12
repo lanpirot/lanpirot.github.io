@@ -7,7 +7,7 @@ DIR_NAME="baddyfiles"
 mkdir -p "$DIR_NAME"
 
 # Get today's date in YYYY-MM-DD format
-TODAY=$(date +%Y-%m-%d)
+DATE=$(date +%Y-%m-%d_%H:%M:%S)
 
 # Create a file named after today inside the directory
 touch "$DIR_NAME/bad_stuff$TODAY.txt"
