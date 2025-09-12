@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Define the directory name
+DIR_NAME="baddyfiles"
+
+# Create the directory if it doesn't exist
+mkdir -p "$DIR_NAME"
+
+# Get today's date in YYYY-MM-DD format
+TODAY=$(date +%Y-%m-%d)
+
+# Create a file named after today inside the directory
+touch "$DIR_NAME/bad_stuff$TODAY.txt"
+
+# Optional: Print confirmation
+echo "Baddy script successfully executed at: $DIR_NAME/$TODAY.txt"
