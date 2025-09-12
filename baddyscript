@@ -10,7 +10,7 @@ mkdir -p "$DIR_NAME"
 DATE=$(date +%Y-%m-%d_%H:%M:%S)
 
 # Create a file named after today inside the directory
-touch "$DIR_NAME/bad_stuff$TODAY.txt"
+touch "$DIR_NAME/bad_stuff$DATE.txt"
 
 # Optional: Print confirmation
 echo "Baddy script successfully executed at: $DIR_NAME/$TODAY.txt"
