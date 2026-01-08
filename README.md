@@ -1,6 +1,6 @@
 # Publication List of Alexander Boll
 
-R. Bögli, A. Boll, A. Schultheiß, T. Kehrer: Community-Driven Variability: Characterizing a new Software Variability Paradigm, ASE 2026. [![.pdf](pdf_icon.png)](publications/Community_Driven_Variability_Characterizing_a_new_Software_Variability_Paradigm.pdf)
+R. Bögli, A. Boll, A. Schultheiß, T. Kehrer: Community-Driven Variability: Characterizing a new Software Variability Paradigm, Autom Softw Eng 2026. [![.pdf](pdf_icon.png)](publications/Community_Driven_Variability_Characterizing_a_new_Software_Variability_Paradigm.pdf)
 
 M. Ohrndorf, A. Boll, R. Bögli, T. Kehrer: [Turning Merge Conflicts Into Conflict-Induced Variability](https://doi.org/10.1145/3786582.3786840), ICSE 2026. [![.pdf](pdf_icon.png)](publications/Turning_Merge_Conflicts_Into_Conflict-Induced_Variability.pdf)
 
