@@ -1,5 +1,9 @@
 # Publication List of Alexander Boll
 
+R. Bögli, A. Boll, A. Schultheiß, T. Kehrer: Community-Driven Variability: Characterizing a new Software Variability Paradigm, ASE 2026. [![.pdf](pdf_icon.png)](publications/Community_Driven_Variability_Characterizing_a_new_Software_Variability_Paradigm.pdf)
+
+M. Ohrndorf, A. Boll, R. Bögli, T. Kehrer: [Turning Merge Conflicts Into Conflict-Induced Variability](https://doi.org/10.1145/3786582.3786840), ICSE 2026. [![.pdf](pdf_icon.png)](publications/Turning_Merge_Conflicts_Into_Conflict-Induced_Variability.pdf)
+
 A. Boll, M. Ohrndorf, T. Kehrer. SMOKE2.0 Whitebox Anonymizing Intellectual Property in Models While Preserving Structure, preprint. [![.pdf](pdf_icon.png)](publications/SMOKE2.0_Whitebox_Anonymizing_Intellectual_Property_in_Models_While_Preserving_Structure.pdf) [![YouTube](yt_icon.png)](https://youtu.be/0i42BzgJAUA)
 
 A. Schultheiß, A. Boll, P. Bittner, S. Greiner, T. Thüm, T. Kehrer: Decades of GNU Patch and Git Cherry-Pick: Can We Do Better?, ICSE 2026. [![.pdf](pdf_icon.png)](publications/Decades_of_GNU_Patch_and_Git_Cherry-Pick_Can_We_Do_Better.pdf)
@@ -33,6 +37,8 @@ A. Boll, T. Kehrer: [On the Replicability of Experimental Tool Evaluations in Mo
 A. Schultheiß, A. Boll, T. Kehrer: [Comparison of Graph-based Model Transformation Rules](http://dx.doi.org/10.5381/jot.2020.19.2.a3), JOT 2020. [![.pdf](pdf_icon.png)](publications/Comparison_of_graph-based_model_transformation_rules.pdf) [![BibTeX](bibtex_icon.png)](publications/Comparison_of_graph-based_model_transformation_rules.bib)
 
 ## Other work
+
+A. Boll: Bridging the Data Desert: Mitigating Challenges of Model Accessibility in Simulink Research, PhD Thesis 2025. [![.pdf](pdf_icon.png)](publications/Bridging_the_Data_Desert_Mitigating_Challenges_of_Model_Accessibility_in_Simulink_Research.pdf)
 
 A. Boll, T. Kehrer: A Multi-Modal Community Quest for Open Data, rejected at IDCC25. [![.pdf](pdf_icon.png)](publications/Multi-Modal_Community_Quest_for_Open_Data.pdf)
 
