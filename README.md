@@ -1,6 +1,6 @@
 # Publication List of Alexander Boll
 
-R. Bögli, A. Boll, A. Schultheiß, T. Kehrer: Community-Driven Variability: Characterizing a new Software Variability Paradigm, Autom Softw Eng 2026. [![.pdf](pdf_icon.png)](publications/Community_Driven_Variability_Characterizing_a_new_Software_Variability_Paradigm.pdf)
+R. Bögli, A. Boll, A. Schultheiß, T. Kehrer: Community-Driven Variability: Characterizing a new Software Variability Paradigm, ASE 2026. [![.pdf](pdf_icon.png)](publications/Community_Driven_Variability_Characterizing_a_new_Software_Variability_Paradigm.pdf)
 
 M. Ohrndorf, A. Boll, R. Bögli, T. Kehrer: [Turning Merge Conflicts Into Conflict-Induced Variability](https://doi.org/10.1145/3786582.3786840), ICSE 2026. [![.pdf](pdf_icon.png)](publications/Turning_Merge_Conflicts_Into_Conflict-Induced_Variability.pdf)
 
@@ -49,4 +49,59 @@ A. Boll: Formale Instanzverifikation zertifizierender verteilter Algorithmen, MS
 ## Contact
 
 email: alexander.boll@unibe.ch
-ORCID: 0000-0002-9881-9748
+
+ORCID: [0000-0002-9881-9748](https://orcid.org/0000-0002-9881-9748)
+
+
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+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
+84mo9Q==
+=uHTt
+-----END PGP PUBLIC KEY BLOCK-----
