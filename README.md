@@ -26,7 +26,7 @@ S. Shrestha, A. Boll, T. Kehrer, C. Csallner: [ScoutSL: An Open-Source Simulink 
 
 S. Shrestha, A. Boll, S. Chowdhury, T. Kehrer, C. Csallner: [EvoSL: A Large Open-Source Corpus of Changes in Simulink Models & Projects](https://doi.org/10.1109/MODELS58315.2023.00024), MODELS 2023. [![.pdf](pdf_icon.png)](publications/EvoSL_A_Large_Open-Source_Corpus_of_Changes_in_Simulink_Models_&_Projects.pdf) [![BibTeX](bibtex_icon.png)](publications/EvoSL_A_Large_Open-Source_Corpus_of_Changes_in_Simulink_Models_&_Projects.bib)
 
-T. Amorim, A. Boll, F. Bachmann, T. Kehrer, A. Vogelsang, H. Pohlheim: [Simulink bus usage in practice: an empirical study](http://dx.doi.org/10.5381/jot.2023.22.2.a12), JOT 2023. [![.pdf](pdf_icon.png)](publications/Simulink_bus_usage_in_practice_an_empirical_study.pdf) [![BibTeX](bibtex_icon.png)](publications/Simulink_bus_usage_in_practice_an_empirical_study.bib)
+T. Amorim, A. Boll, F. Bachmann, T. Kehrer, A. Vogelsang, H. Pohlheim: [Simulink bus usage in practice: an empirical study](https://dx.doi.org/10.5381/jot.2023.22.2.a12), JOT 2023. [![.pdf](pdf_icon.png)](publications/Simulink_bus_usage_in_practice_an_empirical_study.pdf) [![BibTeX](bibtex_icon.png)](publications/Simulink_bus_usage_in_practice_an_empirical_study.bib)
 
 A. Schultheiß, P. Bittner, A. Boll, L. Grunske, T. Thüm, T. Kehrer: [RaQuN: a generic and scalable n-way model matching algorithm](https://doi.org/10.1007/s10270-022-01062-5), SoSyM 2022. [![.pdf](pdf_icon.png)](publications/RaQuN_a_generic_and_scalable_n-way_model_matching_algorithm.pdf) [![BibTeX](bibtex_icon.png)](publications/RaQuN_a_generic_and_scalable_n-way_model_matching_algorithm.bib)
 
@@ -36,17 +36,18 @@ A. Boll, F. Brokhausen, T. Amorim, A. Vogelsang, T. Kehrer: [Characteristics, Po
 
 A. Boll, T. Kehrer: [On the Replicability of Experimental Tool Evaluations in Model-Based Development](https://doi.org/10.1007/978-3-030-58167-1_9), ICSMM 2020. [![.pdf](pdf_icon.png)](publications/On_the_Replicability_of_Experimental_Tool_Evaluations_in_Model-based_Development.pdf) [![BibTeX](bibtex_icon.png)](publications/On_the_Replicability_of_Experimental_Tool_Evaluations_in_Model-based_Development.bib)
 
-A. Schultheiß, A. Boll, T. Kehrer: [Comparison of Graph-based Model Transformation Rules](http://dx.doi.org/10.5381/jot.2020.19.2.a3), JOT 2020. [![.pdf](pdf_icon.png)](publications/Comparison_of_graph-based_model_transformation_rules.pdf) [![BibTeX](bibtex_icon.png)](publications/Comparison_of_graph-based_model_transformation_rules.bib)
+A. Schultheiß, A. Boll, T. Kehrer: [Comparison of Graph-based Model Transformation Rules](https://dx.doi.org/10.5381/jot.2020.19.2.a3), JOT 2020. [![.pdf](pdf_icon.png)](publications/Comparison_of_graph-based_model_transformation_rules.pdf) [![BibTeX](bibtex_icon.png)](publications/Comparison_of_graph-based_model_transformation_rules.bib)
 
 ## Other work
 
-A. Boll: Bridging the Data Desert: Mitigating Challenges of Model Accessibility in Simulink Research, PhD Thesis 2025. [![.pdf](pdf_icon.png)](publications/Bridging_the_Data_Desert_Mitigating_Challenges_of_Model_Accessibility_in_Simulink_Research.pdf)
+A. Boll: [Bridging the Data Desert: Mitigating Challenges of Model Accessibility in Simulink Research, PhD Thesis 2025](https://doi.org/10.48549/7066). [![.pdf](pdf_icon.png)](publications/Bridging_the_Data_Desert_Mitigating_Challenges_of_Model_Accessibility_in_Simulink_Research.pdf)
 
-A. Boll, T. Kehrer: A Multi-Modal Community Quest for Open Data, rejected at IDCC25. [![.pdf](pdf_icon.png)](publications/Multi-Modal_Community_Quest_for_Open_Data.pdf)
+A. Boll: Formale Instanzverifikation zertifizierender verteilter Algorithmen, MSc Thesis 2019. (in German) [![.pdf](pdf_icon.png)](publications/Diplomarbeit_Formale_Instanzverifikation_zertifizierender_verteilter_Algorithmen.pdf)
 
 A. Boll: Limitations of Self Citation, Fun Short Paper 2023. [![.pdf](pdf_icon.png)](publications/Limitations_of_Self_Citation.pdf)
 
-A. Boll: Formale Instanzverifikation zertifizierender verteilter Algorithmen, MSc Thesis 2019. (in German) [![.pdf](pdf_icon.png)](publications/Diplomarbeit_Formale_Instanzverifikation_zertifizierender_verteilter_Algorithmen.pdf)
+A. Boll, T. Kehrer: A Multi-Modal Community Quest for Open Data, rejected at IDCC25. [![.pdf](pdf_icon.png)](publications/Multi-Modal_Community_Quest_for_Open_Data.pdf)
+
 
 ## Contact
 
