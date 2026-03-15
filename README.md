@@ -2,7 +2,7 @@
 
 ## Conference & Journal Papers
 
-A. Boll: GRANDSLAM: Linearly Scalabale Model Synthesis, ICST 2026. [[!.pdf](pdf_icon.png)](publications/GRANDSLAM_LINEARLY_SCALABLE_MODEL_SYNTHESIS.pdf)
+A. Boll: GRANDSLAM: Linearly Scalabale Model Synthesis, ICST 2026. [![.pdf](pdf_icon.png)](publications/GRANDSLAM_LINEARLY_SCALABLE_MODEL_SYNTHESIS.pdf)
 
 R. Bögli, A. Boll, A. Schultheiß, T. Kehrer: Community-Driven Variability: Characterizing a new Software Variability Paradigm, ASE 2026. [![.pdf](pdf_icon.png)](publications/Community_Driven_Variability_Characterizing_a_new_Software_Variability_Paradigm.pdf)
 
