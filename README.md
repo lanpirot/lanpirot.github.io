@@ -40,13 +40,12 @@ A. Schultheiß, A. Boll, T. Kehrer: [Comparison of Graph-based Model Transformat
 
 ## Other work
 
-A. Boll: [Bridging the Data Desert: Mitigating Challenges of Model Accessibility in Simulink Research, PhD Thesis 2025](https://doi.org/10.48549/7066). [![.pdf](pdf_icon.png)](publications/Bridging_the_Data_Desert_Mitigating_Challenges_of_Model_Accessibility_in_Simulink_Research.pdf)
+A. Boll: [Bridging the Data Desert: Mitigating Challenges of Model Accessibility in Simulink Research, PhD Thesis 2025](https://doi.org/10.48549/7066). [![.pdf](pdf_icon.png)](publications/Bridging_the_Data_Desert_Mitigating_Challenges_of_Model_Accessibility_in_Simulink_Research.pdf) [![BibTeX](bibtex_icon.png)](publications/Bridging_the_Data_Desert_Mitigating_Challenges_of_Model_Accessibility_in_Simulink_Research.bib)
 
 A. Boll: Formale Instanzverifikation zertifizierender verteilter Algorithmen, MSc Thesis 2019. (in German) [![.pdf](pdf_icon.png)](publications/Diplomarbeit_Formale_Instanzverifikation_zertifizierender_verteilter_Algorithmen.pdf)
 
 A. Boll: Limitations of Self Citation, Fun Short Paper 2023. [![.pdf](pdf_icon.png)](publications/Limitations_of_Self_Citation.pdf)
 
-A. Boll, T. Kehrer: A Multi-Modal Community Quest for Open Data, rejected at IDCC25. [![.pdf](pdf_icon.png)](publications/Multi-Modal_Community_Quest_for_Open_Data.pdf)
 
 
 ## Contact
