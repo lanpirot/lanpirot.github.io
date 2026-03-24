@@ -2,7 +2,7 @@
 
 ## Conference & Journal Papers
 
-A. Boll, M. Ohrndorf, T. Kehrer. SMOKE2.0 Whitebox Anonymization of Sensitive Information in Simulink with Structure Preservation, SoSyM 2026. [![.pdf](pdf_icon.png)](publications/SMOKE2.0_Whitebox_Anonymization_of_Sensitive_Information_in_Simulink_with_Structure_Preservation) [![YouTube](yt_icon.png)](https://youtu.be/0i42BzgJAUA)
+A. Boll, M. Ohrndorf, T. Kehrer. SMOKE2.0 Whitebox Anonymization of Sensitive Information in Simulink with Structure Preservation, SoSyM 2026. [![.pdf](pdf_icon.png)](publications/SMOKE2.0_Whitebox_Anonymization_of_Sensitive_Information_in_Simulink_with_Structure_Preservation.pdf) [![YouTube](yt_icon.png)](https://youtu.be/0i42BzgJAUA)
 
 A. Boll: GRANDSLAM: Linearly Scalabale Model Synthesis, ICST 2026. [![.pdf](pdf_icon.png)](publications/GRANDSLAM_LINEARLY_SCALABLE_MODEL_SYNTHESIS.pdf)
 
