@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#0b1220"/>
+  <text x="32" y="33" text-anchor="middle" dominant-baseline="central"
+        font-family="Inter, system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif"
+        font-weight="700" font-size="34" fill="#f4f1e8" letter-spacing="-1.5">AB</text>
+</svg>
