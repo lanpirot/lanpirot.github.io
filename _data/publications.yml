@@ -61,7 +61,7 @@
   pdf: "publications/Decades_of_GNU_Patch_and_Git_Cherry-Pick_Can_We_Do_Better.pdf"
   abstract: "Patching is a fundamental software maintenance and evolution task enabling the (semi-)automated propagation of changes across different software versions. Established and widely used language-agnostic patchers, such as GNU patch and Git cherry-pick, work on textual artifact representations (i.e., text files) and typically rely on line numbers and contexts (i.e., surrounding unchanged text fragments) to apply changes. This strategy often fails if source and target of a patch differ, provoking cumbersome manual effort. In this paper, we study the effectiveness of commonly-used patchers, and propose a novel technique that significantly increases patch automation. First, we curate and analyze a large dataset of more than 400,000 patch scenarios (i.e., cherry picks) from 5,000 GitHub projects. Next, we examine the effectiveness of established patchers on the gathered patch scenarios. Third, we develop a novel language-agnostic patch technique, mpatch, that utilizes a source-to-target matching to determine suitable change locations. By comparing mpatch to other patchers, we find that it can correctly apply 44 % more patches automatically than other language-agnostic patchers, while it also requires fewer manual fixes in cases that cannot be automated completely. Thus, mpatch considerably reduces the burden of manually fixing failed patches in practice, specifically in projects with frequent patch applications."
   links:
-  	code: "https://doi.org/10.5281/zenodo.18235133"
+    code: "https://doi.org/10.5281/zenodo.18235133"
 
 - title: "Bridging the Data Desert: Mitigating Challenges of Model Accessibility in Simulink Research"
   authors: "Alexander Boll"
@@ -103,7 +103,7 @@
   abstract: "GitHub Actions (GA) has become the de facto tool that developers use to automate software workflows, seamlessly building, testing, and deploying code. Yet when GA fails, it disrupts development, causing delays and driving up costs. Diagnosing failures becomes especially challenging because error logs are often long, complex and unstructured. Given these difficulties, this study explores the potential of large language models (LLMs) to generate correct, clear, concise, and actionable contextual descriptions (or summaries) for GA failures, focusing on developers' perceptions of their feasibility and usefulness. Our results show that over 80 % of developers rated LLM explanations positively in terms of correctness for simpler/small logs. Overall, our findings suggest that LLMs can feasibly assist developers in understanding common GA errors, thus, potentially reducing manual analysis. However, we also found that improved reasoning abilities are needed to support more complex CI/CD scenarios. For instance, less experienced developers tend to be more positive on the described context, while seasoned developers prefer concise summaries. Overall, our work offers key insights for researchers enhancing LLM reasoning, particularly in adapting explanations to user expertise."
   bib: "publications/Explaining_GitHub_Actions_Failures_with_Large_Language_Models_Challenges_Insights_and_Limitations.bib"
   links:
-  	artifacts: "https://doi.org/10.5281/zenodo.14750197"
+    artifacts: "https://doi.org/10.5281/zenodo.14750197"
 
 - title: "Can We Make Code Green? Understanding Trade-Offs in LLMs vs. Human Code Optimizations"
   authors: "Pooja Rani, Jan-Andrea Bard, June Sallou, Alexander Boll, Timo Kehrer, Alberto Bacchelli"
@@ -118,7 +118,7 @@
 Mapping these optimizations to 13 high-level themes, we found that LLMs propose a broad spectrum of improvements--beyond energy efficiency--including improving code readability and maintainability, memory management, error handling while the developer overlooked some parallel processing, error handling etc. However, our statistical tests reveal that the energy-focused optimizations unexpectedly negatively impacted memory usage, with no clear benefits regarding execution time or energy consumption. Our qualitative analysis of energy-time trade-offs revealed that some themes, such as vectorization preallocation, were among the common themes shaping these trade-offs. With LLMs becoming ubiquitous in modern software development, our study serves as a call to action: prioritizing the evaluation of common coding practices to identify the green ones. "
   bib: "publications/Can_We_Make_Code_Green_Understanding_Trade-Offs_in_LLMs_vs_Human_Code_Optimizations.bib"
   links:
-  	artifacts: "https://anonymous.4open.science/r/RP-Matlab-Code-Green-72F5/README.md"
+    artifacts: "https://anonymous.4open.science/r/RP-Matlab-Code-Green-72F5/README.md"
 
 - title: "SMOKE: Simulink Model Obfuscator Keeping Structure"
   authors: "Alexander Boll, Timo Kehrer, Michael Goedicke"
@@ -147,7 +147,7 @@ Mapping these optimizations to 13 high-level themes, we found that LLMs propose 
   abstract: "In version control systems such as Git, concurrent modifications on the same artifacts can cause merge conflicts that may disrupt the development workflow by requiring manual intervention. While research on software merging focused on sophisticated techniques that hardly had any impact in practice, we present an empirical feasibility study on semi-automated conflict resolution using a fixed set of only a few language-agnostic conflict resolution patterns. In a large-scale quantitative analysis, we simulate the performance of our hypothetical conflict resolution strategy by classifying 131,154 merge conflict resolutions of a diverse sample of 10,000 GitHub projects according to these resolution patterns. We shed light on the derivability of merges on multiple levels of granularity: the conflicting merge commit, its conflicting files and their individual conflicting chunks. 87.9% of chunks are derivable individually, while 34.5% of merges are derivable as a whole. Interestingly, however, by inspecting potential factors affecting derivability, we observe that there are stronger correlations considering individual files than considering the entire merge. A short yet preliminary answer to whether semi-automated conflict resolution is easier than we expected is: yes, it might be, particularly if we use the right level of granularity for proposing conflict resolutions. Through our comprehensive analysis, we aspire to bridge the gap between academic innovations on sophisticated merge techniques and real-world merge conflict scenarios, laying the groundwork for more effective and widely accepted automatic merge tools."
   bib: "publications/Towards_Semi-Automated_Merge_Conflict_Resolution_Is_It_Easier_Than_We_Expected.bib"
   links:
-  	dataset: "https://doi.org/10.5281/zenodo.10511517"
+    dataset: "https://doi.org/10.5281/zenodo.10511517"
 
 - title: "Beyond Code: Is There a Difference Between Comments in Visual and Textual Languages?"
   authors: "Alexander Boll, Pooja Rani, Alexander Schultheiß, Timo Kehrer"
@@ -188,8 +188,8 @@ Mapping these optimizations to 13 high-level themes, we found that LLMs propose 
   abstract: "Having readily available corpora is crucial for performing replication, reproduction, extension, and verification studies of existing research tools and techniques. MAT-LAB/Simulink is a de-facto standard tool in several safety-critical industries for system modeling and analysis, compiling models to code, and deploying code to embedded hardware. There is no commonly used corpus for large-scale model change studies because there is no readily available corpus. EvoSL is the first large corpus of Simulink projects that includes model and project changes and allows redistribution. EvoSL is available under a permissive open-source license and contains its collection and analysis tools. Using a subset of EvoSL, we replicated a case study of model changes on a single closed-source industrial project."
   bib: "publications/EvoSL_A_Large_Open-Source_Corpus_of_Changes_in_Simulink_Models_and_Projects.bib"
   links:
-  	dataset: "https://doi.org/10.5281/zenodo.8217495"
-  	code: "https://doi.org/10.6084/m9.figshare.22298812"
+    dataset: "https://doi.org/10.5281/zenodo.8217495"
+    code: "https://doi.org/10.6084/m9.figshare.22298812"
 
 - title: "Simulink Bus Usage in Practice: An Empirical Study"
   authors: "Tiago Amorim, Alexander Boll, Ferry Bachmann, Timo Kehrer, Andreas Vogelsang, Hartmut Pohlheim"
@@ -224,7 +224,7 @@ Mapping these optimizations to 13 high-level themes, we found that LLMs propose 
   abstract: "Model matching algorithms are used to identify common elements in input models, which is a fundamental precondition for many software engineering tasks, such as merging software variants or views. If there are multiple input models, an n-way matching algorithm that simultaneously processes all models typically produces better results than the sequential application of two-way matching algorithms. However, existing algorithms for n-way matching do not scale well, as the computational effort grows fast in the number of models and their size. We propose a scalable n-way model matching algorithm, which uses multi-dimensional search trees for efficiently finding suitable match candidates through range queries. We implemented our generic algorithm named RaQuN   (Range Queries on input models) in Java and empirically evaluate the matching quality and runtime performance on several datasets of different origins and model types. Compared to the state of the art, our experimental results show a performance improvement by an order of magnitude, while delivering matching results of better quality."
   bib: "publications/RaQuN_a_generic_and_scalable_n-way_model_matching_algorithm.bib"
   links:
-  	artifacts: "https://doi.org/10.5281/zenodo.7372740"
+    artifacts: "https://doi.org/10.5281/zenodo.7372740"
 
 - title: "Replicability of Experimental Tool Evaluations in Model-Based Software and Systems Engineering with MATLAB/Simulink"
   authors: "Alexander Boll, Nicole Vieregg, Timo Kehrer"
@@ -237,7 +237,7 @@ Mapping these optimizations to 13 high-level themes, we found that LLMs propose 
   abstract: "Research on novel tools for model-based development differs from a mere engineering task by not only developing a new tool, but by providing some form of evidence that it is effective. This is typically achieved by experimental evaluations. Following principles of good scientific practice, both the tool and the models used in the experiments should be made available along with a paper, aiming at the replicability of experimental results. We investigate to which degree recent research reporting on novel methods, techniques, or algorithms supporting model-based development with MATLAB/Simulink meets the requirements for replicability of experimental results. Our results from studying 65 research papers obtained through a systematic literature search are rather unsatisfactory. In a nutshell, we found that only 31% of the tools and 22% of the models used as experimental subjects are accessible. Given that both artifacts are needed for a replication study, only 9% of the tool evaluations presented in the examined papers can be classified to be replicable in principle. We found none of the experimental results presented in these papers to be fully replicable, and 6% partially replicable. Given that tools are still being listed among the major obstacles of a more widespread adoption of model-based principles in practice, we see this as an alarming signal. While we are convinced that this situation can only be improved as a community effort, this paper is meant to serve as starting point for discussion, based on the lessons learnt from our study."
   bib: "publications/Replicability_of_experimental_tool_evaluations_in_model-based_software_and_systems_engineering_with_MATLABSimulink.bib"
   links:
-  	artifacts: "https://doi.org/10.6084/m9.figshare.13633928"
+    artifacts: "https://doi.org/10.6084/m9.figshare.13633928"
 
 - title: "Characteristics, Potentials, and Limitations of Open Source Simulink Projects for Empirical Research"
   authors: "Alexander Boll, Florian Brokhausen, Tiago Amorim, Andreas Vogelsang, Timo Kehrer"
@@ -250,7 +250,7 @@ Mapping these optimizations to 13 high-level themes, we found that LLMs propose 
   abstract: "Simulink is an example of a successful application of the paradigm of model-based development into industrial practice. Numerous companies create and maintain Simulink projects for modeling software-intensive embedded systems, aiming at early validation and automated code generation. However, Simulink projects are not as easily available as code-based ones, which profit from large publicly accessible open-source repositories, thus curbing empirical research. In this paper, we investigate a set of 1734 freely available Simulink models from 194 projects and analyze their suitability for empirical research. We analyze the projects considering (1) their development context, (2) their complexity in terms of size and organization within projects, and (3) their evolution over time. Our results show that there are both limitations and potentials for empirical research. On the one hand, some application domains dominate the development context, and there is a large number of models that can be considered toy examples of limited practical relevance. These often stem from an academic context, consist of only a few Simulink blocks, and are no longer (or have never been) under active development or maintenance. On the other hand, we found that a subset of the analyzed models is of considerable size and complexity. There are models comprising several thousands of blocks, some of them highly modularized by hierarchically organized Simulink subsystems. Likewise, some of the models expose an active maintenance span of several years, which indicates that they are used as primary development artifacts throughout a project’s lifecycle. According to a discussion of our results with a domain expert, many models can be considered mature enough for quality analysis purposes, and they expose characteristics that can be considered representative for industry-scale models. Thus, we are confident that a subset of the models is suitable for empirical research. More generally, using a publicly available model corpus or a dedicated subset enables researchers to replicate findings, publish subsequent studies, and use them for validation purposes. We publish our dataset for the sake of replicating our results and fostering future empirical research."
   bib: "publications/Characteristics_Potentials_and_Limitations_of_Open_Source_Simulink_Projects_for_Empirical_Research.bib"
   links:
-  	artifacts: "https://doi.org/10.6084/m9.figshare.13636589"
+    artifacts: "https://doi.org/10.6084/m9.figshare.13636589"
 
 - title: "On the Replicability of Experimental Tool Evaluations in Model-Based Development"
   authors: "Alexander Boll, Timo Kehrer"
@@ -263,7 +263,7 @@ Mapping these optimizations to 13 high-level themes, we found that LLMs propose 
   abstract: "Research on novel tools for model-based development differs from a mere engineering task by providing some form of evidence that a tool is effective. This is typically achieved by experimental evaluations. Following principles of good scientific practice, both the tool and the models used in the experiments should be made available along with a paper. We investigate to which degree these basic prerequisites for the replicability of experimental results are met by recent research reporting on novel methods, techniques, or algorithms supporting model-based development using MATLAB/Simulink. Our results from a systematic literature review are rather unsatisfactory. In a nutshell, we found that only 31% of the tools and 22% of the models used as experimental subjects are accessible. Given that both artifacts are needed for a replication study, only 9% of the tool evaluations presented in the examined papers can be classified to be replicable in principle. Given that tools are still being listed among the major obstacles of a more widespread adoption of model-based principles in practice, we see this as an alarming signal. While we are convinced that this can only be achieved as a community effort, this paper is meant to serve as starting point for discussion, based on the lessons learnt from our study."
   bib: "publications/On_the_Replicability_of_Experimental_Tool_Evaluations_in_Model-based_Development.bib"
   links:
-  	artifacts: "https://doi.org/10.6084/m9.figshare.13633928"
+    artifacts: "https://doi.org/10.6084/m9.figshare.13633928"
 
 - title: "Comparison of Graph-Based Model Transformation Rules"
   authors: "Alexander Schultheiß, Alexander Boll, Timo Kehrer"
@@ -276,7 +276,7 @@ Mapping these optimizations to 13 high-level themes, we found that LLMs propose 
   abstract: "With model transformations arising to primary development artifacts in Model-Driven Engineering, dedicated tools supporting transformation developers in the development and maintenance of model transfor- mations are strongly required. In this paper, we address the versioning of model transformations, which essentially relies on a basic service for comparing different versions of model transformations, e.g., a local workspace version and the latest version of a repository. Focusing on rule-based model transformations based on graph transformation concepts, we propose to compare such transformation rules using a maximum common subgraph (MCS) algorithm as the underlying matching engine. Although the MCS problem is known as a non-polynomial optimization problem, our research hypothesis is that using an MCS algorithm as a basis for comparing graph-based transformation rules is feasible for real-world model transformations and increases the quality of comparison results compared to standard model comparison algorithms. Experimental results obtained on a benchmark set for model transformation confirm this hypothesis."
   bib: "publications/Comparison_of_graph-based_model_transformation_rules.bib"
   links:
-  	artifacts: "https://doi.org/10.5281/zenodo.19598328"
+    artifacts: "https://doi.org/10.5281/zenodo.19598328"
 
 - title: "Formale Instanzverifikation zertifizierender verteilter Algorithmen"
   authors: "Alexander Boll"
