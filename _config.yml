@@ -31,10 +31,6 @@ defaults:
       path: "google*.html"
     values:
       sitemap: false
-  - scope:
-      path: "dblp-preview.html"
-    values:
-      sitemap: false
 
 exclude:
   - README.md
