@@ -32,7 +32,7 @@
 {%- for a in authors %}
 <meta name="citation_author" content="{{ a | strip }}">
 {%- endfor %}
-<meta name="citation_publication_date" content="{{ pub.year }}">
+<meta name="citation_publication_date" content="{{ pub.date | default: pub.year }}">
 <meta name="citation_year" content="{{ pub.year }}">
 {%- if pub.venue == "arXiv" %}
 {%- assign arxiv_id = pub.doi | remove: "10.48550/arXiv." %}
@@ -47,7 +47,7 @@
 <meta name="citation_technical_report_institution" content="{{ pub.venue }}">
 {%- endif %}
 {%- if pub.pdf %}
-<meta name="citation_pdf_url" content="{{ pub.pdf | relative_url | absolute_url }}">
+<meta name="citation_pdf_url" content="{{ pub.pdf | absolute_url }}">
 {%- endif %}
 {%- if pub.doi %}
 <meta name="citation_doi" content="{{ pub.doi }}">
