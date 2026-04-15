@@ -43,6 +43,9 @@ layout: default
     {%- if pub.links.zenodo -%}
       <a href="{{ pub.links.zenodo }}" aria-label="Zenodo" rel="noopener" target="_blank">{% include icon.html name="zenodo" %}<span>Zenodo</span></a>
     {%- endif -%}
+    {%- if pub.links.artifacts -%}
+      <a href="{{ pub.links.artifacts }}" aria-label="Artifacts" rel="noopener" target="_blank">{% include icon.html name="zenodo" %}<span>Artifacts</span></a>
+    {%- endif -%}
     {%- if pub.links.code -%}
       <a href="{{ pub.links.code }}" aria-label="Code" rel="noopener" target="_blank">{% include icon.html name="code" %}<span>Code</span></a>
     {%- endif -%}
