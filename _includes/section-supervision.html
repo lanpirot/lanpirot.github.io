@@ -1,0 +1,11 @@
+<section id="supervision">
+  <h2>Supervision</h2>
+  <ul class="plain-list">
+    {%- for t in site.data.supervision -%}
+      <li>
+        <strong>{{ t.student }}</strong> — {{ t.type }} {{ t.year }} — <em>{{ t.title }}</em>
+        {%- if t.cosupervisor %}<div class="meta">with {{ t.cosupervisor }}</div>{% endif -%}
+      </li>
+    {%- endfor -%}
+  </ul>
+</section>

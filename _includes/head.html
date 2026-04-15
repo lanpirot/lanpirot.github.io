@@ -1,0 +1,63 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+<link rel="preload" href="{{ '/assets/fonts/Inter-Variable.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+<link rel="icon" type="image/jpeg" href="{{ site.data.site.photo | relative_url }}">
+{% seo %}
+
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("theme");
+      if (t === "light" || t === "dark") {
+        document.documentElement.setAttribute("data-theme", t);
+      } else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    } catch (e) {}
+  })();
+</script>
+
+{%- comment -%} JSON-LD: Person + ScholarlyArticle list {%- endcomment -%}
+{%- assign s = site.data.site -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "{{ site.url }}/#person",
+      "name": {{ s.name | jsonify }},
+      "jobTitle": {{ s.role | jsonify }},
+      "affiliation": {
+        "@type": "Organization",
+        "name": {{ s.affiliation | jsonify }},
+        "url": {{ s.affiliation_url | jsonify }}
+      },
+      "url": "{{ site.url }}/",
+      "image": "{{ site.url }}{{ s.photo }}",
+      "email": "{{ site.author.email }}",
+      "sameAs": [
+        {%- for link in site.data.socials -%}
+          {%- unless link.icon == "email" -%}
+            {{ link.url | jsonify }}{%- unless forloop.last -%},{%- endunless -%}
+          {%- endunless -%}
+        {%- endfor -%}
+      ]
+    }{% for pub in site.data.publications %},
+    {
+      "@type": "ScholarlyArticle",
+      "headline": {{ pub.title | jsonify }},
+      "author": {{ pub.authors | jsonify }},
+      "datePublished": "{{ pub.year }}",
+      "isPartOf": {
+        "@type": "Periodical",
+        "name": {{ pub.venue | jsonify }}
+      }{% if pub.doi %},
+      "sameAs": "https://doi.org/{{ pub.doi }}"{% endif %}{% if pub.pdf %},
+      "url": "{{ site.url }}/{{ pub.pdf }}"{% endif %}
+    }{% endfor %}
+  ]
+}
+</script>

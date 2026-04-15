@@ -1,0 +1,27 @@
+<section id="publications">
+  <h2>Publications</h2>
+  {%- assign pubs = site.data.publications -%}
+  {%- assign current_year = "" -%}
+  {%- for pub in pubs -%}
+    {%- if pub.year != current_year -%}
+      {%- unless forloop.first %}</div>{% endunless -%}
+      <div class="year-group"><h3 class="year-head">{{ pub.year }}</h3>
+      {%- assign current_year = pub.year -%}
+    {%- endif -%}
+    {% include publication.html pub=pub %}
+  {%- endfor -%}
+  </div>
+</section>
+<script>
+(function () {
+  var pubs = document.querySelectorAll('#publications .pub > details');
+  pubs.forEach(function (d) {
+    d.addEventListener('toggle', function () {
+      if (!d.open) return;
+      pubs.forEach(function (other) {
+        if (other !== d && other.open) other.open = false;
+      });
+    });
+  });
+})();
+</script>

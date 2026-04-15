@@ -1,0 +1,42 @@
+# Latest first. Each entry: date (YYYY-MM-DD), text, optional link.
+# Rule of thumb: add news items that are NOT already visible in the publication list.
+# Good: awards, talks, service appointments, milestones, moves, releases, grants.
+# Avoid: "paper accepted at X" (the paper itself is the record).
+
+- date: 2026-05-01
+  text: "Presented 'GRANDSLAM: Linearly Scalable Model Synthesis' at ICST 2026."
+
+- date: 2026-01-01
+  text: "Started as Postdoctoral Researcher in the Software Engineering Group at the University of Bern."
+
+- date: 2025-12-01
+  text: "Defended PhD thesis 'Bridging the Data Desert: Mitigating Challenges of Model Accessibility in Simulink Research', supervised by Timo Kehrer."
+
+- date: 2025-10-01
+  text: "Submitted PhD thesis 'Bridging the Data Desert: Mitigating Challenges of Model Accessibility in Simulink Research' at the University of Bern."
+
+- date: 2024-09-01
+  text: "Presented 'SMOKE: Simulink Model Obfuscator Keeping Structure' at MODELS 2024."
+
+- date: 2024-06-01
+  text: "Presented 'Towards Semi-Automated Merge Conflict Resolution: Is It Easier Than We Expected?' at EASE 2024."
+
+- date: 2024-05-23
+  text: "'Towards Semi-Automated Merge Conflict Resolution' received the Distinguished Paper Award at EASE 2024."
+  link: "https://seg.inf.unibe.ch/news/2024/05/23/ease-2024-distinguished-paper-award/"
+
+- date: 2024-02-01
+  text: "Served as Web Chair for VaMoS 2024."
+  link: "https://vamos2024.inf.unibe.ch/"
+
+- date: 2023-10-01
+  text: "Presented 'ScoutSL: An Open-Source Simulink Search Engine' and 'EvoSL: A Large Open-Source Corpus of Changes in Simulink Models & Projects' at MODELS 2023."
+
+- date: 2022-01-01
+  text: "Moved to the University of Bern together with Timo Kehrer, continuing PhD research in the Software Engineering Group."
+
+- date: 2020-06-01
+  text: "Presented 'On the Replicability of Experimental Tool Evaluations in Model-Based Development' at ICSMM 2020."
+
+- date: 2019-06-01
+  text: "Started PhD with Timo Kehrer in the Model-Driven Software Engineering Group at Humboldt-Universität zu Berlin."

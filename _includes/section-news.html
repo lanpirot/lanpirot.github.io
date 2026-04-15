@@ -1,0 +1,30 @@
+<section id="news">
+  <h2>News</h2>
+  {%- assign news = site.data.news | sort: "date" | reverse -%}
+  {%- assign recent = news | slice: 0, 5 -%}
+  <ul class="news-list">
+    {%- for item in recent -%}
+      <li>
+        <time datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: "%b %Y" }}</time>
+        <span>
+          {{ item.text }}{% if item.link %} <a href="{{ item.link }}">Read more</a>.{% endif %}
+        </span>
+      </li>
+    {%- endfor -%}
+  </ul>
+  {%- if news.size > 5 -%}
+  <details class="news-more">
+    <summary>Show older news</summary>
+    <ul class="news-list" style="margin-top: 0.5rem;">
+      {%- for item in news offset: 5 -%}
+        <li>
+          <time datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: "%b %Y" }}</time>
+          <span>
+            {{ item.text }}{% if item.link %} <a href="{{ item.link }}">Read more</a>.{% endif %}
+          </span>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </details>
+  {%- endif -%}
+</section>

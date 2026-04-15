@@ -1,0 +1,25 @@
+<section id="service">
+  <h2>Service</h2>
+  <ul class="plain-list">
+    {%- for s in site.data.service -%}
+      <li>
+        <strong>{{ s.role }}</strong>, {% if s.url %}<a href="{{ s.url }}" rel="noopener" target="_blank">{{ s.venue }}</a>{% else %}{{ s.venue }}{% endif %}
+      </li>
+    {%- endfor -%}
+  </ul>
+
+  <h3 style="margin-top: 1.5rem;">Reviewing</h3>
+  <ul class="reviewing-list">
+    {%- for year in site.data.reviewing -%}
+      <li>
+        <span class="yr">{{ year.year }}</span>
+        <span>
+          {%- for v in year.venues -%}
+            {%- assign full = site.data.venues[v.name] -%}
+            <abbr title="{{ full | default: v.name }}">{{ v.name }}</abbr>&nbsp;({{ v.count }}){%- unless forloop.last -%}, {% endunless -%}
+          {%- endfor -%}
+        </span>
+      </li>
+    {%- endfor -%}
+  </ul>
+</section>

@@ -1,0 +1,23 @@
+- student: "Volodymyr Kachuriak"
+  type: "MSc"
+  year: 2026
+  title: "CI/CD-Enhanced Conflict Resolution"
+  cosupervisor: "Timo Kehrer"
+
+- student: "Judi Abdullah"
+  type: "MSc"
+  year: 2025
+  title: "An Empirical Study of Context Modifications in Git Merge Conflict Resolutions"
+  cosupervisor: "Timo Kehrer"
+
+- student: "Yael van Dok"
+  type: "BSc"
+  year: 2023
+  title: "In Conflict: An Empirical Study of Merge Conflict Resolutions in Open-Source Projects"
+  cosupervisor: "Timo Kehrer"
+
+- student: "Severin Buchser"
+  type: "BSc"
+  year: 2022
+  title: "An Empirical Study on the Human Role in Merge Conflict Resolution"
+  cosupervisor: "Timo Kehrer"

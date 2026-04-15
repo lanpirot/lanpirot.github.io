@@ -1,0 +1,48 @@
+<header class="topnav">
+  <div class="topnav-inner">
+    <nav aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#news">News</a>
+      <a href="#publications">Publications</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#supervision">Supervision</a>
+      <a href="#service">Service</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Toggle light and dark theme" aria-pressed="true">
+      <span class="icon-moon">{% include icon.html name="moon" %}</span>
+      <span class="icon-sun">{% include icon.html name="sun" %}</span>
+    </button>
+  </div>
+</header>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var links = Array.from(document.querySelectorAll('.topnav nav a[href^="#"]'));
+  var map = new Map();
+  links.forEach(function (a) {
+    var el = document.getElementById(a.getAttribute('href').slice(1));
+    if (el) map.set(el, a);
+  });
+  if (!map.size) return;
+  var minVisible = 6 * parseFloat(getComputedStyle(document.documentElement).fontSize);
+  var visible = new Map();
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      visible.set(e.target, e.intersectionRect.height);
+    });
+    links.forEach(function (a) { a.classList.remove('is-current'); });
+    visible.forEach(function (h, el) {
+      if (h >= minVisible) {
+        var link = map.get(el);
+        if (link) link.classList.add('is-current');
+      }
+    });
+  }, { rootMargin: '-72px 0px 0px 0px', threshold: buildThresholds() });
+
+  function buildThresholds() {
+    var t = [];
+    for (var i = 0; i <= 20; i++) t.push(i / 20);
+    return t;
+  }
+  map.forEach(function (_, el) { io.observe(el); });
+});
+</script>

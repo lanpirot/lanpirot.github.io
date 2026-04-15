@@ -1,2 +1,27 @@
-title: Publication List of Alexander Boll
-description: github.io page of Alexander Boll listing publications and other information
+title: Alexander Boll
+tagline: Postdoctoral Researcher, University of Bern
+description: >
+  Alexander Boll — Postdoctoral Researcher at the Software Engineering Group,
+  University of Bern. Research on merge conflict resolution, software variability,
+  and model-based software engineering with MATLAB/Simulink.
+url: "https://lanpirot.github.io"
+baseurl: ""
+lang: en
+
+author:
+  name: Alexander Boll
+  email: alexander.boll@unibe.ch
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .claude
+
+sass:
+  style: compressed

@@ -1,0 +1,39 @@
+- year: 2026
+  venues:
+    - {name: EASE, count: 2}
+    - {name: ICSE, count: 1}
+    - {name: SoSyM, count: 1}
+
+- year: 2025
+  venues:
+    - {name: EASE, count: 1}
+    - {name: ICSME, count: 1}
+    - {name: ICSE, count: 2}
+    - {name: FSE, count: 2}
+
+- year: 2024
+  venues:
+    - {name: TSE, count: 1}
+    - {name: ICSE, count: 1}
+    - {name: VaMoS, count: 1}
+
+- year: 2023
+  venues:
+    - {name: MODELS, count: 1}
+    - {name: ESWA, count: 1}
+    - {name: SPE, count: 1}
+
+- year: 2022
+  venues:
+    - {name: "ICSE (NIER)", count: 3}
+
+- year: 2021
+  venues:
+    - {name: ASE, count: 1}
+    - {name: "J.UCS", count: 1}
+
+- year: 2020
+  venues:
+    - {name: ASE, count: 2}
+    - {name: JOT, count: 1}
+    - {name: SPE, count: 1}

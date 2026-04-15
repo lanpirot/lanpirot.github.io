@@ -1,0 +1,21 @@
+- name: Email
+  icon: email
+  url: "mailto:Alexander%20Boll%20%3Calexander.boll%40unibe.ch%3E"
+- name: LinkedIn
+  icon: linkedin
+  url: "https://www.linkedin.com/in/alexander-boll/"
+- name: GitHub
+  icon: github
+  url: "https://github.com/lanpirot"
+- name: ORCID
+  icon: orcid
+  url: "https://orcid.org/0000-0002-9881-9748"
+- name: Google Scholar
+  icon: scholar
+  url: "https://scholar.google.com/citations?user=gxju6l0AAAAJ"
+- name: DBLP
+  icon: dblp
+  url: "https://dblp.org/pid/271/4416.html"
+- name: PGP public key
+  icon: pgp
+  url: "/assets/pgp.asc"

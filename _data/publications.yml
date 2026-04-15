@@ -1,0 +1,238 @@
+# Single source of truth for publications.
+# To add a paper: append an entry. Required: title, authors, venue, year, type.
+# Optional: abstract, pdf, doi, bib, award, status, links (map).
+
+- title: "SMOKE2.0 Whitebox Anonymization of Sensitive Information in Simulink with Structure Preservation"
+  authors: "A. Boll, M. Ohrndorf, T. Kehrer"
+  venue: "SoSyM"
+  year: 2026
+  type: journal
+  status: accepted
+  pdf: "publications/SMOKE2.0_Whitebox_Anonymization_of_Sensitive_Information_in_Simulink_with_Structure_Preservation.pdf"
+  abstract: "Simulink is widely used across various industries to model and simulate cyber-physical systems. Most industry-built models contain sensitive information, which prevents companies from sharing models with interested third parties, such as researchers or collaborating companies. However, advancing model-based engineering research requires access to such models – either to derive empirical insights or to evaluate new tools. While initiatives to replace industry-built models with open-source alternatives exist, they offer only a limited remedy. In this work, we present a novel approach with Smoke, a Simulink anonymization tool designed to selectively remove sensitive information within models. This allows companies to share relevant parts of their models with researchers or other third parties while safeguarding all sensitive information. Smoke’s whitebox design preserves the model’s original format and structure, ensuring that meaningful insights remain accessible. We evaluated the tool on an extensive set of open-source models and found it successfully removes sensitive information, while preserving model structure. A video demonstration of Smoke is available online at youtu.be/0i42BzgJAUA."
+  links:
+    video: "https://youtu.be/0i42BzgJAUA"
+    code: "https://github.com/lanpirot/SMOKE"
+
+- title: "GRANDSLAM: Linearly Scalable Model Synthesis"
+  authors: "A. Boll"
+  venue: "ICST"
+  year: 2026
+  type: conference
+  status: accepted
+  pdf: "publications/GRANDSLAM_LINEARLY_SCALABLE_MODEL_SYNTHESIS.pdf"
+  abstract: "Commercial cyber-physical system (CPS) development tools are complex and safety-critical software, yet face two major testing challenges. First, the lack of formal specifications necessitates fuzzing for bug discovery. Second, the scarcity of large, open-source models hampers effective scalability testing and empirical research. To address these challenges, we present GRANDSLAM, a Simulink model synthesizer that scales linearly and generates models far larger than prior work. GRANDSLAM enables both fuzzing and scalability testing at unprecedented scales, synthesizing diverse models with over 1M blocks. Our evaluation reveals eleven confirmed bugs, and two confirmed scalability issues in Simulink, demonstrating its effectiveness."
+
+- title: "Community-Driven Variability: Characterizing a new Software Variability Paradigm"
+  authors: "R. Bögli, A. Boll, A. Schultheiß, T. Kehrer"
+  venue: "Automated Software Engineering"
+  year: 2026
+  type: journal
+  doi: "10.1007/s10515-026-00594-0"
+  pdf: "publications/Community_Driven_Variability_Characterizing_a_new_Software_Variability_Paradigm.pdf"
+  abstract: "Both software engineering researchers and practitioners have increasingly shifted their focus from single software systems to software families, reflecting the need for software industrialization through systematic reuse of implementation artifacts. Interestingly, several vibrant ecosystems produce software families in a radically different way than classical variability-intensive systems, notably software product lines (SPLs). The Bitcoin community, for instance, evolves its ecosystem through crowdsourced improvement proposals being continuously shaped and autonomously implemented by independent actors. While this novel paradigm of Community-Driven Variability (CDV) has proven effective for driving flourishing technologies like Bitcoin and others, it also comes with unique challenges calling for novel solutions. In this paper, we define the key characteristics of ecosystems exposing CDV and derive a taxonomy that hierarchically decomposes each characteristic into constituting sub-characteristics. Building on the taxonomy, we conduct a systematic analysis of 14 software ecosystems to evaluate the presence and nature of CDV. We highlight the novel problems they face, such as the lack of ecosystem overview, difficulties in impact assessment, misalignment between proposals and implementations, and interoperability breakdowns – challenges that transcend classical variability management. Based on the problem analysis, we outline our research vision to tackle these challenges, including a sketch of concrete starting points for technical solutions. While classical SPLs and CDV ecosystems differ drastically, we believe that feature-oriented modeling and analysis offers promising concepts for addressing CDV challenges without enforcing product-line processes. Conversely, the unique demands of CDV can inspire advances in variability research with impact beyond its original domains."
+  bib: "publications/Community_Driven_Variability_Characterizing_a_new_Software_Variability_Paradigm.bib"
+
+- title: "Turning Merge Conflicts Into Conflict-Induced Variability"
+  authors: "M. Ohrndorf, A. Boll, R. Bögli, T. Kehrer"
+  venue: "ICSE"
+  year: 2026
+  type: conference
+  status: accepted
+  doi: "10.1145/3786582.3786840"
+  pdf: "publications/Turning_Merge_Conflicts_Into_Conflict-Induced_Variability.pdf"
+  abstract: "Merging is central to software version control and collaborative work, yet current techniques force developers to resolve conflicts immediately upon each merge attempt, causing constant interruptions and hampering continuous integration. To mitigate, we propose a paradigm shift: merge conflicts shall be no longer treated as obstacles to be eliminated immediately, but as a form of software variability that explicitly captures diverging developer intentions. Such conflict-induced variability defines alternative behaviors that can be explored, analyzed, and resolved upon request, enabling deferred bulk conflict resolution based on the analysis results. With this, we open an avenue of research around a paradigm that shall preserve the practicality of today’s merging techniques, while accelerating traditional versioning workflows through increased flexibility and more effective conflict resolution."
+
+- title: "Decades of GNU Patch and Git Cherry-Pick: Can We Do Better?"
+  authors: "A. Schultheiß, A. Boll, P. Bittner, S. Greiner, T. Thüm, T. Kehrer"
+  venue: "ICSE"
+  year: 2026
+  type: conference
+  status: accepted
+  doi: "10.1145/3744916.3764537"
+  pdf: "publications/Decades_of_GNU_Patch_and_Git_Cherry-Pick_Can_We_Do_Better.pdf"
+  abstract: "Patching is a fundamental software maintenance and evolution task enabling the (semi-)automated propagation of changes across different software versions. Established and widely used language-agnostic patchers, such as GNU patch and Git cherry-pick, work on textual artifact representations (i.e., text files) and typically rely on line numbers and contexts (i.e., surrounding unchanged text fragments) to apply changes. This strategy often fails if source and target of a patch differ, provoking cumbersome manual effort. In this paper, we study the effectiveness of commonly-used patchers, and propose a novel technique that significantly increases patch automation. First, we curate and analyze a large dataset of more than 400,000 patch scenarios (i.e., cherry picks) from 5,000 GitHub projects. Next, we examine the effectiveness of established patchers on the gathered patch scenarios. Third, we develop a novel language-agnostic patch technique, mpatch, that utilizes a source-to-target matching to determine suitable change locations. By comparing mpatch to other patchers, we find that it can correctly apply 44 % more patches automatically than other language-agnostic patchers, while it also requires fewer manual fixes in cases that cannot be automated completely. Thus, mpatch considerably reduces the burden of manually fixing failed patches in practice, specifically in projects with frequent patch applications."
+
+- title: "Bridging the Data Desert: Mitigating Challenges of Model Accessibility in Simulink Research"
+  authors: "A. Boll"
+  venue: "PhD Thesis, University of Bern"
+  year: 2025
+  type: thesis
+  doi: "10.48549/7066"
+  pdf: "publications/Bridging_the_Data_Desert_Mitigating_Challenges_of_Model_Accessibility_in_Simulink_Research.pdf"
+  abstract:
+    - "Simulink is the industry standard for model-driven development in safety-critical domains such as automotive, aerospace, and medical devices. However, empirical research in the context of Simulink faces a persistent challenge: a scarcity of high-quality, industry-representative models that are essential for rigorous tool evaluation, empirical validation, and reproducible studies. This scarcity not only slows down scientific progress but also contributes to a reproduction crisis in the field – primarily due to the unavailability of experimental models."
+    - "This thesis addresses this challenge through three interconnected contributions, grounded in a multi-method approach that includes a systematic literature review, empirical case studies, community surveys, dataset analysis, and tool prototyping and validation:"
+    - "1. A diagnosis of model scarcity demonstrating that the lack of models limits the ability to conduct empirical research and also contributes to only 9% of Simulink tool studies meeting reproducibility criteria (i.e., all artifacts available)."
+    - "2. An assessment of existing open-source Simulink models and datasets, evaluating their suitability for empirical research and investigating their limitations in scale, complexity, and industrial realism. Through case studies – including model matching, analyzing bus architecture of Simulink models, and investigating commenting practices – we demonstrate that open-source models, while imperfect, can serve as valuable research subjects for empirical investigation when carefully selected and used appropriately."
+    - "3. To address the lack of (i) large-scale and (ii) industry-representative models, we developed two novel tools: (i) Grandslam, a linearly scaling synthesizer for Simulink that generates models with adjustable properties, enabling the synthesis of very large open-source models; (ii) Smoke, a model anonymizer that removes sensitive information from Simulink models while preserving their structural properties, thus facilitating the sharing of real-world models without violating intellectual property constraints."
+    - "Our work complements and extends contemporary datasets by showing their suitability for empirical research and providing tools for their expansion. By lowering the barriers to data access, we advance open science in model-driven engineering, enabling reproducible studies, specifically large-scale studies that were previously infeasible. The contributions of this thesis are foundational: they narrow the “data desert” in Simulink research and foster collaboration through shareable resources. Beyond immediate applications, our tools and findings support standardized benchmarks, comparative tool evaluations, and longitudinal studies of modeling practices – ultimately strengthening the empirical rigor and industrial relevance of Simulink research."
+    - "In summary, this thesis provides both the evidence of a critical gap in Simulink research and practical solutions to address it, offering a pathway toward more transparent, reproducible, and impactful model-driven engineering."
+  bib: "publications/Bridging_the_Data_Desert_Mitigating_Challenges_of_Model_Accessibility_in_Simulink_Research.bib"
+
+- title: "Beyond Software Families: Community Driven Variability"
+  authors: "R. Bögli, A. Boll, A. Schultheiß, T. Kehrer"
+  venue: "FSE"
+  year: 2025
+  type: conference
+  doi: "10.1145/3696630.3728501"
+  pdf: "publications/Beyond_Software_Families_Community_Driven_Variability.pdf"
+  abstract: "Both software engineering researchers and practitioners have increasingly shifted their focus from single software systems to software families, reflecting the need for software industrialization through systematic reuse of implementation artifacts. Interestingly, several vibrant ecosystems produce software families in a radically different way than classical variability-intensive systems, notably software product lines. The Bitcoin community, for instance, evolves its ecosystem through openly shared improvement proposals being continuously shaped and autonomously implemented by independent actors. While this novel paradigm of community-driven variability (CDV) has proven effective for driving flourishing technologies like Bitcoin and others, it also comes with unique challenges calling for novel solutions. In this paper, we define the key characteristics of ecosystems exposing CDV, highlight the novel problems they face, and outline our respective research vision."
+  bib: "publications/Beyond_Software_Families_Community_Driven_Variability.bib"
+
+- title: "Explaining GitHub Actions Failures with Large Language Models: Challenges, Insights, and Limitations"
+  authors: "P. Valenzuela-Toledo, C. Wu, S. Hernández, A. Boll, R. Machacek, S. Panichella, T. Kehrer"
+  venue: "ICPC"
+  year: 2025
+  type: conference
+  doi: "10.1109/ICPC66645.2025.00037"
+  pdf: "publications/Explaining_GitHub_Actions_Failures_with_Large_Language_Models_Challenges_Insights_and_Limitations.pdf"
+  abstract: "GitHub Actions (GA) has become the de facto tool that developers use to automate software workflows, seamlessly building, testing, and deploying code. Yet when GA fails, it disrupts development, causing delays and driving up costs. Diagnosing failures becomes especially challenging because error logs are often long, complex and unstructured. Given these difficulties, this study explores the potential of large language models (LLMs) to generate correct, clear, concise, and actionable contextual descriptions (or summaries) for GA failures, focusing on developers' perceptions of their feasibility and usefulness. Our results show that over 80 % of developers rated LLM explanations positively in terms of correctness for simpler/small logs. Overall, our findings suggest that LLMs can feasibly assist developers in understanding common GA errors, thus, potentially reducing manual analysis. However, we also found that improved reasoning abilities are needed to support more complex CI/CD scenarios. For instance, less experienced developers tend to be more positive on the described context, while seasoned developers prefer concise summaries. Overall, our work offers key insights for researchers enhancing LLM reasoning, particularly in adapting explanations to user expertise."
+  bib: "publications/Explaining_GitHub_Actions_Failures_with_Large_Language_Models_Challenges_Insights_and_Limitations.bib"
+
+- title: "Can We Make Code Green? Understanding Trade-Offs in LLMs vs. Human Code Optimizations"
+  authors: "P. Rani, J.-A. Bard, J. Sallou, A. Boll, T. Kehrer, A. Bacchelli"
+  venue: "arXiv"
+  year: 2025
+  type: other
+  status: preprint
+  doi: "10.48550/arXiv.2503.20126"
+  pdf: "publications/Can_We_Make_Code_Green_Understanding_Trade-Offs_in_LLMs_vs_Human_Code_Optimizations.pdf"
+  abstract: "The rapid technological evolution has accelerated software development for various domains and use cases, contributing to a growing share of global carbon emissions. While recent large language models (LLMs) claim to assist developers in optimizing code for performance and energy efficiency, their efficacy in real-world scenarios remains under exploration. In this work, we explore the effectiveness of LLMs in reducing the environmental footprint of real-world projects, focusing on software written in Matlab-widely used in both academia and industry for scientific and engineering applications. We analyze energy-focused optimization on 400 scripts across 100 top GitHub repositories. We examine potential 2,176 optimizations recommended by leading LLMs, such as GPT-3, GPT-4, Llama, and Mixtral, and a senior Matlab developer, on energy consumption, memory usage, execution time consumption, and code correctness. The developer serves as a real-world baseline for comparing typical human and LLM-generated optimizations.
+Mapping these optimizations to 13 high-level themes, we found that LLMs propose a broad spectrum of improvements--beyond energy efficiency--including improving code readability and maintainability, memory management, error handling while the developer overlooked some parallel processing, error handling etc. However, our statistical tests reveal that the energy-focused optimizations unexpectedly negatively impacted memory usage, with no clear benefits regarding execution time or energy consumption. Our qualitative analysis of energy-time trade-offs revealed that some themes, such as vectorization preallocation, were among the common themes shaping these trade-offs. With LLMs becoming ubiquitous in modern software development, our study serves as a call to action: prioritizing the evaluation of common coding practices to identify the green ones. "
+  bib: "publications/Can_We_Make_Code_Green_Understanding_Trade-Offs_in_LLMs_vs_Human_Code_Optimizations.bib"
+
+- title: "SMOKE: Simulink Model Obfuscator Keeping Structure"
+  authors: "A. Boll, T. Kehrer, M. Goedicke"
+  venue: "MODELS"
+  year: 2024
+  type: conference
+  doi: "10.1145/3652620.3687788"
+  pdf: "publications/SMOKE_Simulink_Model_Obfuscator_Keeping_Structure.pdf"
+  abstract: "Simulink is extensively used across various industries to model and simulate cyber-physical systems. Most industry-built models contain sensitive intellectual property, which prevents companies from sharing models with interested third parties, such as researchers. Initiatives to replace industry-built models with open-source alternatives exist, however they offer only limited remedy. In this work, we offer a novel approach: a Simulink obfuscation tool named SMOKE, designed to selectively protect intellectual property in models. This allows companies to share relevant parts of their models with researchers or other third parties, while safeguarding all sensitive information. We evaluated the tool on an extensive set of open-source models and found it successfully removes sensitive components, while preserving model structure. A video demonstration of SMOKE is available online at https://youtu.be/2KI6HGHrJ20."
+  bib: "publications/SMOKE_Simulink_Model_Obfuscator_Keeping_Structure.bib"
+  links:
+    video: "https://youtu.be/TFeFNKHSlAw"
+    code: "https://github.com/lanpirot/SMOKE"
+
+- title: "Towards Semi-Automated Merge Conflict Resolution: Is It Easier Than We Expected?"
+  authors: "A. Boll, Y. van Dok, M. Ohrndorf, A. Schultheiß, T. Kehrer"
+  venue: "EASE"
+  year: 2024
+  type: conference
+  award: "Distinguished Paper Award"
+  award_url: "https://seg.inf.unibe.ch/news/2024/05/23/ease-2024-distinguished-paper-award/"
+  doi: "10.1145/3661167.3661197"
+  pdf: "publications/Towards_Semi-Automated_Merge_Conflict_Resolution_Is_It_Easier_Than_We_Expected.pdf"
+  abstract: "In version control systems such as Git, concurrent modifications on the same artifacts can cause merge conflicts that may disrupt the development workflow by requiring manual intervention. While research on software merging focused on sophisticated techniques that hardly had any impact in practice, we present an empirical feasibility study on semi-automated conflict resolution using a fixed set of only a few language-agnostic conflict resolution patterns. In a large-scale quantitative analysis, we simulate the performance of our hypothetical conflict resolution strategy by classifying 131,154 merge conflict resolutions of a diverse sample of 10,000 GitHub projects according to these resolution patterns. We shed light on the derivability of merges on multiple levels of granularity: the conflicting merge commit, its conflicting files and their individual conflicting chunks. 87.9% of chunks are derivable individually, while 34.5% of merges are derivable as a whole. Interestingly, however, by inspecting potential factors affecting derivability, we observe that there are stronger correlations considering individual files than considering the entire merge. A short yet preliminary answer to whether semi-automated conflict resolution is easier than we expected is: yes, it might be, particularly if we use the right level of granularity for proposing conflict resolutions. Through our comprehensive analysis, we aspire to bridge the gap between academic innovations on sophisticated merge techniques and real-world merge conflict scenarios, laying the groundwork for more effective and widely accepted automatic merge tools."
+  bib: "publications/Towards_Semi-Automated_Merge_Conflict_Resolution_Is_It_Easier_Than_We_Expected.bib"
+
+- title: "Beyond Code: Is There a Difference Between Comments in Visual and Textual Languages?"
+  authors: "A. Boll, P. Rani, A. Schultheiß, T. Kehrer"
+  venue: "JSS"
+  year: 2024
+  type: journal
+  doi: "10.1016/j.jss.2024.112087"
+  pdf: "publications/Beyond_Code_Is_There_a_Difference_Between_Comments.pdf"
+  abstract: "Code comments are crucial for program comprehension and maintenance. To better understand the nature and content of comments, previous work proposed taxonomies of comment information for textual languages, notably classical programming languages. However, paradigms such as model-driven or model-based engineering often promote the use of visual languages, to which existing taxonomies are not directly applicable. Taking MATLAB/Simulink as a representative of a sophisticated and widely used modeling environment, we extend a multi-language comment taxonomy onto new (visual) comment types and two new languages: Simulink and MATLAB. Furthermore, we outline Simulink commenting practices and compare them to textual languages. We analyze 259,267 comments from 9095 Simulink models and 17,792 MATLAB scripts. We identify the comment types, their usage frequency, classify comment information, and analyze their correlations with model metrics. We manually analyze 757 comments to extend the taxonomy. We also analyze commenting guidelines and developer adherence to them. Our extended taxonomy, SCoT (Simulink Comment Taxonomy), contains 25 categories. We find that Simulink comments, although often duplicated, are used at all model hierarchy levels. Of all comment types, Annotations are used most often; Notes scarcely. Our results indicate that Simulink developers, instead of extending comments, add new ones, and rarely follow commenting guidelines. Overall, we find Simulink comment information comparable to textual languages, which highlights commenting practice similarity across languages."
+  bib: "publications/Beyond_Code_Is_There_a_Difference_Between_Comments.bib"
+  links:
+    code: "https://github.com/lanpirot/commenter"
+
+- title: "ScoutSL: An Open-Source Simulink Search Engine"
+  authors: "S. Shrestha, A. Boll, T. Kehrer, C. Csallner"
+  venue: "MODELS"
+  year: 2023
+  type: conference
+  doi: "10.1109/MODELS-C59198.2023.00022"
+  pdf: "publications/ScoutSL_An_Open-source_Simulink_Search_Engine.pdf"
+  abstract: "Simulink is one of the most widely used modelling languages in safety-critical industries. Most models created in industrial settings are valuable intellectual property to their companies and are thus often not publicly available. But to study Simulink software engineering processes or to develop new Simulink tools, access to models with relevant properties is vital for researchers. We conducted a community survey to find out what kind of models and model metrics are of interest to researchers. With these results, we implemented ScoutSL (http://scoutsl.net), a tool that gives researchers easy online access to over 100k open-source Simulink models from which they can select a subset according to their needs. A short video demonstration is available online at https://youtu.be/HwsHL8LrVCM"
+  bib: "publications/ScoutSL_An_Open-source_Simulink_Search_Engine.bib"
+  links:
+    video: "https://youtu.be/HwsHL8LrVCM"
+
+- title: "EvoSL: A Large Open-Source Corpus of Changes in Simulink Models & Projects"
+  authors: "S. Shrestha, A. Boll, S. Chowdhury, T. Kehrer, C. Csallner"
+  venue: "MODELS"
+  year: 2023
+  type: conference
+  doi: "10.1109/MODELS58315.2023.00024"
+  pdf: "publications/EvoSL_A_Large_Open-Source_Corpus_of_Changes_in_Simulink_Models_&_Projects.pdf"
+  abstract: "Having readily available corpora is crucial for performing replication, reproduction, extension, and verification studies of existing research tools and techniques. MAT-LAB/Simulink is a de-facto standard tool in several safety-critical industries for system modeling and analysis, compiling models to code, and deploying code to embedded hardware. There is no commonly used corpus for large-scale model change studies because there is no readily available corpus. EvoSL is the first large corpus of Simulink projects that includes model and project changes and allows redistribution. EvoSL is available under a permissive open-source license and contains its collection and analysis tools. Using a subset of EvoSL, we replicated a case study of model changes on a single closed-source industrial project."
+  bib: "publications/EvoSL_A_Large_Open-Source_Corpus_of_Changes_in_Simulink_Models_&_Projects.bib"
+
+- title: "Simulink Bus Usage in Practice: An Empirical Study"
+  authors: "T. Amorim, A. Boll, F. Bachmann, T. Kehrer, A. Vogelsang, H. Pohlheim"
+  venue: "JOT"
+  year: 2023
+  type: journal
+  doi: "10.5381/jot.2023.22.2.a12"
+  pdf: "publications/Simulink_bus_usage_in_practice_an_empirical_study.pdf"
+  abstract: "Matlab/Simulink is a graphical modeling environment that has become the de facto standard for the industrial model-based development of embedded systems. Practitioners employ different structuring mechanisms to manage Simulink models’ growing size and complexity. One important architectural element is the so-called bus, which can combine multiple signals into composite ones, thus, reducing a model’s visual complexity. However, when and how to effectively use buses is a non-trivial design problem with several trade-offs. To date, only little guidance exists, often applied in an ad-hoc and subjective manner, leading to suboptimal designs. Using an inductive-deductive research approach, we conducted an exploratory survey among Simulink practitioners and extracted bus usage information from a corpus comprising 433 open-source Simulink models. We elicited 22 hypotheses on bus usage advantages, disadvantages, and best practices from the data, whose validity was later tested through a confirmatory survey. Our findings serve as requirements for static analysis tools and pave the way toward guidelines on bus usage in Simulink."
+  bib: "publications/Simulink_bus_usage_in_practice_an_empirical_study.bib"
+
+- title: "Limitations of Self Citation"
+  authors: "A. Boll"
+  venue: "Fun Short Paper"
+  year: 2023
+  type: other
+  pdf: "publications/Limitations_of_Self_Citation.pdf"
+  abstract: "Read this."
+
+- title: "RaQuN: A Generic and Scalable n-Way Model Matching Algorithm"
+  authors: "A. Schultheiß, P. Bittner, A. Boll, L. Grunske, T. Thüm, T. Kehrer"
+  venue: "SoSyM"
+  year: 2022
+  type: journal
+  doi: "10.1007/s10270-022-01062-5"
+  pdf: "publications/RaQuN_a_generic_and_scalable_n-way_model_matching_algorithm.pdf"
+  abstract: "Model matching algorithms are used to identify common elements in input models, which is a fundamental precondition for many software engineering tasks, such as merging software variants or views. If there are multiple input models, an n-way matching algorithm that simultaneously processes all models typically produces better results than the sequential application of two-way matching algorithms. However, existing algorithms for n-way matching do not scale well, as the computational effort grows fast in the number of models and their size. We propose a scalable n-way model matching algorithm, which uses multi-dimensional search trees for efficiently finding suitable match candidates through range queries. We implemented our generic algorithm named RaQuN   (Range Queries on input models) in Java and empirically evaluate the matching quality and runtime performance on several datasets of different origins and model types. Compared to the state of the art, our experimental results show a performance improvement by an order of magnitude, while delivering matching results of better quality."
+  bib: "publications/RaQuN_a_generic_and_scalable_n-way_model_matching_algorithm.bib"
+
+- title: "Replicability of Experimental Tool Evaluations in Model-Based Software and Systems Engineering with MATLAB/Simulink"
+  authors: "A. Boll, N. Vieregg, T. Kehrer"
+  venue: "ISSE"
+  year: 2022
+  type: journal
+  doi: "10.1007/s11334-022-00442-w"
+  pdf: "publications/Replicability_of_experimental_tool_evaluations_in_model-based_software_and_systems_engineering_with_MATLABSimulink.pdf"
+  abstract: "Research on novel tools for model-based development differs from a mere engineering task by not only developing a new tool, but by providing some form of evidence that it is effective. This is typically achieved by experimental evaluations. Following principles of good scientific practice, both the tool and the models used in the experiments should be made available along with a paper, aiming at the replicability of experimental results. We investigate to which degree recent research reporting on novel methods, techniques, or algorithms supporting model-based development with MATLAB/Simulink meets the requirements for replicability of experimental results. Our results from studying 65 research papers obtained through a systematic literature search are rather unsatisfactory. In a nutshell, we found that only 31% of the tools and 22% of the models used as experimental subjects are accessible. Given that both artifacts are needed for a replication study, only 9% of the tool evaluations presented in the examined papers can be classified to be replicable in principle. We found none of the experimental results presented in these papers to be fully replicable, and 6% partially replicable. Given that tools are still being listed among the major obstacles of a more widespread adoption of model-based principles in practice, we see this as an alarming signal. While we are convinced that this situation can only be improved as a community effort, this paper is meant to serve as starting point for discussion, based on the lessons learnt from our study."
+  bib: "publications/Replicability_of_experimental_tool_evaluations_in_model-based_software_and_systems_engineering_with_MATLABSimulink.bib"
+
+- title: "Characteristics, Potentials, and Limitations of Open Source Simulink Projects for Empirical Research"
+  authors: "A. Boll, F. Brokhausen, T. Amorim, A. Vogelsang, T. Kehrer"
+  venue: "SoSyM"
+  year: 2021
+  type: journal
+  doi: "10.1007/s10270-021-00883-0"
+  pdf: "publications/Characteristics,_Potentials,_and_Limitations_of_Open_Source_Simulink_Projects_for_Empirical_Research.pdf"
+  abstract: "Simulink is an example of a successful application of the paradigm of model-based development into industrial practice. Numerous companies create and maintain Simulink projects for modeling software-intensive embedded systems, aiming at early validation and automated code generation. However, Simulink projects are not as easily available as code-based ones, which profit from large publicly accessible open-source repositories, thus curbing empirical research. In this paper, we investigate a set of 1734 freely available Simulink models from 194 projects and analyze their suitability for empirical research. We analyze the projects considering (1) their development context, (2) their complexity in terms of size and organization within projects, and (3) their evolution over time. Our results show that there are both limitations and potentials for empirical research. On the one hand, some application domains dominate the development context, and there is a large number of models that can be considered toy examples of limited practical relevance. These often stem from an academic context, consist of only a few Simulink blocks, and are no longer (or have never been) under active development or maintenance. On the other hand, we found that a subset of the analyzed models is of considerable size and complexity. There are models comprising several thousands of blocks, some of them highly modularized by hierarchically organized Simulink subsystems. Likewise, some of the models expose an active maintenance span of several years, which indicates that they are used as primary development artifacts throughout a project’s lifecycle. According to a discussion of our results with a domain expert, many models can be considered mature enough for quality analysis purposes, and they expose characteristics that can be considered representative for industry-scale models. Thus, we are confident that a subset of the models is suitable for empirical research. More generally, using a publicly available model corpus or a dedicated subset enables researchers to replicate findings, publish subsequent studies, and use them for validation purposes. We publish our dataset for the sake of replicating our results and fostering future empirical research."
+  bib: "publications/Characteristics,_Potentials,_and_Limitations_of_Open_Source_Simulink_Projects_for_Empirical_Research.bib"
+
+- title: "On the Replicability of Experimental Tool Evaluations in Model-Based Development"
+  authors: "A. Boll, T. Kehrer"
+  venue: "ICSMM"
+  year: 2020
+  type: conference
+  doi: "10.1007/978-3-030-58167-1_9"
+  pdf: "publications/On_the_Replicability_of_Experimental_Tool_Evaluations_in_Model-based_Development.pdf"
+  abstract: "Research on novel tools for model-based development differs from a mere engineering task by providing some form of evidence that a tool is effective. This is typically achieved by experimental evaluations. Following principles of good scientific practice, both the tool and the models used in the experiments should be made available along with a paper. We investigate to which degree these basic prerequisites for the replicability of experimental results are met by recent research reporting on novel methods, techniques, or algorithms supporting model-based development using MATLAB/Simulink. Our results from a systematic literature review are rather unsatisfactory. In a nutshell, we found that only 31% of the tools and 22% of the models used as experimental subjects are accessible. Given that both artifacts are needed for a replication study, only 9% of the tool evaluations presented in the examined papers can be classified to be replicable in principle. Given that tools are still being listed among the major obstacles of a more widespread adoption of model-based principles in practice, we see this as an alarming signal. While we are convinced that this can only be achieved as a community effort, this paper is meant to serve as starting point for discussion, based on the lessons learnt from our study."
+  bib: "publications/On_the_Replicability_of_Experimental_Tool_Evaluations_in_Model-based_Development.bib"
+
+- title: "Comparison of Graph-Based Model Transformation Rules"
+  authors: "A. Schultheiß, A. Boll, T. Kehrer"
+  venue: "JOT"
+  year: 2020
+  type: journal
+  doi: "10.5381/jot.2020.19.2.a3"
+  pdf: "publications/Comparison_of_graph-based_model_transformation_rules.pdf"
+  abstract: "With model transformations arising to primary development artifacts in Model-Driven Engineering, dedicated tools supporting transformation developers in the development and maintenance of model transfor- mations are strongly required. In this paper, we address the versioning of model transformations, which essentially relies on a basic service for comparing different versions of model transformations, e.g., a local workspace version and the latest version of a repository. Focusing on rule-based model transformations based on graph transformation concepts, we propose to compare such transformation rules using a maximum common subgraph (MCS) algorithm as the underlying matching engine. Although the MCS problem is known as a non-polynomial optimization problem, our research hypothesis is that using an MCS algorithm as a basis for comparing graph-based transformation rules is feasible for real-world model transformations and increases the quality of comparison results compared to standard model comparison algorithms. Experimental results obtained on a benchmark set for model transformation confirm this hypothesis."
+  bib: "publications/Comparison_of_graph-based_model_transformation_rules.bib"
+
+- title: "Formale Instanzverifikation zertifizierender verteilter Algorithmen"
+  authors: "A. Boll"
+  venue: "MSc Thesis (in German)"
+  year: 2019
+  type: thesis
+  pdf: "publications/Diplomarbeit_Formale_Instanzverifikation_zertifizierender_verteilter_Algorithmen.pdf"
+  abstract: "We simplify a formal proof framework in COQ for distributed certificating algorithms. We demonstrate this framework on distributed certification of two-colorability for an end-to-end proof."

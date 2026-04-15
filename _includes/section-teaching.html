@@ -1,0 +1,11 @@
+<section id="teaching">
+  <h2>Teaching</h2>
+  <ul class="plain-list">
+    {%- for t in site.data.teaching -%}
+      <li>
+        <strong>{{ t.course }}</strong> — {{ t.role }}
+        <div class="meta">{{ t.institution }}{% if t.years %} · {{ t.years | join: ", " }}{% endif %}</div>
+      </li>
+    {%- endfor -%}
+  </ul>
+</section>
