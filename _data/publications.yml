@@ -60,8 +60,6 @@
   type: thesis
   doi: "10.48549/7066"
   pdf: "https://zenodo.org/records/19593526/files/Bridging_the_Data_Desert_Mitigating_Challenges_of_Model_Accessibility_in_Simulink_Research.pdf?download=1"
-  links:
-    zenodo: "https://zenodo.org/records/19593526"
   abstract:
     - "Simulink is the industry standard for model-driven development in safety-critical domains such as automotive, aerospace, and medical devices. However, empirical research in the context of Simulink faces a persistent challenge: a scarcity of high-quality, industry-representative models that are essential for rigorous tool evaluation, empirical validation, and reproducible studies. This scarcity not only slows down scientific progress but also contributes to a reproduction crisis in the field – primarily due to the unavailability of experimental models."
     - "This thesis addresses this challenge through three interconnected contributions, grounded in a multi-method approach that includes a systematic literature review, empirical case studies, community surveys, dataset analysis, and tool prototyping and validation:"
