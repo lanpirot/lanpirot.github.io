@@ -14,7 +14,7 @@
   </ul>
   {%- if news.size > 5 -%}
   <details class="news-more">
-    <summary>Show older news</summary>
+    <summary><span class="more-label">Show older news</span><span class="less-label">Show less</span></summary>
     <ul class="news-list" style="margin-top: 0.5rem;">
       {%- for item in news offset: 5 -%}
         <li>

@@ -9,7 +9,7 @@
 - date: 2026-01-01
   text: "Started as Postdoctoral Researcher in the Software Engineering Group at the University of Bern."
 
-- date: 2025-12-01
+- date: 2025-12-16
   text: "Defended PhD thesis 'Bridging the Data Desert: Mitigating Challenges of Model Accessibility in Simulink Research', supervised by Timo Kehrer."
 
 - date: 2025-10-01
@@ -19,11 +19,11 @@
   text: "Presented 'SMOKE: Simulink Model Obfuscator Keeping Structure' at MODELS 2024."
 
 - date: 2024-06-01
-  text: "Presented 'Towards Semi-Automated Merge Conflict Resolution: Is It Easier Than We Expected?' at EASE 2024."
-
-- date: 2024-05-23
   text: "'Towards Semi-Automated Merge Conflict Resolution' received the Distinguished Paper Award at EASE 2024."
   link: "https://seg.inf.unibe.ch/news/2024/05/23/ease-2024-distinguished-paper-award/"
+
+- date: 2024-06-01
+  text: "Presented 'Towards Semi-Automated Merge Conflict Resolution: Is It Easier Than We Expected?' at EASE 2024."
 
 - date: 2024-02-01
   text: "Served as Web Chair for VaMoS 2024."

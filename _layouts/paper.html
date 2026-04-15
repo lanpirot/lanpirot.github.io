@@ -1,0 +1,53 @@
+---
+layout: default
+---
+{%- assign matched = nil -%}
+{%- for p in site.data.publications -%}
+  {%- if p.title == page.title -%}{%- assign matched = p -%}{%- endif -%}
+{%- endfor -%}
+{%- assign pub = matched -%}
+<section id="paper">
+  <p><a href="{{ '/' | relative_url }}#publications">← Back to homepage</a></p>
+  <h1>{{ pub.title }}</h1>
+  <p class="authors">{{ pub.authors }}</p>
+  <p class="venue">
+    {%- assign vfull = site.data.venues[pub.venue] -%}
+    {% if vfull %}<abbr title="{{ vfull }}">{{ pub.venue }}</abbr>{% else %}{{ pub.venue }}{% endif %} {{ pub.year }}
+    {%- if pub.award %} · <em>{{ pub.award }}</em>{% endif -%}
+  </p>
+
+  {%- if pub.abstract %}
+  <h2>Abstract</h2>
+  <div class="abstract">
+    {%- if pub.abstract.first -%}
+      {%- for para in pub.abstract -%}<p>{{ para }}</p>{%- endfor -%}
+    {%- else -%}
+      <p>{{ pub.abstract | strip_newlines }}</p>
+    {%- endif -%}
+  </div>
+  {%- endif %}
+
+  <div class="pub-links">
+    {%- if pub.pdf -%}
+      <a href="{{ pub.pdf | relative_url }}" aria-label="PDF">{% include icon.html name="pdf" %}<span>PDF</span></a>
+    {%- endif -%}
+    {%- if pub.doi -%}
+      <a href="https://doi.org/{{ pub.doi }}" aria-label="DOI" rel="noopener" target="_blank">{% include icon.html name="doi" %}<span>DOI</span></a>
+    {%- endif -%}
+    {%- if pub.bib -%}
+      <a href="{{ pub.bib | relative_url }}" aria-label="BibTeX">{% include icon.html name="bibtex" %}<span>BibTeX</span></a>
+    {%- endif -%}
+    {%- if pub.links.video -%}
+      <a href="{{ pub.links.video }}" aria-label="Video" rel="noopener" target="_blank">{% include icon.html name="video" %}<span>Video</span></a>
+    {%- endif -%}
+    {%- if pub.links.zenodo -%}
+      <a href="{{ pub.links.zenodo }}" aria-label="Zenodo" rel="noopener" target="_blank">{% include icon.html name="zenodo" %}<span>Zenodo</span></a>
+    {%- endif -%}
+    {%- if pub.links.code -%}
+      <a href="{{ pub.links.code }}" aria-label="Code" rel="noopener" target="_blank">{% include icon.html name="code" %}<span>Code</span></a>
+    {%- endif -%}
+    {%- if pub.award -%}
+      <a href="{{ pub.award_url | default: '#' }}" aria-label="Award" rel="noopener" target="_blank">{% include icon.html name="award" %}<span>{{ pub.award }}</span></a>
+    {%- endif -%}
+  </div>
+</section>

@@ -1,12 +1,12 @@
 <header class="topnav">
   <div class="topnav-inner">
     <nav aria-label="Sections">
-      <a href="#about">About</a>
-      <a href="#news">News</a>
-      <a href="#publications">Publications</a>
-      <a href="#teaching">Teaching</a>
-      <a href="#supervision">Supervision</a>
-      <a href="#service">Service</a>
+      <a href="{{ '/' | relative_url }}#about">About</a>
+      <a href="{{ '/' | relative_url }}#news">News</a>
+      <a href="{{ '/' | relative_url }}#publications">Publications</a>
+      <a href="{{ '/' | relative_url }}#teaching">Teaching</a>
+      <a href="{{ '/' | relative_url }}#supervision">Supervision</a>
+      <a href="{{ '/' | relative_url }}#service">Service</a>
     </nav>
     <button class="theme-toggle" type="button" aria-label="Toggle light and dark theme" aria-pressed="true">
       <span class="icon-moon">{% include icon.html name="moon" %}</span>
@@ -16,10 +16,13 @@
 </header>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  var links = Array.from(document.querySelectorAll('.topnav nav a[href^="#"]'));
+  var links = Array.from(document.querySelectorAll('.topnav nav a[href*="#"]'));
   var map = new Map();
   links.forEach(function (a) {
-    var el = document.getElementById(a.getAttribute('href').slice(1));
+    var href = a.getAttribute('href');
+    var hashIdx = href.indexOf('#');
+    if (hashIdx < 0) return;
+    var el = document.getElementById(href.slice(hashIdx + 1));
     if (el) map.set(el, a);
   });
   if (!map.size) return;

@@ -16,6 +16,18 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
+collections:
+  papers:
+    output: true
+    permalink: /papers/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: papers
+    values:
+      layout: paper
+
 exclude:
   - README.md
   - Gemfile

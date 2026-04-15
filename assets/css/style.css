@@ -206,6 +206,9 @@ p { margin: 0.5rem 0; }
 }
 .news-more summary::-webkit-details-marker { display: none; }
 .news-more summary:hover { color: var(--fg); }
+.news-more summary .less-label { display: none; }
+.news-more[open] summary .more-label { display: none; }
+.news-more[open] summary .less-label { display: inline; }
 
 /* Publications */
 .year-head {

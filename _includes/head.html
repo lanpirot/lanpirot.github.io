@@ -6,6 +6,53 @@
 <link rel="icon" type="image/jpeg" href="{{ site.data.site.photo | relative_url }}">
 {% seo %}
 
+{%- if page.collection == "papers" -%}
+{%- assign matched = nil -%}
+{%- for p in site.data.publications -%}
+  {%- if p.title == page.title -%}{%- assign matched = p -%}{%- endif -%}
+{%- endfor -%}
+{%- assign pub = matched -%}
+{%- if pub -%}
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<meta name="description" content="{{ pub.title }} by {{ pub.authors }} ({{ pub.venue }} {{ pub.year }}).">
+<meta name="citation_title" content="{{ pub.title }}">
+{%- assign authors = pub.authors | split: ", " -%}
+{%- for a in authors %}
+<meta name="citation_author" content="{{ a | strip }}">
+{%- endfor %}
+<meta name="citation_publication_date" content="{{ pub.year }}">
+<meta name="citation_year" content="{{ pub.year }}">
+{%- if pub.type == "journal" %}
+<meta name="citation_journal_title" content="{{ pub.venue }}">
+{%- elsif pub.type == "conference" %}
+<meta name="citation_conference_title" content="{{ pub.venue }}">
+{%- elsif pub.type == "thesis" %}
+<meta name="citation_dissertation_institution" content="{{ pub.venue }}">
+{%- else %}
+<meta name="citation_technical_report_institution" content="{{ pub.venue }}">
+{%- endif %}
+{%- if pub.pdf %}
+<meta name="citation_pdf_url" content="{{ pub.pdf | relative_url | absolute_url }}">
+{%- endif %}
+{%- if pub.doi %}
+<meta name="citation_doi" content="{{ pub.doi }}">
+{%- endif %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": {{ pub.title | jsonify }},
+  "author": {{ pub.authors | jsonify }},
+  "datePublished": "{{ pub.year }}",
+  "isPartOf": { "@type": "Periodical", "name": {{ pub.venue | jsonify }} }{% if pub.doi %},
+  "sameAs": "https://doi.org/{{ pub.doi }}"{% endif %}{% if pub.pdf %},
+  "url": "{{ pub.pdf | relative_url | absolute_url }}"{% endif %},
+  "mainEntityOfPage": "{{ page.url | absolute_url }}"
+}
+</script>
+{%- endif -%}
+{%- endif -%}
+
 <script>
   (function () {
     try {
@@ -19,7 +66,8 @@
   })();
 </script>
 
-{%- comment -%} JSON-LD: Person + ScholarlyArticle list {%- endcomment -%}
+{%- comment -%} JSON-LD: Person + ScholarlyArticle list (homepage only) {%- endcomment -%}
+{%- if page.collection != "papers" -%}
 {%- assign s = site.data.site -%}
 <script type="application/ld+json">
 {
@@ -61,3 +109,4 @@
   ]
 }
 </script>
+{%- endif -%}
