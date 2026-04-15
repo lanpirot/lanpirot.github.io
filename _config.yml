@@ -27,6 +27,14 @@ defaults:
       type: papers
     values:
       layout: paper
+  - scope:
+      path: "google*.html"
+    values:
+      sitemap: false
+  - scope:
+      path: "dblp-preview.html"
+    values:
+      sitemap: false
 
 exclude:
   - README.md
