@@ -3,7 +3,7 @@
 # Optional: abstract, pdf, doi, bib, award, status, links (map).
 
 - title: "SMOKE2.0 Whitebox Anonymization of Sensitive Information in Simulink with Structure Preservation"
-  authors: "A. Boll, M. Ohrndorf, T. Kehrer"
+  authors: "Alexander Boll, Manuel Ohrndorf, Timo Kehrer"
   venue: "SoSyM"
   year: 2026
   type: journal
@@ -15,7 +15,7 @@
     code: "https://github.com/lanpirot/SMOKE"
 
 - title: "GRANDSLAM: Linearly Scalable Model Synthesis"
-  authors: "A. Boll"
+  authors: "Alexander Boll"
   venue: "ICST"
   year: 2026
   type: conference
@@ -24,7 +24,7 @@
   abstract: "Commercial cyber-physical system (CPS) development tools are complex and safety-critical software, yet face two major testing challenges. First, the lack of formal specifications necessitates fuzzing for bug discovery. Second, the scarcity of large, open-source models hampers effective scalability testing and empirical research. To address these challenges, we present GRANDSLAM, a Simulink model synthesizer that scales linearly and generates models far larger than prior work. GRANDSLAM enables both fuzzing and scalability testing at unprecedented scales, synthesizing diverse models with over 1M blocks. Our evaluation reveals eleven confirmed bugs, and two confirmed scalability issues in Simulink, demonstrating its effectiveness."
 
 - title: "Community-Driven Variability: Characterizing a new Software Variability Paradigm"
-  authors: "R. Bögli, A. Boll, A. Schultheiß, T. Kehrer"
+  authors: "Roman Bögli, Alexander Boll, Alexander Schultheiß, Timo Kehrer"
   venue: "Automated Software Engineering"
   year: 2026
   type: journal
@@ -34,7 +34,7 @@
   bib: "publications/Community_Driven_Variability_Characterizing_a_new_Software_Variability_Paradigm.bib"
 
 - title: "Turning Merge Conflicts Into Conflict-Induced Variability"
-  authors: "M. Ohrndorf, A. Boll, R. Bögli, T. Kehrer"
+  authors: "Manuel Ohrndorf, Alexander Boll, Roman Bögli, Timo Kehrer"
   venue: "ICSE"
   year: 2026
   type: conference
@@ -44,7 +44,7 @@
   abstract: "Merging is central to software version control and collaborative work, yet current techniques force developers to resolve conflicts immediately upon each merge attempt, causing constant interruptions and hampering continuous integration. To mitigate, we propose a paradigm shift: merge conflicts shall be no longer treated as obstacles to be eliminated immediately, but as a form of software variability that explicitly captures diverging developer intentions. Such conflict-induced variability defines alternative behaviors that can be explored, analyzed, and resolved upon request, enabling deferred bulk conflict resolution based on the analysis results. With this, we open an avenue of research around a paradigm that shall preserve the practicality of today’s merging techniques, while accelerating traditional versioning workflows through increased flexibility and more effective conflict resolution."
 
 - title: "Decades of GNU Patch and Git Cherry-Pick: Can We Do Better?"
-  authors: "A. Schultheiß, A. Boll, P. Bittner, S. Greiner, T. Thüm, T. Kehrer"
+  authors: "Alexander Schultheiß, Alexander Boll, Paul Bittner, Sandra Greiner, Thomas Thüm, Timo Kehrer"
   venue: "ICSE"
   year: 2026
   type: conference
@@ -54,7 +54,7 @@
   abstract: "Patching is a fundamental software maintenance and evolution task enabling the (semi-)automated propagation of changes across different software versions. Established and widely used language-agnostic patchers, such as GNU patch and Git cherry-pick, work on textual artifact representations (i.e., text files) and typically rely on line numbers and contexts (i.e., surrounding unchanged text fragments) to apply changes. This strategy often fails if source and target of a patch differ, provoking cumbersome manual effort. In this paper, we study the effectiveness of commonly-used patchers, and propose a novel technique that significantly increases patch automation. First, we curate and analyze a large dataset of more than 400,000 patch scenarios (i.e., cherry picks) from 5,000 GitHub projects. Next, we examine the effectiveness of established patchers on the gathered patch scenarios. Third, we develop a novel language-agnostic patch technique, mpatch, that utilizes a source-to-target matching to determine suitable change locations. By comparing mpatch to other patchers, we find that it can correctly apply 44 % more patches automatically than other language-agnostic patchers, while it also requires fewer manual fixes in cases that cannot be automated completely. Thus, mpatch considerably reduces the burden of manually fixing failed patches in practice, specifically in projects with frequent patch applications."
 
 - title: "Bridging the Data Desert: Mitigating Challenges of Model Accessibility in Simulink Research"
-  authors: "A. Boll"
+  authors: "Alexander Boll"
   venue: "PhD Thesis, University of Bern"
   year: 2025
   type: thesis
@@ -71,7 +71,7 @@
   bib: "publications/Bridging_the_Data_Desert_Mitigating_Challenges_of_Model_Accessibility_in_Simulink_Research.bib"
 
 - title: "Beyond Software Families: Community Driven Variability"
-  authors: "R. Bögli, A. Boll, A. Schultheiß, T. Kehrer"
+  authors: "Roman Bögli, Alexander Boll, Alexander Schultheiß, Timo Kehrer"
   venue: "FSE"
   year: 2025
   type: conference
@@ -81,7 +81,7 @@
   bib: "publications/Beyond_Software_Families_Community_Driven_Variability.bib"
 
 - title: "Explaining GitHub Actions Failures with Large Language Models: Challenges, Insights, and Limitations"
-  authors: "P. Valenzuela-Toledo, C. Wu, S. Hernández, A. Boll, R. Machacek, S. Panichella, T. Kehrer"
+  authors: "Pablo Valenzuela-Toledo, Chuyue Wu, Sandro Hernández, Alexander Boll, Roman Machacek, Sebastiano Panichella, Timo Kehrer"
   venue: "ICPC"
   year: 2025
   type: conference
@@ -91,7 +91,7 @@
   bib: "publications/Explaining_GitHub_Actions_Failures_with_Large_Language_Models_Challenges_Insights_and_Limitations.bib"
 
 - title: "Can We Make Code Green? Understanding Trade-Offs in LLMs vs. Human Code Optimizations"
-  authors: "P. Rani, J.-A. Bard, J. Sallou, A. Boll, T. Kehrer, A. Bacchelli"
+  authors: "Pooja Rani, Jan-Andrea Bard, June Sallou, Alexander Boll, Timo Kehrer, Alberto Bacchelli"
   venue: "arXiv"
   year: 2025
   type: other
@@ -103,7 +103,7 @@ Mapping these optimizations to 13 high-level themes, we found that LLMs propose 
   bib: "publications/Can_We_Make_Code_Green_Understanding_Trade-Offs_in_LLMs_vs_Human_Code_Optimizations.bib"
 
 - title: "SMOKE: Simulink Model Obfuscator Keeping Structure"
-  authors: "A. Boll, T. Kehrer, M. Goedicke"
+  authors: "Alexander Boll, Timo Kehrer, Michael Goedicke"
   venue: "MODELS"
   year: 2024
   type: conference
@@ -116,7 +116,7 @@ Mapping these optimizations to 13 high-level themes, we found that LLMs propose 
     code: "https://github.com/lanpirot/SMOKE"
 
 - title: "Towards Semi-Automated Merge Conflict Resolution: Is It Easier Than We Expected?"
-  authors: "A. Boll, Y. van Dok, M. Ohrndorf, A. Schultheiß, T. Kehrer"
+  authors: "Alexander Boll, Yael van Dok, Manuel Ohrndorf, Alexander Schultheiß, Timo Kehrer"
   venue: "EASE"
   year: 2024
   type: conference
@@ -128,7 +128,7 @@ Mapping these optimizations to 13 high-level themes, we found that LLMs propose 
   bib: "publications/Towards_Semi-Automated_Merge_Conflict_Resolution_Is_It_Easier_Than_We_Expected.bib"
 
 - title: "Beyond Code: Is There a Difference Between Comments in Visual and Textual Languages?"
-  authors: "A. Boll, P. Rani, A. Schultheiß, T. Kehrer"
+  authors: "Alexander Boll, Pooja Rani, Alexander Schultheiß, Timo Kehrer"
   venue: "JSS"
   year: 2024
   type: journal
@@ -140,7 +140,7 @@ Mapping these optimizations to 13 high-level themes, we found that LLMs propose 
     code: "https://github.com/lanpirot/commenter"
 
 - title: "ScoutSL: An Open-Source Simulink Search Engine"
-  authors: "S. Shrestha, A. Boll, T. Kehrer, C. Csallner"
+  authors: "Sohil Lal Shrestha, Alexander Boll, Timo Kehrer, Christoph Csallner"
   venue: "MODELS"
   year: 2023
   type: conference
@@ -152,7 +152,7 @@ Mapping these optimizations to 13 high-level themes, we found that LLMs propose 
     video: "https://youtu.be/HwsHL8LrVCM"
 
 - title: "EvoSL: A Large Open-Source Corpus of Changes in Simulink Models & Projects"
-  authors: "S. Shrestha, A. Boll, S. Chowdhury, T. Kehrer, C. Csallner"
+  authors: "Sohil Lal Shrestha, Alexander Boll, Shafiul Azam Chowdhury, Timo Kehrer, Christoph Csallner"
   venue: "MODELS"
   year: 2023
   type: conference
@@ -162,7 +162,7 @@ Mapping these optimizations to 13 high-level themes, we found that LLMs propose 
   bib: "publications/EvoSL_A_Large_Open-Source_Corpus_of_Changes_in_Simulink_Models_&_Projects.bib"
 
 - title: "Simulink Bus Usage in Practice: An Empirical Study"
-  authors: "T. Amorim, A. Boll, F. Bachmann, T. Kehrer, A. Vogelsang, H. Pohlheim"
+  authors: "Tiago Amorim, Alexander Boll, Ferry Bachmann, Timo Kehrer, Andreas Vogelsang, Hartmut Pohlheim"
   venue: "JOT"
   year: 2023
   type: journal
@@ -172,15 +172,17 @@ Mapping these optimizations to 13 high-level themes, we found that LLMs propose 
   bib: "publications/Simulink_bus_usage_in_practice_an_empirical_study.bib"
 
 - title: "Limitations of Self Citation"
-  authors: "A. Boll"
+  authors: "Alexander Boll"
   venue: "Fun Short Paper"
   year: 2023
   type: other
+  status: satire
+  scholar: false
   pdf: "publications/Limitations_of_Self_Citation.pdf"
   abstract: "Read this."
 
 - title: "RaQuN: A Generic and Scalable n-Way Model Matching Algorithm"
-  authors: "A. Schultheiß, P. Bittner, A. Boll, L. Grunske, T. Thüm, T. Kehrer"
+  authors: "Alexander Schultheiß, Paul Bittner, Alexander Boll, Lars Grunske, Thomas Thüm, Timo Kehrer"
   venue: "SoSyM"
   year: 2022
   type: journal
@@ -190,7 +192,7 @@ Mapping these optimizations to 13 high-level themes, we found that LLMs propose 
   bib: "publications/RaQuN_a_generic_and_scalable_n-way_model_matching_algorithm.bib"
 
 - title: "Replicability of Experimental Tool Evaluations in Model-Based Software and Systems Engineering with MATLAB/Simulink"
-  authors: "A. Boll, N. Vieregg, T. Kehrer"
+  authors: "Alexander Boll, Nicole Vieregg, Timo Kehrer"
   venue: "ISSE"
   year: 2022
   type: journal
@@ -200,7 +202,7 @@ Mapping these optimizations to 13 high-level themes, we found that LLMs propose 
   bib: "publications/Replicability_of_experimental_tool_evaluations_in_model-based_software_and_systems_engineering_with_MATLABSimulink.bib"
 
 - title: "Characteristics, Potentials, and Limitations of Open Source Simulink Projects for Empirical Research"
-  authors: "A. Boll, F. Brokhausen, T. Amorim, A. Vogelsang, T. Kehrer"
+  authors: "Alexander Boll, Florian Brokhausen, Tiago Amorim, Andreas Vogelsang, Timo Kehrer"
   venue: "SoSyM"
   year: 2021
   type: journal
@@ -210,7 +212,7 @@ Mapping these optimizations to 13 high-level themes, we found that LLMs propose 
   bib: "publications/Characteristics,_Potentials,_and_Limitations_of_Open_Source_Simulink_Projects_for_Empirical_Research.bib"
 
 - title: "On the Replicability of Experimental Tool Evaluations in Model-Based Development"
-  authors: "A. Boll, T. Kehrer"
+  authors: "Alexander Boll, Timo Kehrer"
   venue: "ICSMM"
   year: 2020
   type: conference
@@ -220,7 +222,7 @@ Mapping these optimizations to 13 high-level themes, we found that LLMs propose 
   bib: "publications/On_the_Replicability_of_Experimental_Tool_Evaluations_in_Model-based_Development.bib"
 
 - title: "Comparison of Graph-Based Model Transformation Rules"
-  authors: "A. Schultheiß, A. Boll, T. Kehrer"
+  authors: "Alexander Schultheiß, Alexander Boll, Timo Kehrer"
   venue: "JOT"
   year: 2020
   type: journal
@@ -230,7 +232,7 @@ Mapping these optimizations to 13 high-level themes, we found that LLMs propose 
   bib: "publications/Comparison_of_graph-based_model_transformation_rules.bib"
 
 - title: "Formale Instanzverifikation zertifizierender verteilter Algorithmen"
-  authors: "A. Boll"
+  authors: "Alexander Boll"
   venue: "MSc Thesis (in German)"
   year: 2019
   type: thesis

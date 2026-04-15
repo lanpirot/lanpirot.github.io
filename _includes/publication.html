@@ -1,12 +1,14 @@
 {%- assign pub = include.pub -%}
+{%- capture authors_short -%}{%- include authors-short.html authors=pub.authors -%}{%- endcapture -%}
 <article class="pub">
   <details>
     <summary>
-      <span class="authors">{{ pub.authors }}.</span>
+      <span class="authors">{{ authors_short }}.</span>
       <span class="title">{{ pub.title }}.</span>
       <span class="venue">{%- assign vfull = site.data.venues[pub.venue] -%}{% if vfull %}<abbr title="{{ vfull }}">{{ pub.venue }}</abbr>{% else %}{{ pub.venue }}{% endif %} {{ pub.year }}.</span>
       {%- if pub.status == "accepted" %}<span class="badge">to appear</span>{% endif -%}
       {%- if pub.status == "preprint" %}<span class="badge">preprint</span>{% endif -%}
+      {%- if pub.status == "satire" %}<span class="badge" title="Satirical piece — not a serious publication">satire</span>{% endif -%}
       {%- if pub.award %}<span class="badge" title="{{ pub.award }}">award</span>{% endif -%}
       <span class="chev">{% include icon.html name="chevron" %}</span>
     </summary>

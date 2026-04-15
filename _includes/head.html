@@ -4,15 +4,29 @@
 <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 <link rel="preload" href="{{ '/assets/fonts/Inter-Variable.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/jpeg" href="{{ site.data.site.photo | relative_url }}">
-{% seo %}
-
 {%- if page.collection == "papers" -%}
 {%- assign matched = nil -%}
 {%- for p in site.data.publications -%}
   {%- if p.title == page.title -%}{%- assign matched = p -%}{%- endif -%}
 {%- endfor -%}
 {%- assign pub = matched -%}
+{%- endif -%}
+
 {%- if pub -%}
+{%- capture paper_desc -%}{{ pub.title }} — {{ pub.authors }} ({{ pub.venue }} {{ pub.year }}).{%- endcapture -%}
+<title>{{ pub.title }} | {{ site.title }}</title>
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<meta name="description" content="{{ paper_desc }}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{ pub.title }}">
+<meta property="og:description" content="{{ paper_desc }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:locale" content="{{ site.lang | default: 'en' }}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ pub.title }}">
+<meta name="twitter:description" content="{{ paper_desc }}">
+{%- unless pub.scholar == false %}
 <meta name="citation_title" content="{{ pub.title }}">
 {%- assign authors = pub.authors | split: ", " -%}
 {%- for a in authors %}
@@ -20,7 +34,10 @@
 {%- endfor %}
 <meta name="citation_publication_date" content="{{ pub.year }}">
 <meta name="citation_year" content="{{ pub.year }}">
-{%- if pub.type == "journal" %}
+{%- if pub.venue == "arXiv" %}
+{%- assign arxiv_id = pub.doi | remove: "10.48550/arXiv." %}
+<meta name="citation_arxiv_id" content="{{ arxiv_id }}">
+{%- elsif pub.type == "journal" %}
 <meta name="citation_journal_title" content="{{ pub.venue }}">
 {%- elsif pub.type == "conference" %}
 <meta name="citation_conference_title" content="{{ pub.venue }}">
@@ -48,7 +65,9 @@
   "mainEntityOfPage": "{{ page.url | absolute_url }}"
 }
 </script>
-{%- endif -%}
+{%- endunless -%}
+{%- else -%}
+{% seo %}
 {%- endif -%}
 
 <script>
@@ -91,7 +110,7 @@
           {%- endunless -%}
         {%- endfor -%}
       ]
-    }{% for pub in site.data.publications %},
+    }{% for pub in site.data.publications %}{% if pub.scholar == false %}{% continue %}{% endif %},
     {
       "@type": "ScholarlyArticle",
       "headline": {{ pub.title | jsonify }},

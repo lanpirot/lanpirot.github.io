@@ -1,0 +1,39 @@
+{%- comment -%}
+  Shortens a comma-separated author list to first-initial form.
+  Handles hyphenated given names ("Jan-Andrea Bard" -> "J.-A. Bard"),
+  multi-token given names ("Sohil Lal Shrestha" -> "S. L. Shrestha"),
+  and lowercase particles ("Yael van Dok" -> "Y. van Dok").
+  Idempotent on already-short names ("A. Boll" -> "A. Boll").
+  Usage: {% include authors-short.html authors=pub.authors %}
+{%- endcomment -%}
+{%- assign names = include.authors | split: ", " -%}
+{%- for name in names -%}
+  {%- assign parts = name | split: " " -%}
+  {%- assign given_count = 0 -%}
+  {%- for p in parts -%}
+    {%- if forloop.last -%}{%- break -%}{%- endif -%}
+    {%- assign ch = p | slice: 0, 1 -%}
+    {%- assign ch_up = ch | upcase -%}
+    {%- if ch == ch_up -%}
+      {%- assign given_count = forloop.index -%}
+    {%- else -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- assign given = "" -%}
+  {%- for p in parts limit: given_count -%}
+    {%- assign subs = p | split: "-" -%}
+    {%- assign initials = "" -%}
+    {%- for s in subs -%}
+      {%- assign letter = s | slice: 0, 1 | append: "." -%}
+      {%- if forloop.first -%}{%- assign initials = letter -%}
+      {%- else -%}{%- assign initials = initials | append: "-" | append: letter -%}{%- endif -%}
+    {%- endfor -%}
+    {%- if forloop.first -%}{%- assign given = initials -%}
+    {%- else -%}{%- assign given = given | append: " " | append: initials -%}{%- endif -%}
+  {%- endfor -%}
+  {%- assign surname = parts | slice: given_count, 99 | join: " " -%}
+  {%- if given == "" -%}{%- assign abbr = surname -%}
+  {%- else -%}{%- assign abbr = given | append: " " | append: surname -%}{%- endif -%}
+  {%- unless forloop.first -%}, {% endunless -%}{{ abbr }}
+{%- endfor -%}
