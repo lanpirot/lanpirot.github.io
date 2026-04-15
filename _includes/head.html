@@ -13,8 +13,6 @@
 {%- endfor -%}
 {%- assign pub = matched -%}
 {%- if pub -%}
-<link rel="canonical" href="{{ page.url | absolute_url }}">
-<meta name="description" content="{{ pub.title }} by {{ pub.authors }} ({{ pub.venue }} {{ pub.year }}).">
 <meta name="citation_title" content="{{ pub.title }}">
 {%- assign authors = pub.authors | split: ", " -%}
 {%- for a in authors %}
@@ -104,7 +102,7 @@
         "name": {{ pub.venue | jsonify }}
       }{% if pub.doi %},
       "sameAs": "https://doi.org/{{ pub.doi }}"{% endif %}{% if pub.pdf %},
-      "url": "{{ site.url }}/{{ pub.pdf }}"{% endif %}
+      "url": "{{ pub.pdf | absolute_url }}"{% endif %}
     }{% endfor %}
   ]
 }

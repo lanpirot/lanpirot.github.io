@@ -22,7 +22,14 @@
       {%- else -%}
         <p class="abstract empty">Abstract coming soon.</p>
       {%- endif -%}
+      {%- assign paper_page = nil -%}
+      {%- for p in site.papers -%}
+        {%- if p.title == pub.title -%}{%- assign paper_page = p -%}{%- endif -%}
+      {%- endfor -%}
       <div class="pub-links">
+        {%- if paper_page -%}
+          <a href="{{ paper_page.url | relative_url }}" aria-label="Permalink">{% include icon.html name="permalink" %}<span>Permalink</span></a>
+        {%- endif -%}
         {%- if pub.pdf -%}
           <a href="{{ pub.pdf | relative_url }}" aria-label="PDF">{% include icon.html name="pdf" %}<span>PDF</span></a>
         {%- endif -%}
