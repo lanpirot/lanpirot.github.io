@@ -17,7 +17,6 @@ permalink: /cv/
       {%- endif -%}
     {%- endfor -%}
   </p>
-  <p class="cv-print-hint no-print">Tip: use your browser's <em>Print</em> dialog to save this page as a PDF.</p>
 </section>
 
 <section id="cv-experience">

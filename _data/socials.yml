@@ -16,6 +16,9 @@
 - name: DBLP
   icon: dblp
   url: "https://dblp.org/pid/271/4416.html"
+- name: CV
+  icon: cv
+  url: "/cv/"
 - name: PGP public key
   icon: pgp
   url: "/assets/pgp.asc"
