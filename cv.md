@@ -11,10 +11,9 @@ permalink: /cv/
   <h1>{{ s.name }}</h1>
   <p class="role">{{ s.role }} · <a href="{{ s.affiliation_url }}">{{ s.affiliation }}</a> · {{ s.location }}</p>
   <p class="cv-contact">
-    {%- for link in site.data.socials -%}
-      {%- if link.icon == "email" or link.icon == "linkedin" or link.icon == "github" or link.icon == "orcid" or link.icon == "scholar" or link.icon == "dblp" -%}
-        <a href="{{ link.url }}"{% unless link.icon == "email" %} rel="me noopener" target="_blank"{% endunless %}>{{ link.name }}</a>{% unless forloop.last %} · {% endunless %}
-      {%- endif -%}
+    {%- assign contacts = site.data.socials | where_exp: "l", "l.icon != 'pgp'" -%}
+    {%- for link in contacts -%}
+      <a href="{{ link.url }}"{% unless link.icon == "email" %} rel="me noopener" target="_blank"{% endunless %}>{{ link.name }}</a>{% unless forloop.last %} · {% endunless %}
     {%- endfor -%}
   </p>
 </section>
@@ -184,7 +183,7 @@ permalink: /cv/
     {%- endfor -%}
   </ol>
 
-  <h3>Conference &amp; Workshop Papers</h3>
+  <h3>Conferences</h3>
   <ol class="cv-pubs">
     {%- for pub in conferences -%}
       <li>
@@ -243,7 +242,7 @@ permalink: /cv/
       <div class="when">Oct 2023 – Sep 2027</div>
       <div class="what">
         <strong>Merge++</strong> — SNSF-funded research project on merge conflict resolution (<a href="https://data.snf.ch/grants/grant/219719">SNSF grant 219719</a>, PI: Timo Kehrer)<br>
-        <span class="muted">Major research contributor; not named on the grant.</span>
+        <span class="muted">Contributed substantially to the successful grant proposal.</span>
       </div>
     </li>
   </ul>
@@ -296,7 +295,7 @@ permalink: /cv/
   <ul class="cv-reviewing">
     {%- for year in site.data.reviewing -%}
       <li>
-        <strong>{{ year.year }}:</strong>
+        <strong>{{ year.year }}:</strong>&nbsp;
         {%- for v in year.venues -%}
           {{ v.name }}{% if v.count > 1 %} ({{ v.count }}){% endif %}{% unless forloop.last %}, {% endunless %}
         {%- endfor -%}
@@ -309,13 +308,13 @@ permalink: /cv/
   <h2>Skills</h2>
 
   <h3>Programming Languages</h3>
-  <p><strong>Regular use:</strong> Java, Python, C++, Coq, MATLAB, Simulink</p>
-  <p><strong>Occasional:</strong> C, Haskell, Tamarin, Xtext, R, JavaScript, HTML, Prolog, Pascal</p>
+  <p><strong>Regular use:</strong> Java, Python, C++, MATLAB, Simulink</p>
+  <p><strong>Occasional:</strong> C, Coq, Haskell, Tamarin, Xtext, R, JavaScript, HTML, Prolog, Pascal</p>
 
   <h3>Languages</h3>
   <ul class="cv-plain">
     <li>German — native</li>
-    <li>English — fluent (11 months in New Zealand)</li>
+    <li>English — fluent</li>
     <li>French — B1 (written)</li>
     <li>Portuguese — A2</li>
     <li>Japanese — A2</li>
