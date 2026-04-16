@@ -15,7 +15,7 @@
     <p class="pitch">{{ s.pitch }}</p>
     <div class="socials">
       {%- for link in site.data.socials -%}
-        <a href="{{ link.url }}" aria-label="{{ link.name }}" title="{{ link.name }}"{% unless link.icon == "email" or link.icon == "pgp" or link.icon == "cv" %} rel="me noopener" target="_blank"{% endunless %}>
+        <a href="{{ link.url }}" aria-label="{{ link.name }}" title="{{ link.name }}"{% unless link.icon == "email" or link.icon == "pgp" %} rel="me noopener" target="_blank"{% endunless %}>
           {%- include icon.html name=link.icon -%}
         </a>
       {%- endfor -%}
