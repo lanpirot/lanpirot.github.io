@@ -151,17 +151,30 @@ p { margin: 0.5rem 0; }
   border: 1px solid var(--rule);
 }
 .header .view-cv {
+  align-self: center;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   font-size: 0.8rem;
   color: var(--muted);
   text-decoration: none;
   border: 1px solid var(--rule);
   padding: 0.25rem 0.7rem;
   border-radius: 999px;
-  transition: color 0.15s, border-color 0.15s;
+  transition: color 0.15s, border-color 0.15s, gap 0.15s;
+}
+.header .view-cv svg {
+  width: 0.95rem;
+  height: 0.95rem;
+  display: block;
+  transition: transform 0.15s;
 }
 .header .view-cv:hover {
   color: var(--fg);
   border-color: var(--fg);
+}
+.header .view-cv:hover svg {
+  transform: translateX(0.15rem);
 }
 .header img.photo {
   width: 100%;
