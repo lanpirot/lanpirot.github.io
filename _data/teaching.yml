@@ -2,3 +2,13 @@
   role: "Occasional lecture and exercise substitute"
   years: [2025, 2026]
   institution: "University of Bern"
+
+- course: "Algorithms and Complexity"
+  role: "Tutor — designed and graded exercises and exams, led tutorial sessions"
+  years: [2009, 2010, 2011]
+  institution: "Humboldt University of Berlin"
+
+- course: "Introduction to C++ for Engineers"
+  role: "Tutor — led tutorials, reviewed course materials, exercises, and exams"
+  years: [2007, 2008, 2009]
+  institution: "TU Berlin"

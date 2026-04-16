@@ -132,7 +132,7 @@ permalink: /cv/
     <li>
       <div class="when">Jun 2019 – Dec 2025</div>
       <div class="what">
-        <strong>Dr. rer. nat. (PhD) in Computer Science</strong>, University of Bern<br>
+        <strong>Dr. rer. nat. (PhD) in Computer Science</strong>, University of Bern (initially at Humboldt University of Berlin until Dec 2021)<br>
         Thesis: <em>Bridging the Data Desert: Mitigating Challenges of Model Accessibility in Simulink Research</em><br>
         Advisor: Prof. Dr. Timo Kehrer · Defended Dec 2025 · <a href="https://doi.org/10.48549/7066">doi.org/10.48549/7066</a>
       </div>
@@ -141,7 +141,7 @@ permalink: /cv/
       <div class="when">Oct 2006 – Feb 2019</div>
       <div class="what">
         <strong>Diplom / M.Sc. in Computer Science</strong>, Humboldt University of Berlin<br>
-        Advisor: Dr. Kim Völlinger · Final grade 1.3 (<em>sehr gut</em> / very good; German scale where 1.0 is best, 4.0 is lowest pass)<br>
+        Advisor: Dr. Kim Völlinger · Final grade 1.3 (<em>sehr gut</em> / very good; German scale, 1.0 best)<br>
         Thesis: <em>Formale Instanzverifikation zertifizierender verteilter Algorithmen</em>
       </div>
     </li>
@@ -168,6 +168,7 @@ permalink: /cv/
   <h2>Publications</h2>
   {%- assign journals = site.data.publications | where: "type", "journal" -%}
   {%- assign conferences = site.data.publications | where: "type", "conference" -%}
+  {%- assign preprints = site.data.publications | where: "status", "preprint" -%}
   {%- assign theses = site.data.publications | where: "type", "thesis" -%}
 
   <h3>Journal Articles</h3>
@@ -196,6 +197,18 @@ permalink: /cv/
     {%- endfor -%}
   </ol>
 
+  <h3>Preprints</h3>
+  <ol class="cv-pubs">
+    {%- for pub in preprints -%}
+      <li>
+        {{ pub.authors | replace: "Alexander Boll", "<strong>Alexander Boll</strong>" }}.
+        "{{ pub.title }}".
+        <em>{{ pub.venue }}</em>, {{ pub.year }}.
+        {%- if pub.doi %} <a href="https://doi.org/{{ pub.doi }}">doi:{{ pub.doi }}</a>.{% endif -%}
+      </li>
+    {%- endfor -%}
+  </ol>
+
   <h3>Theses</h3>
   <ol class="cv-pubs">
     {%- for pub in theses -%}
@@ -210,7 +223,7 @@ permalink: /cv/
 </section>
 
 <section id="cv-talks">
-  <h2>Invited Talks &amp; Presentations</h2>
+  <h2>Presentations</h2>
   <ul class="cv-list">
     <li>
       <div class="when">May 2026</div>
@@ -308,14 +321,14 @@ permalink: /cv/
   <h2>Skills</h2>
 
   <h3>Programming Languages</h3>
-  <p><strong>Regular use:</strong> Java, Python, C++, MATLAB, Simulink</p>
-  <p><strong>Occasional:</strong> C, Coq, Haskell, Tamarin, Xtext, R, JavaScript, HTML, Prolog, Pascal</p>
+  <p><strong>Regular use:</strong> Java, Python, MATLAB, Simulink</p>
+  <p><strong>Occasional:</strong> C, C++, Coq, Haskell, Tamarin, Xtext, R, JavaScript, HTML, Prolog, Pascal</p>
 
   <h3>Languages</h3>
   <ul class="cv-plain">
     <li>German — native</li>
     <li>English — fluent</li>
-    <li>French — B1 (written)</li>
+    <li>French — B1</li>
     <li>Portuguese — A2</li>
     <li>Japanese — A2</li>
   </ul>

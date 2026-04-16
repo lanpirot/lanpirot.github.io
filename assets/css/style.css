@@ -537,36 +537,103 @@ footer {
 
 /* Print */
 @media print {
-  :root {
-    --bg: #ffffff;
-    --fg: #000000;
-    --muted: #444444;
-    --rule: rgba(0, 0, 0, 0.25);
+  @page { size: A4; margin: 1.5cm 2cm; }
+
+  /* Override both selectors so dark theme never leaks into print */
+  :root, [data-theme="dark"] {
+    --bg: #fff;
+    --fg: #000;
+    --muted: #444;
+    --rule: rgba(0, 0, 0, 0.2);
+    --hover: transparent;
+    --link-underline: transparent;
   }
-  html, body { background: #fff !important; color: #000 !important; }
-  .topnav, .theme-toggle, .no-print, footer { display: none !important; }
-  main { max-width: none; padding: 0 0.5cm; }
-  a { color: #000 !important; text-decoration: none; }
-  h1 { font-size: 1.4rem; }
+
+  html, body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  body { font-size: 9.5pt; line-height: 1.4; }
+
+  /* Hide chrome */
+  .topnav, .theme-toggle, .no-print, footer,
+  .header .view-cv { display: none !important; }
+
+  main { max-width: none; padding: 0; }
+
+  a { color: inherit !important; text-decoration: none; }
+
+  /* Headings — use pt so sizing is stable on paper */
+  h1 { font-size: 14pt; }
   h2 {
-    font-size: 0.95rem;
-    margin: 1.1rem 0 0.4rem;
+    font-size: 9.5pt;
+    margin: 0.8rem 0 0.3rem;
     break-after: avoid;
     page-break-after: avoid;
   }
-  h3 { break-after: avoid; page-break-after: avoid; }
-  .cv-list > li, .cv-pubs li {
+  h3 {
+    font-size: 9pt;
+    margin: 0.5rem 0 0.2rem;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  p { orphans: 3; widows: 3; }
+
+  /* CV header */
+  .cv-header { margin: 0 0 0.5rem; }
+  .cv-header .role { font-size: 9pt; }
+  .cv-header .cv-contact { font-size: 8.5pt; }
+
+  /* CV list items (education, supervision, talks, etc.) */
+  .cv-list > li {
+    padding: 0.2rem 0;
+    font-size: 9pt;
     break-inside: avoid;
     page-break-inside: avoid;
   }
-  .cv-list > li { padding: 0.3rem 0; font-size: 9.5pt; }
-  .cv-pubs { font-size: 9pt; }
-  .cv-reviewing, .cv-plain { font-size: 9.5pt; }
-  body { font-size: 10pt; line-height: 1.35; }
-  .cv-foldable details { display: block; break-inside: avoid; page-break-inside: avoid; }
+
+  /* Publications */
+  .cv-pubs { font-size: 8.5pt; }
+  .cv-pubs li {
+    padding: 0.25rem 0;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .cv-reviewing { font-size: 9pt; }
+  .cv-reviewing li { padding: 0.15rem 0; }
+  .cv-plain { font-size: 9pt; }
+
+  /* Experience foldable — force open, hide chevrons */
+  .cv-foldable details {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
   .cv-foldable details[open] > ul,
   .cv-foldable details > ul { display: block; }
-  .cv-foldable summary { cursor: default; font-size: 9.5pt; padding: 0.2rem 0; }
+  .cv-foldable summary {
+    cursor: default;
+    font-size: 9pt;
+    padding: 0.15rem 0;
+  }
   .cv-foldable summary .chev { display: none; }
-  .cv-foldable details > ul { padding-left: 11rem; font-size: 9pt; }
+  .cv-foldable details > ul {
+    padding-left: 11rem;
+    font-size: 8.5pt;
+    margin-bottom: 0.1rem;
+  }
+
+  /* Keep small sections on one page */
+  #cv-summary, #cv-awards, #cv-grants,
+  #cv-skills, #cv-memberships {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Homepage: hide sections that don't belong in a CV printout */
+  #research, #news, #publications,
+  #teaching, #supervision, #service,
+  .header .socials, .header .pitch { break-before: auto; }
 }
