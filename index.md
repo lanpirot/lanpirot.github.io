@@ -5,6 +5,7 @@ description: Postdoctoral Researcher at the Software Engineering Group, Universi
 ---
 
 {% include header.html %}
+{% include section-research.html %}
 {% include section-news.html %}
 {% include section-publications.html %}
 {% include section-teaching.html %}
