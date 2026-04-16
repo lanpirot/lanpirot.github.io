@@ -1,7 +1,10 @@
 {%- assign s = site.data.site -%}
 <section id="about" class="header">
-  <div class="photo-frame">
-    <img class="photo" src="{{ s.photo | relative_url }}" alt="Portrait of {{ s.name }}" width="112" height="112" loading="eager" decoding="async">
+  <div class="photo-col">
+    <div class="photo-frame">
+      <img class="photo" src="{{ s.photo | relative_url }}" alt="Portrait of {{ s.name }}" width="112" height="112" loading="eager" decoding="async">
+    </div>
+    <a class="view-cv" href="{{ '/cv/' | relative_url }}">View CV →</a>
   </div>
   <div>
     <h1>{{ s.name }}</h1>

@@ -137,12 +137,31 @@ p { margin: 0.5rem 0; }
   align-items: center;
   margin: 1rem 0 0.5rem;
 }
+.header .photo-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
 .header .photo-frame {
   width: 8.4rem;
   height: 8.4rem;
   border-radius: 999px;
   overflow: hidden;
   border: 1px solid var(--rule);
+}
+.header .view-cv {
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-decoration: none;
+  border: 1px solid var(--rule);
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  transition: color 0.15s, border-color 0.15s;
+}
+.header .view-cv:hover {
+  color: var(--fg);
+  border-color: var(--fg);
 }
 .header img.photo {
   width: 100%;
@@ -392,6 +411,55 @@ footer {
 .cv-list .what ul li { padding: 0.1rem 0; }
 .cv-list .muted { color: var(--muted); font-size: 0.85rem; }
 
+.cv-foldable details {
+  border-bottom: 1px solid var(--rule);
+}
+.cv-foldable details:last-child { border-bottom: none; }
+.cv-foldable summary {
+  list-style: none;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 10rem 1fr auto;
+  gap: 1rem;
+  align-items: baseline;
+  padding: 0.65rem 0.25rem 0.65rem 0;
+  font-size: 0.92rem;
+}
+.cv-foldable summary::-webkit-details-marker { display: none; }
+.cv-foldable summary:hover { background: var(--hover); }
+.cv-foldable summary .when {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.85rem;
+}
+.cv-foldable summary .chev {
+  display: inline-flex;
+  width: 0.9rem;
+  height: 0.9rem;
+  color: var(--muted);
+  transition: transform 0.2s;
+}
+.cv-foldable details[open] summary .chev { transform: rotate(90deg); }
+.cv-foldable details > ul {
+  margin: 0 0 0.9rem;
+  padding: 0 0 0 11rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.cv-foldable details > ul li { padding: 0.1rem 0; }
+
+@media (max-width: 540px) {
+  .cv-foldable summary {
+    grid-template-columns: 1fr auto;
+    gap: 0.25rem;
+  }
+  .cv-foldable summary .when {
+    grid-column: 1 / -1;
+    font-size: 0.78rem;
+  }
+  .cv-foldable details > ul { padding-left: 1.2rem; }
+}
+
 .cv-pubs {
   padding-left: 1.4rem;
   margin: 0.25rem 0 1.25rem;
@@ -457,4 +525,10 @@ footer {
   .cv-pubs { font-size: 9pt; }
   .cv-reviewing, .cv-plain { font-size: 9.5pt; }
   body { font-size: 10pt; line-height: 1.35; }
+  .cv-foldable details { display: block; break-inside: avoid; page-break-inside: avoid; }
+  .cv-foldable details[open] > ul,
+  .cv-foldable details > ul { display: block; }
+  .cv-foldable summary { cursor: default; font-size: 9.5pt; padding: 0.2rem 0; }
+  .cv-foldable summary .chev { display: none; }
+  .cv-foldable details > ul { padding-left: 11rem; font-size: 9pt; }
 }
