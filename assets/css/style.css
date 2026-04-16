@@ -319,6 +319,25 @@ p { margin: 0.5rem 0; }
 }
 .pub-links a:hover { color: var(--muted); }
 .pub-links svg { width: 1rem; height: 1rem; }
+.pub-links .bib-copy {
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--fg);
+  font-size: 0.85rem;
+  padding: 0.25rem 0;
+  cursor: pointer;
+  position: relative;
+}
+.pub-links .bib-copy:hover { color: var(--muted); }
+.pub-links .bib-copy.copied span { visibility: hidden; }
+.pub-links .bib-copy.copied::after {
+  content: "Copied!";
+  position: absolute;
+  left: 1.35rem;
+  color: var(--fg);
+}
 
 /* Teaching / Supervision / Service */
 .plain-list {

@@ -36,7 +36,7 @@
           <a href="https://doi.org/{{ pub.doi }}" aria-label="DOI" rel="noopener" target="_blank">{% include icon.html name="doi" %}<span>DOI</span></a>
         {%- endif -%}
         {%- if pub.bib -%}
-          <a href="{{ pub.bib | relative_url }}" aria-label="BibTeX">{% include icon.html name="bibtex" %}<span>BibTeX</span></a>
+          <button class="bib-copy" data-bib-url="{{ pub.bib | relative_url }}" aria-label="Copy BibTeX to clipboard">{% include icon.html name="copy" %}<span>BibTeX</span></button>
         {%- endif -%}
         {%- if pub.links.video -%}
           <a href="{{ pub.links.video }}" aria-label="Video" rel="noopener" target="_blank">{% include icon.html name="video" %}<span>Video</span></a>

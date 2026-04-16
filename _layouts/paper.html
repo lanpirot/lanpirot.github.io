@@ -35,7 +35,7 @@ layout: default
       <a href="https://doi.org/{{ pub.doi }}" aria-label="DOI" rel="noopener" target="_blank">{% include icon.html name="doi" %}<span>DOI</span></a>
     {%- endif -%}
     {%- if pub.bib -%}
-      <a href="{{ pub.bib | relative_url }}" aria-label="BibTeX">{% include icon.html name="bibtex" %}<span>BibTeX</span></a>
+      <button class="bib-copy" data-bib-url="{{ pub.bib | relative_url }}" aria-label="Copy BibTeX to clipboard">{% include icon.html name="copy" %}<span>BibTeX</span></button>
     {%- endif -%}
     {%- if pub.links.video -%}
       <a href="{{ pub.links.video }}" aria-label="Video" rel="noopener" target="_blank">{% include icon.html name="video" %}<span>Video</span></a>
@@ -54,3 +54,21 @@ layout: default
     {%- endif -%}
   </div>
 </section>
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest('.bib-copy');
+    if (!btn) return;
+    var url = btn.getAttribute('data-bib-url');
+    fetch(url)
+      .then(function (r) { return r.text(); })
+      .then(function (text) {
+        return navigator.clipboard.writeText(text);
+      })
+      .then(function () {
+        btn.classList.add('copied');
+        setTimeout(function () { btn.classList.remove('copied'); }, 1500);
+      });
+  });
+})();
+</script>
