@@ -54,7 +54,7 @@
           <a href="{{ pub.award_url | default: '#' }}" aria-label="Award" rel="noopener" target="_blank">{% include icon.html name="award" %}<span>{{ pub.award }}</span></a>
         {%- endif -%}
         {%- if paper_page -%}
-          <a href="{{ paper_page.url | relative_url }}" aria-label="Permalink">{% include icon.html name="permalink" %}<span>Permalink</span></a>
+          <a href="{{ paper_page.url | relative_url }}" aria-label="Details">{% include icon.html name="permalink" %}<span>Details</span></a>
         {%- endif -%}
       </div>
     </div>
