@@ -45,7 +45,6 @@
 {%- endif -%}
 {%- endfor %}
 <meta name="citation_publication_date" content="{{ pub.date | default: pub.year }}">
-<meta name="citation_year" content="{{ pub.year }}">
 {%- if pub.venue == "arXiv" %}
 {%- assign arxiv_id = pub.doi | remove: "10.48550/arXiv." %}
 <meta name="citation_arxiv_id" content="{{ arxiv_id }}">
