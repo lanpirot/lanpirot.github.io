@@ -32,7 +32,17 @@
 <meta name="citation_title" content="{{ pub.title }}">
 {%- assign authors = pub.authors | split: ", " -%}
 {%- for a in authors %}
+{%- if pub.type == "thesis" -%}
+{%- assign parts = a | strip | split: " " -%}
+{%- assign last_idx = parts.size | minus: 1 -%}
+{%- assign surname = parts[last_idx] -%}
+{%- assign given = parts | slice: 0, last_idx | join: " " -%}
+{%- if given == "" -%}{%- assign formatted = surname -%}
+{%- else -%}{%- assign formatted = surname | append: ", " | append: given -%}{%- endif %}
+<meta name="citation_author" content="{{ formatted }}">
+{%- else %}
 <meta name="citation_author" content="{{ a | strip }}">
+{%- endif -%}
 {%- endfor %}
 <meta name="citation_publication_date" content="{{ pub.date | default: pub.year }}">
 <meta name="citation_year" content="{{ pub.year }}">
@@ -44,12 +54,16 @@
 {%- elsif pub.type == "conference" %}
 <meta name="citation_conference_title" content="{{ pub.venue }}">
 {%- elsif pub.type == "thesis" %}
-<meta name="citation_dissertation_institution" content="{{ pub.venue }}">
+<meta name="citation_dissertation_institution" content="{{ pub.institution | default: pub.venue }}">
+<meta name="citation_dissertation_name" content="PhD thesis">
+<meta name="citation_abstract_html_url" content="{{ page.url | absolute_url }}">
+<meta name="citation_language" content="{{ site.lang | default: 'en' }}">
 {%- else %}
 <meta name="citation_technical_report_institution" content="{{ pub.venue }}">
 {%- endif %}
-{%- if pub.pdf %}
-<meta name="citation_pdf_url" content="{{ pub.pdf | absolute_url }}">
+{%- assign citation_pdf = pub.citation_pdf | default: pub.pdf %}
+{%- if citation_pdf %}
+<meta name="citation_pdf_url" content="{{ citation_pdf | absolute_url }}">
 {%- endif %}
 {%- if pub.doi %}
 <meta name="citation_doi" content="{{ pub.doi }}">
@@ -62,8 +76,8 @@
   "author": {{ pub.authors | jsonify }},
   "datePublished": "{{ pub.year }}",
   "isPartOf": { "@type": "Periodical", "name": {{ pub.venue | jsonify }} }{% if pub.doi %},
-  "sameAs": "https://doi.org/{{ pub.doi }}"{% endif %}{% if pub.pdf %},
-  "url": "{{ pub.pdf | relative_url | absolute_url }}"{% endif %},
+  "sameAs": "https://doi.org/{{ pub.doi }}"{% endif %}{% if citation_pdf %},
+  "url": "{{ citation_pdf | relative_url | absolute_url }}"{% endif %},
   "mainEntityOfPage": "{{ page.url | absolute_url }}"
 }
 </script>
@@ -125,8 +139,8 @@
         "@type": "Periodical",
         "name": {{ pub.venue | jsonify }}
       }{% if pub.doi %},
-      "sameAs": "https://doi.org/{{ pub.doi }}"{% endif %}{% if pub.pdf %},
-      "url": "{{ pub.pdf | absolute_url }}"{% endif %}
+      "sameAs": "https://doi.org/{{ pub.doi }}"{% endif %}{% assign pub_citation_pdf = pub.citation_pdf | default: pub.pdf %}{% if pub_citation_pdf %},
+      "url": "{{ pub_citation_pdf | absolute_url }}"{% endif %}
     }{% endfor %}
   ]
 }
