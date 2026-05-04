@@ -8,7 +8,7 @@
   year: 2026
   date: ""
   type: journal
-  status: accepted
+  doi: "10.1007/s10270-026-01381-x"
   pdf: "publications/SMOKE2.0_Whitebox_Anonymization_of_Sensitive_Information_in_Simulink_with_Structure_Preservation.pdf"
   abstract: "Simulink is widely used across various industries to model and simulate cyber-physical systems. Most industry-built models contain sensitive information, which prevents companies from sharing models with interested third parties, such as researchers or collaborating companies. However, advancing model-based engineering research requires access to such models – either to derive empirical insights or to evaluate new tools. While initiatives to replace industry-built models with open-source alternatives exist, they offer only a limited remedy. In this work, we present a novel approach with Smoke, a Simulink anonymization tool designed to selectively remove sensitive information within models. This allows companies to share relevant parts of their models with researchers or other third parties while safeguarding all sensitive information. Smoke’s whitebox design preserves the model’s original format and structure, ensuring that meaningful insights remain accessible. We evaluated the tool on an extensive set of open-source models and found it successfully removes sensitive information, while preserving model structure. A video demonstration of Smoke is available online at youtu.be/0i42BzgJAUA."
   links:
