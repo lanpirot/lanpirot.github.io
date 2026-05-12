@@ -2,6 +2,7 @@
   venues:
     - {name: EASE, count: 2}
     - {name: ICSE, count: 1}
+    - {name: MODELS, count: 1}
     - {name: SoSyM, count: 1}
 
 - year: 2025
