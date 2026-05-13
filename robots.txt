@@ -1,5 +1,2 @@
----
-permalink: /robots.txt
----
-Sitemap: {{ "/sitemap.xml" | absolute_url }}
-Sitemap: {{ "/sitemap-v2.xml" | absolute_url }}
+Sitemap: https://lanpirot.github.io/sitemap.xml
+Sitemap: https://lanpirot.github.io/sitemap-v2.xml
