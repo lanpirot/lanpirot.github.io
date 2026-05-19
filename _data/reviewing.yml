@@ -1,5 +1,6 @@
 - year: 2026
   venues:
+    - {name: ASE, count: 2}
     - {name: EASE, count: 2}
     - {name: ICSE, count: 1}
     - {name: MODELS, count: 1}
