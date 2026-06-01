@@ -15,9 +15,27 @@
     <p class="pitch">{{ s.pitch }}</p>
     <div class="socials">
       {%- for link in site.data.socials -%}
-        <a href="{{ link.url }}" aria-label="{{ link.name }}" title="{{ link.name }}"{% unless link.icon == "email" or link.icon == "pgp" %} rel="me noopener" target="_blank"{% endunless %}>
-          {%- include icon.html name=link.icon -%}
-        </a>
+        {%- if link.icon == "pgp" -%}
+          <div class="pgp" data-pgp>
+            <button type="button" class="pgp-btn" aria-label="{{ link.name }}" title="{{ link.name }}" aria-haspopup="true" aria-expanded="false">
+              {%- include icon.html name="pgp" -%}
+            </button>
+            <div class="pgp-menu" role="menu" hidden>
+              <p class="pgp-head">Copy public key</p>
+              {%- for key in site.data.pgp_keys -%}
+                <button type="button" class="pgp-item" role="menuitem" data-src="{{ key.file | relative_url }}">
+                  <span class="pgp-email">{{ key.email }}</span>
+                  <span class="pgp-fpr">{{ key.fingerprint }}</span>
+                </button>
+              {%- endfor -%}
+              <p class="pgp-status" aria-live="polite"></p>
+            </div>
+          </div>
+        {%- else -%}
+          <a href="{{ link.url }}" aria-label="{{ link.name }}" title="{{ link.name }}"{% unless link.icon == "email" %} rel="me noopener" target="_blank"{% endunless %}>
+            {%- include icon.html name=link.icon -%}
+          </a>
+        {%- endif -%}
       {%- endfor -%}
     </div>
   </div>

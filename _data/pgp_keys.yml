@@ -1,0 +1,10 @@
+# PGP public keys offered by the key-icon popover (see _includes/header.html + assets/js/main.js).
+# email       — identity shown in the popover
+# file        — armored public key, fetched & copied to clipboard (and directly downloadable)
+# fingerprint — shown for out-of-band verification
+- email: alexander@alexanderboll.dev
+  file: /assets/pgp/dev.asc
+  fingerprint: C103 D3E2 40D0 6EB5 4553 9088 3364 CA3F A87F B0E3
+- email: alexander.boll@unibe.ch
+  file: /assets/pgp/unibe.asc
+  fingerprint: A5AD 56C9 05A0 21B6 B89E C42D D0D0 A8C6 1E87 0433

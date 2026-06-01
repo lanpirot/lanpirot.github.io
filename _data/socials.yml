@@ -18,4 +18,4 @@
   url: "https://dblp.org/pid/271/4416.html"
 - name: PGP public key
   icon: pgp
-  url: "/assets/pgp.asc"
+  # rendered as a click-to-copy popover (header.html); keys live in _data/pgp_keys.yml

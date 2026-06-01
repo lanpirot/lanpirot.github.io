@@ -210,6 +210,70 @@ p { margin: 0.5rem 0; }
 .socials .dblp-bg { transition: fill 0.15s; }
 .socials a:hover .dblp-bg { fill: var(--muted); }
 
+/* PGP key popover */
+.pgp { position: relative; display: inline-flex; }
+.pgp-btn {
+  display: inline-flex;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--fg);
+  cursor: pointer;
+}
+.pgp-btn:hover { color: var(--muted); }
+.pgp-menu {
+  position: absolute;
+  top: calc(100% + 0.55rem);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 30;
+  width: 17rem;
+  max-width: calc(100vw - 1.5rem);
+  padding: 0.35rem;
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  border-radius: 0.6rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+  text-align: left;
+}
+.pgp-menu[hidden] { display: none; }
+.pgp-head {
+  margin: 0.2rem 0.55rem 0.35rem;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+.pgp-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  width: 100%;
+  padding: 0.45rem 0.55rem;
+  border: 0;
+  border-radius: 0.4rem;
+  background: none;
+  color: var(--fg);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.pgp-item:hover,
+.pgp-item:focus-visible { background: var(--hover); outline: none; }
+.pgp-email { font-size: 0.9rem; }
+.pgp-fpr {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.62rem;
+  line-height: 1.3;
+  color: var(--muted);
+}
+.pgp-status {
+  margin: 0.2rem 0.55rem 0.1rem;
+  min-height: 1em;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
 /* News */
 .news-list {
   list-style: none;

@@ -39,3 +39,64 @@
   if (document.readyState !== "loading") onReady();
   else document.addEventListener("DOMContentLoaded", onReady);
 })();
+
+// PGP key popover: toggle the menu and copy a chosen public key to the clipboard.
+(function () {
+  function onReady() {
+    var wrap = document.querySelector("[data-pgp]");
+    if (!wrap) return;
+    var btn = wrap.querySelector(".pgp-btn");
+    var menu = wrap.querySelector(".pgp-menu");
+    var status = wrap.querySelector(".pgp-status");
+    var items = Array.prototype.slice.call(wrap.querySelectorAll(".pgp-item"));
+    var cache = {};
+
+    function fetchKey(src) {
+      if (src in cache) return Promise.resolve(cache[src]);
+      return fetch(src).then(function (r) {
+        if (!r.ok) throw new Error("fetch failed");
+        return r.text();
+      }).then(function (t) { cache[src] = t; return t; });
+    }
+    function prime() { items.forEach(function (it) { fetchKey(it.getAttribute("data-src")).catch(function () {}); }); }
+
+    function open() {
+      menu.hidden = false;
+      btn.setAttribute("aria-expanded", "true");
+      document.addEventListener("click", onDoc, true);
+      document.addEventListener("keydown", onKey);
+    }
+    function close() {
+      menu.hidden = true;
+      btn.setAttribute("aria-expanded", "false");
+      if (status) status.textContent = "";
+      document.removeEventListener("click", onDoc, true);
+      document.removeEventListener("keydown", onKey);
+    }
+    function onDoc(e) { if (!wrap.contains(e.target)) close(); }
+    function onKey(e) { if (e.key === "Escape") { close(); btn.focus(); } }
+
+    btn.addEventListener("mouseenter", prime);
+    btn.addEventListener("focus", prime);
+    btn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      if (menu.hidden) { prime(); open(); } else { close(); }
+    });
+
+    items.forEach(function (item) {
+      item.addEventListener("click", function () {
+        var src = item.getAttribute("data-src");
+        var email = item.querySelector(".pgp-email").textContent;
+        var ok = function () { if (status) status.textContent = "Copied " + email + " ✓"; };
+        var fail = function () { window.open(src, "_blank", "noopener"); close(); };
+        fetchKey(src).then(function (text) {
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(text).then(ok, fail);
+          } else { fail(); }
+        }).catch(fail);
+      });
+    });
+  }
+  if (document.readyState !== "loading") onReady();
+  else document.addEventListener("DOMContentLoaded", onReady);
+})();
