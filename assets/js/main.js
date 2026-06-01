@@ -91,7 +91,7 @@
         var src = item.getAttribute("data-src");
         var email = item.querySelector(".pgp-email").textContent;
         var ok = function () {
-          if (status) status.textContent = "Copied " + email + " ✓";
+          if (status) status.textContent = "Copied " + email;
           clearCopied();
           item.classList.add("copied");
           copiedTimer = setTimeout(function () { item.classList.remove("copied"); }, 1600);
