@@ -50,6 +50,8 @@
     var status = wrap.querySelector(".pgp-status");
     var items = Array.prototype.slice.call(wrap.querySelectorAll(".pgp-item"));
     var cache = {};
+    var copiedTimer;
+    function clearCopied() { clearTimeout(copiedTimer); items.forEach(function (it) { it.classList.remove("copied"); }); }
 
     function fetchKey(src) {
       if (src in cache) return Promise.resolve(cache[src]);
@@ -70,6 +72,7 @@
       menu.hidden = true;
       btn.setAttribute("aria-expanded", "false");
       if (status) status.textContent = "";
+      clearCopied();
       document.removeEventListener("click", onDoc, true);
       document.removeEventListener("keydown", onKey);
     }
@@ -87,7 +90,12 @@
       item.addEventListener("click", function () {
         var src = item.getAttribute("data-src");
         var email = item.querySelector(".pgp-email").textContent;
-        var ok = function () { if (status) status.textContent = "Copied " + email + " ✓"; };
+        var ok = function () {
+          if (status) status.textContent = "Copied " + email + " ✓";
+          clearCopied();
+          item.classList.add("copied");
+          copiedTimer = setTimeout(function () { item.classList.remove("copied"); }, 1600);
+        };
         var fail = function () { window.open(src, "_blank", "noopener"); close(); };
         fetchKey(src).then(function (text) {
           if (navigator.clipboard && navigator.clipboard.writeText) {

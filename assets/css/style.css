@@ -246,8 +246,10 @@ p { margin: 0.5rem 0; }
 }
 .pgp-item {
   display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
   width: 100%;
   padding: 0.45rem 0.55rem;
   border: 0;
@@ -260,6 +262,7 @@ p { margin: 0.5rem 0; }
 }
 .pgp-item:hover,
 .pgp-item:focus-visible { background: var(--hover); outline: none; }
+.pgp-text { display: flex; flex-direction: column; gap: 0.15rem; flex: 1 1 auto; min-width: 0; }
 .pgp-email { font-size: 0.9rem; }
 .pgp-fpr {
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
@@ -267,6 +270,13 @@ p { margin: 0.5rem 0; }
   line-height: 1.3;
   color: var(--muted);
 }
+.pgp-ico { flex: 0 0 auto; display: inline-flex; color: var(--muted); }
+.pgp-ico svg { width: 1rem; height: 1rem; display: block; }
+.pgp-item:hover .pgp-ico,
+.pgp-item:focus-visible .pgp-ico { color: var(--fg); }
+.pgp-ico-check { display: none; }
+.pgp-item.copied .pgp-ico-copy { display: none; }
+.pgp-item.copied .pgp-ico-check { display: block; color: #3fb950; }
 .pgp-status {
   margin: 0.2rem 0.55rem 0.1rem;
   min-height: 1em;
