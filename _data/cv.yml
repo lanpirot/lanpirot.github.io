@@ -1,0 +1,146 @@
+# CV-only data — the single source of truth for sections that appear on the PDF CV
+# but not on the website's main page. Website-shared sections (publications,
+# teaching, supervision, service, reviewing) come from their own _data/*.yml files;
+# name/role/affiliation/location/photo come from _data/site.yml; contact links from
+# _data/socials.yml and _config.yml. Regenerate the PDF with `make cv`.
+
+summary: >
+  Postdoctoral researcher in software engineering, working on merge conflict
+  resolution and software variability, with a strong track record in model-based
+  software engineering — particularly MATLAB/Simulink. My research develops
+  practical tools (SMOKE, GRANDSLAM, ScoutSL) that lower the barrier to empirical
+  research in model-based engineering, and studies how developers can be better
+  supported in everyday version-control workflows.
+
+experience:
+  - when: "Jan 2026 – present"
+    title: "Postdoctoral Researcher"
+    org: "Software Engineering Group, University of Bern"
+    bullets:
+      - "Prototype development (MATLAB, Python, Java)"
+      - "Writing and reviewing research papers"
+      - "Supervision of BSc, MSc, and co-supervision of PhD students"
+      - "Teaching support and exam assessment"
+
+  - when: "Jan 2022 – Dec 2025"
+    title: "Doctoral Researcher"
+    org: "Software Engineering Group, University of Bern"
+    bullets:
+      - "Prototype development (MATLAB, Python, Java)"
+      - "Writing and reviewing research papers"
+      - "Exam assessment and proctoring"
+      - "Literature research"
+
+  - when: "Jul 2024 – Dec 2024"
+    title: "Research Developer"
+    org: "University of Duisburg-Essen / Gesellschaft für Informatik"
+    bullets:
+      - "Contributor to the DFG project NFDIxCS (nfdixcs.org)"
+      - "Prototyping for model-based use cases"
+      - "Writing and reviewing research papers"
+
+  - when: "Jun 2019 – Dec 2021"
+    title: "Research Associate"
+    org: "Humboldt University of Berlin (Model-Driven Software Engineering)"
+    bullets:
+      - "Contributor to the DFG project SimuComp"
+      - "Prototype development (Python, Java)"
+      - "Writing and reviewing research papers"
+      - "Exam assessment and proctoring"
+
+  - when: "Oct 2015 – May 2019"
+    title: "Student Research Assistant"
+    org: "Fraunhofer AISEC"
+    bullets:
+      - "Java, Docker, CI, Bash, VirtualBox"
+      - "Programming, software testing and configuration"
+      - "Research, risk analysis, and documentation"
+
+  - when: "Mar 2014 – Sep 2014"
+    title: "Student Assistant"
+    org: "Ctb Camtec GmbH"
+    bullets:
+      - "Web development (HTML, CSS, PHP) and VB programming"
+      - "Windows Server, mail server, VMware administration"
+
+  - when: "Sep 2009 – Sep 2011"
+    title: "Tutor"
+    org: "Humboldt University of Berlin (Algorithms and Complexity)"
+    bullets:
+      - "Designed and graded exercises and exams"
+      - "Led tutorial sessions"
+
+  - when: "Oct 2007 – May 2009"
+    title: "Student Assistant / Tutor"
+    org: "TU Berlin (Industrial Information Technology)"
+    bullets:
+      - "Implemented evolutionary algorithms in C++"
+      - "Led tutorials for \"Introduction to C++ for Engineers\""
+      - "Reviewed course materials, exercises, and exams"
+
+education:
+  - when: "Jun 2019 – Dec 2025"
+    degree: "Dr. rer. nat. (PhD) in Computer Science"
+    org: "University of Bern (initially at Humboldt University of Berlin until Dec 2021)"
+    details:
+      - "Thesis: *Bridging the Data Desert: Mitigating Challenges of Model Accessibility in Simulink Research*"
+      - "Advisor: Prof. Dr. Timo Kehrer · Defended Dec 2025 · doi.org/10.48549/7066"
+
+  - when: "Oct 2006 – Feb 2019"
+    degree: "Diplom / M.Sc. in Computer Science"
+    org: "Humboldt University of Berlin"
+    details:
+      - "Advisor: Dr. Kim Völlinger · Final grade 1.3 (*sehr gut* / very good; German scale, 1.0 best)"
+      - "Thesis: *Formale Instanzverifikation zertifizierender verteilter Algorithmen*"
+
+  - when: "1997 – 2006"
+    degree: "Abitur"
+    org: "Rosa-Luxemburg-Oberschule, Berlin-Pankow"
+    details:
+      - "Final grade 1.6 (*gut* / good; German scale, 1.0 best)"
+
+awards:
+  - title: "Distinguished Paper Award"
+    venue: "EASE 2024"
+    detail: 'for "Towards Semi-Automated Merge Conflict Resolution: Is It Easier Than We Expected?"'
+
+presentations:
+  - when: "May 2026"
+    text: '"GRANDSLAM: Linearly Scalable Model Synthesis" at ICST 2026'
+  - when: "Sep 2024"
+    text: '"SMOKE: Simulink Model Obfuscator Keeping Structure" at MODELS 2024'
+  - when: "Jun 2024"
+    text: '"Towards Semi-Automated Merge Conflict Resolution: Is It Easier Than We Expected?" at EASE 2024'
+  - when: "Oct 2023"
+    text: '"ScoutSL: An Open-Source Simulink Search Engine" and "EvoSL: A Large Open-Source Corpus of Changes in Simulink Models & Projects" at MODELS 2023'
+  - when: "Jun 2020"
+    text: '"On the Replicability of Experimental Tool Evaluations in Model-Based Development" at ICSMM 2020'
+
+grants:
+  - when: "2024 – 2027"
+    name: "VariantSync II"
+    url: "https://seg.inf.unibe.ch/research/projects/variantsync-2/"
+    detail: "SNSF-funded research project on the automated synchronization of software variants in clone-and-own development; in collaboration with Prof. Dr. Thomas Thüm (TU Braunschweig)."
+
+  - when: "Oct 2023 – Sep 2027"
+    name: "Merge++"
+    url: "https://data.snf.ch/grants/grant/219719"
+    detail: "SNSF-funded research project on merge conflict resolution (SNSF grant 219719, PI: Timo Kehrer). Contributed substantially to the successful grant proposal."
+
+  - when: "2019 – 2021"
+    name: "SimuComp"
+    url: "https://www.informatik.hu-berlin.de/de/forschung/gebiete/mse/forsch/projekte/simu-comp"
+    detail: "DFG-funded research project on the comparison and versioning of MATLAB/Simulink models (Model-Driven Software Engineering group, Humboldt University of Berlin)."
+
+skills: ["Java", "Python", "MATLAB", "Simulink", "Coq", "Git", "Docker", "Bash", "LaTeX", "Claude Code & other AI tools"]
+
+languages:
+  - {name: "German", level: "native"}
+  - {name: "English", level: "fluent"}
+  - {name: "French", level: "B1"}
+  - {name: "Portuguese", level: "A2"}
+  - {name: "Japanese", level: "A2"}
+
+memberships:
+  - "ACM — Association for Computing Machinery"
+  - "IEEE — Institute of Electrical and Electronics Engineers"

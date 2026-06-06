@@ -38,6 +38,8 @@ exclude:
   - Gemfile.lock
   - vendor
   - .claude
+  - cv/          # CV generator sources (script, LaTeX template, build dir)
+  - Makefile
 
 sass:
   style: compressed
