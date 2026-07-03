@@ -62,19 +62,36 @@
     }
     function prime() { items.forEach(function (it) { fetchKey(it.getAttribute("data-src")).catch(function () {}); }); }
 
+    // Keep the centered menu from spilling past the viewport edges (the PGP
+    // button sits right of centre on narrow screens, so its right half clips).
+    function place() {
+      menu.style.transform = "";
+      var margin = 8;
+      var rect = menu.getBoundingClientRect();
+      var vw = document.documentElement.clientWidth;
+      var shift = 0;
+      if (rect.right > vw - margin) shift = vw - margin - rect.right;
+      else if (rect.left < margin) shift = margin - rect.left;
+      menu.style.transform = "translateX(calc(-50% + " + Math.round(shift) + "px))";
+    }
+
     function open() {
       menu.hidden = false;
       btn.setAttribute("aria-expanded", "true");
+      place();
       document.addEventListener("click", onDoc, true);
       document.addEventListener("keydown", onKey);
+      window.addEventListener("resize", place);
     }
     function close() {
       menu.hidden = true;
+      menu.style.transform = "";
       btn.setAttribute("aria-expanded", "false");
       if (status) status.textContent = "";
       clearCopied();
       document.removeEventListener("click", onDoc, true);
       document.removeEventListener("keydown", onKey);
+      window.removeEventListener("resize", place);
     }
     function onDoc(e) { if (!wrap.contains(e.target)) close(); }
     function onKey(e) { if (e.key === "Escape") { close(); btn.focus(); } }
