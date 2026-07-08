@@ -45,7 +45,7 @@
   year: 2026
   date: ""
   type: conference
-  status: accepted
+  status: released
   doi: "10.1145/3786582.3786840"
   pdf: "publications/Turning_Merge_Conflicts_Into_Conflict-Induced_Variability.pdf"
   abstract: "Merging is central to software version control and collaborative work, yet current techniques force developers to resolve conflicts immediately upon each merge attempt, causing constant interruptions and hampering continuous integration. To mitigate, we propose a paradigm shift: merge conflicts shall be no longer treated as obstacles to be eliminated immediately, but as a form of software variability that explicitly captures diverging developer intentions. Such conflict-induced variability defines alternative behaviors that can be explored, analyzed, and resolved upon request, enabling deferred bulk conflict resolution based on the analysis results. With this, we open an avenue of research around a paradigm that shall preserve the practicality of today’s merging techniques, while accelerating traditional versioning workflows through increased flexibility and more effective conflict resolution."
