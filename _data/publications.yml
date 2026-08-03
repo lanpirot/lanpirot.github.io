@@ -21,7 +21,8 @@
   year: 2026
   date: ""
   type: conference
-  status: accepted
+  status: released
+  doi: "10.1109/ICST69053.2026.00058"
   pdf: "publications/GRANDSLAM_LINEARLY_SCALABLE_MODEL_SYNTHESIS.pdf"
   abstract: "Commercial cyber-physical system (CPS) development tools are complex and safety-critical software, yet face two major testing challenges. First, the lack of formal specifications necessitates fuzzing for bug discovery. Second, the scarcity of large, open-source models hampers effective scalability testing and empirical research. To address these challenges, we present GRANDSLAM, a Simulink model synthesizer that scales linearly and generates models far larger than prior work. GRANDSLAM enables both fuzzing and scalability testing at unprecedented scales, synthesizing diverse models with over 1M blocks. Our evaluation reveals eleven confirmed bugs, and two confirmed scalability issues in Simulink, demonstrating its effectiveness."
   links:
