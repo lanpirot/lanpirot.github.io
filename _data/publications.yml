@@ -10,6 +10,7 @@
   type: journal
   doi: "10.1007/s10270-026-01381-x"
   pdf: "publications/SMOKE2.0_Whitebox_Anonymization_of_Sensitive_Information_in_Simulink_with_Structure_Preservation.pdf"
+  bib: "publications/SMOKE2.0_Whitebox_Anonymization_of_Sensitive_Information_in_Simulink_with_Structure_Preservation.bib"
   abstract: "Simulink is widely used across various industries to model and simulate cyber-physical systems. Most industry-built models contain sensitive information, which prevents companies from sharing models with interested third parties, such as researchers or collaborating companies. However, advancing model-based engineering research requires access to such models – either to derive empirical insights or to evaluate new tools. While initiatives to replace industry-built models with open-source alternatives exist, they offer only a limited remedy. In this work, we present a novel approach with Smoke, a Simulink anonymization tool designed to selectively remove sensitive information within models. This allows companies to share relevant parts of their models with researchers or other third parties while safeguarding all sensitive information. Smoke’s whitebox design preserves the model’s original format and structure, ensuring that meaningful insights remain accessible. We evaluated the tool on an extensive set of open-source models and found it successfully removes sensitive information, while preserving model structure. A video demonstration of Smoke is available online at youtu.be/0i42BzgJAUA."
   links:
     video: "https://youtu.be/0i42BzgJAUA"
@@ -24,6 +25,7 @@
   status: released
   doi: "10.1109/ICST69053.2026.00058"
   pdf: "publications/GRANDSLAM_LINEARLY_SCALABLE_MODEL_SYNTHESIS.pdf"
+  bib: "publications/GRANDSLAM_LINEARLY_SCALABLE_MODEL_SYNTHESIS.bib"
   abstract: "Commercial cyber-physical system (CPS) development tools are complex and safety-critical software, yet face two major testing challenges. First, the lack of formal specifications necessitates fuzzing for bug discovery. Second, the scarcity of large, open-source models hampers effective scalability testing and empirical research. To address these challenges, we present GRANDSLAM, a Simulink model synthesizer that scales linearly and generates models far larger than prior work. GRANDSLAM enables both fuzzing and scalability testing at unprecedented scales, synthesizing diverse models with over 1M blocks. Our evaluation reveals eleven confirmed bugs, and two confirmed scalability issues in Simulink, demonstrating its effectiveness."
   links:
     code: "https://doi.org/10.5281/zenodo.18900319"
@@ -49,6 +51,7 @@
   status: released
   doi: "10.1145/3786582.3786840"
   pdf: "publications/Turning_Merge_Conflicts_Into_Conflict-Induced_Variability.pdf"
+  bib: "publications/Turning_Merge_Conflicts_Into_Conflict-Induced_Variability.bib"
   abstract: "Merging is central to software version control and collaborative work, yet current techniques force developers to resolve conflicts immediately upon each merge attempt, causing constant interruptions and hampering continuous integration. To mitigate, we propose a paradigm shift: merge conflicts shall be no longer treated as obstacles to be eliminated immediately, but as a form of software variability that explicitly captures diverging developer intentions. Such conflict-induced variability defines alternative behaviors that can be explored, analyzed, and resolved upon request, enabling deferred bulk conflict resolution based on the analysis results. With this, we open an avenue of research around a paradigm that shall preserve the practicality of today’s merging techniques, while accelerating traditional versioning workflows through increased flexibility and more effective conflict resolution."
 
 - title: "Decades of GNU Patch and Git Cherry-Pick: Can We Do Better?"
