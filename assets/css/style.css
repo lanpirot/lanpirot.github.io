@@ -730,11 +730,16 @@ footer {
 }
 
 /* play / pause control */
-.disc-anim-bar { display: flex; justify-content: flex-end; margin-bottom: 0.45rem; }
+.disc-anim-stage { position: relative; }
+.disc-anim-bar {
+  position: absolute; left: 50%; top: 0; z-index: 1;
+  margin-top: 6.3%;              /* header band centre: 29/460 of the width */
+  transform: translate(-50%, -50%);
+}
 .disc-anim-toggle {
   display: inline-flex; align-items: center; gap: 0.4rem;
   font-size: 0.8rem; color: var(--muted);
-  background: none; border: 1px solid var(--rule); border-radius: 999px;
+  background: var(--bg); border: 1px solid var(--rule); border-radius: 999px;
   padding: 0.22rem 0.7rem; cursor: pointer;
   transition: color 0.15s, border-color 0.15s;
 }
