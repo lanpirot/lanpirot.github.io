@@ -3,6 +3,10 @@
 # Good: awards, talks, service appointments, milestones, moves, releases, grants.
 # Avoid: "paper accepted at X" (the paper itself is the record).
 
+- date: 2026-09-01
+  text: "Published a security disclosure of a critical vulnerability in MATLAB/Simulink: concealed executable blocks."
+  link: "/disclosures/simulink-invisible-block/"
+
 - date: 2026-05-01
   text: "Presented 'GRANDSLAM: Linearly Scalable Model Synthesis' at ICST 2026."
 

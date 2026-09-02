@@ -20,6 +20,9 @@ collections:
   papers:
     output: true
     permalink: /papers/:name/
+  disclosures:
+    output: true
+    permalink: /disclosures/:name/
 
 defaults:
   - scope:
@@ -27,6 +30,11 @@ defaults:
       type: papers
     values:
       layout: paper
+  - scope:
+      path: ""
+      type: disclosures
+    values:
+      layout: disclosure
   - scope:
       path: "google*.html"
     values:

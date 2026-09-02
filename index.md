@@ -11,6 +11,7 @@ description: Postdoctoral Researcher at the Software Engineering Group, Universi
 {% include section-teaching.html %}
 {% include section-supervision.html %}
 {% include section-service.html %}
+{% include section-disclosures.html %}
 
 <footer>
   <span>&copy; {{ site.time | date: "%Y" }} {{ site.data.site.name }}</span>
