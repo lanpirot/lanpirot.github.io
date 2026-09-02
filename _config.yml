@@ -8,6 +8,10 @@ url: "https://alexanderboll.dev"
 baseurl: ""
 lang: en
 
+# Cloudflare Web Analytics (cookieless). Paste the site token from
+# Cloudflare dashboard -> Analytics & Logs -> Web Analytics to enable.
+cloudflare_analytics_token: ""
+
 author:
   name: Alexander Boll
   email: alexander.boll@unibe.ch
