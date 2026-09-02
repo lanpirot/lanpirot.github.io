@@ -552,14 +552,6 @@ footer {
 }
 
 /* --- Post masthead --- */
-.disc-back {
-  display: inline-block;
-  margin-bottom: 1.5rem;
-  font-size: 0.85rem;
-  color: var(--muted);
-  text-decoration: none;
-}
-.disc-back:hover { color: var(--fg); }
 .disc h1 { font-size: 1.7rem; line-height: 1.2; margin: 0 0 0.75rem; }
 .disc-meta {
   display: flex;
@@ -738,16 +730,6 @@ footer {
 .disc-checks .hit .mark { color: var(--disc-ok); }
 .disc-checks .what { font-weight: 600; }
 .disc-checks .why { color: var(--muted); }
-
-/* Disclosure index list */
-.disc-index { list-style: none; padding: 0; margin: 1.5rem 0 0; }
-.disc-index li { padding: 1rem 0; border-bottom: 1px solid var(--rule); }
-.disc-index li:last-child { border-bottom: none; }
-.disc-index a { text-decoration: none; }
-.disc-index .di-title { font-weight: 600; font-size: 1.02rem; }
-.disc-index a:hover .di-title { text-decoration: underline; text-decoration-color: var(--link-underline); text-underline-offset: 3px; }
-.disc-index .di-meta { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.45rem; }
-.disc-index .di-sum { margin: 0.5rem 0 0; color: var(--muted); font-size: 0.9rem; }
 
 @media (max-width: 540px) {
   .disc-split { grid-template-columns: 1fr; }
