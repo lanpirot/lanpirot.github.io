@@ -806,3 +806,70 @@ footer {
   color: var(--fg);
   letter-spacing: -0.01em;
 }
+
+/* Animated analogy figure (before -> after, with play/pause) */
+.disc-anim svg { width: 100%; height: auto; display: block; }
+.disc-anim .an-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+.disc-anim .head { font-size: 10.5px; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase; }
+
+@keyframes an-reveal { 0%,28%{opacity:0;transform:translateY(8px)} 44%,86%{opacity:1;transform:translateY(0)} 100%{opacity:0;transform:translateY(8px)} }
+@keyframes an-fade    { 0%,28%{opacity:0} 44%,86%{opacity:1} 100%{opacity:0} }
+@keyframes an-fadeout { 0%,28%{opacity:1} 44%,86%{opacity:0} 100%{opacity:1} }
+@keyframes an-thumb   { 0%,28%{transform:scaleY(1)} 44%,86%{transform:scaleY(.24)} 100%{transform:scaleY(1)} }
+.disc-anim .reveal { animation: an-reveal 12s ease-in-out infinite; }
+.disc-anim .run    { animation: an-fade 12s ease-in-out infinite; }
+.disc-anim .safe   { animation: an-fadeout 12s ease-in-out infinite; }
+.disc-anim .thumb  { transform-box: fill-box; transform-origin: top; animation: an-thumb 12s ease-in-out infinite; }
+.disc-anim.is-paused .reveal,
+.disc-anim.is-paused .run,
+.disc-anim.is-paused .safe,
+.disc-anim.is-paused .thumb { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) {
+  .disc-anim .reveal, .disc-anim .run, .disc-anim .safe, .disc-anim .thumb { animation: none; }
+  .disc-anim .reveal { opacity: 1; transform: none; }
+  .disc-anim .run { opacity: 1; }
+  .disc-anim .safe { opacity: 0; }
+  .disc-anim .thumb { transform: scaleY(.24); }
+}
+
+/* play / pause control */
+.disc-anim-bar { display: flex; justify-content: flex-end; margin-bottom: 0.45rem; }
+.disc-anim-toggle {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  font-size: 0.8rem; color: var(--muted);
+  background: none; border: 1px solid var(--rule); border-radius: 999px;
+  padding: 0.22rem 0.7rem; cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+.disc-anim-toggle:hover { color: var(--fg); border-color: var(--fg); }
+.disc-anim-toggle svg { width: 0.7rem; height: 0.7rem; display: block; fill: currentColor; }
+.disc-anim-toggle .an-ico { display: inline-flex; align-items: center; }
+.disc-anim-toggle .an-ico-play, .disc-anim-toggle .an-lbl-play { display: none; }
+.disc-anim.is-paused .disc-anim-toggle .an-ico-pause,
+.disc-anim.is-paused .disc-anim-toggle .an-lbl-pause { display: none; }
+.disc-anim.is-paused .disc-anim-toggle .an-ico-play { display: inline-flex; }
+.disc-anim.is-paused .disc-anim-toggle .an-lbl-play { display: inline; }
+
+/* Figure 2 animation: zoom-to-fit -> zoom out -> off-canvas radar blip */
+.disc-anim .an2-model { transform-box: fill-box; transform-origin: 0 0; animation: an2-zoom 12s ease-in-out infinite; }
+@keyframes an2-zoom {
+  0%, 26% { transform: translate(0,0) scale(1); }
+  50%, 84% { transform: translate(-26px,-28px) scale(0.16); }
+  100% { transform: translate(0,0) scale(1); }
+}
+.disc-anim .blip { animation: an2-blip 12s ease-in-out infinite; }
+@keyframes an2-blip { 0%,48%{opacity:0} 53%,82%{opacity:1} 100%{opacity:0} }
+.disc-anim .blip-dot { transform-box: fill-box; transform-origin: center; animation: an2-dot 2.4s ease-out infinite; }
+@keyframes an2-dot { 0%{opacity:0;transform:scale(.5)} 12%{opacity:1;transform:scale(1)} 64%{opacity:1;transform:scale(1)} 80%{opacity:0;transform:scale(1)} 100%{opacity:0;transform:scale(1)} }
+.disc-anim .blip-ring { transform-box: fill-box; transform-origin: center; animation: an2-ring 2.4s ease-out infinite; }
+@keyframes an2-ring { 0%{opacity:0;transform:scale(.5)} 12%{opacity:.5;transform:scale(.8)} 66%{opacity:0;transform:scale(3.4)} 100%{opacity:0;transform:scale(3.4)} }
+.disc-anim.is-paused .an2-model,
+.disc-anim.is-paused .blip,
+.disc-anim.is-paused .blip-dot,
+.disc-anim.is-paused .blip-ring { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) {
+  .disc-anim .an2-model { animation: none; transform: translate(-26px,-28px) scale(0.16); }
+  .disc-anim .blip { animation: none; opacity: 1; }
+  .disc-anim .blip-dot { animation: none; opacity: 1; transform: none; }
+  .disc-anim .blip-ring { animation: none; opacity: 0; }
+}
