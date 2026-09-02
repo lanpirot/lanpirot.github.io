@@ -732,7 +732,7 @@ footer {
 /* play / pause control */
 .disc-anim-stage { position: relative; }
 .disc-anim-bar {
-  position: absolute; left: 50%; top: 0; z-index: 1;
+  position: absolute; left: 68%; top: 0; z-index: 1;   /* right of the header label, left of fig 1's file name */
   margin-top: 6.3%;              /* header band centre: 29/460 of the width */
   transform: translate(-50%, -50%);
 }
