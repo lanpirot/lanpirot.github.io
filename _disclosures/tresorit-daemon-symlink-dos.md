@@ -38,7 +38,7 @@ Shared tresors are not a vector: symlinks aren't stored server-side, so the trig
 
 Tresorit judged it "not a security issue", citing the deliberate choice to follow symlinks. That justifies traversal, but not *unbounded memory allocation*. The suggested sync-filter workaround assumes you already know the toxic path and have a responsive GUI.
 
-My view: that "deliberate design decision" is indefensible. The bug is not easy to weaponize, but it occurs in the wild and causes out-of-memory crashes that are hard to diagnose and hard to stop.
+My view: that "deliberate design decision" is indefensible. The bug is not easy to weaponize against specific targets, but it occurs in the wild as is and causes out-of-memory crashes that are hard to diagnose and hard to stop.
 
 ## Timeline
 
