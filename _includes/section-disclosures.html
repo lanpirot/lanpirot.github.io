@@ -1,7 +1,7 @@
 <section id="disclosures">
   <h2>Disclosures</h2>
   <ul class="plain-list">
-    {%- assign items = site.disclosures | sort: "date" | reverse -%}
+    {%- assign items = site.disclosures | sort: "date" -%}
     {%- for d in items -%}
       <li>
         <strong><a href="{{ d.url | relative_url }}">{{ d.title }}</a></strong>
