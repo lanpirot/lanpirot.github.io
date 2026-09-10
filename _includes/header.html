@@ -17,7 +17,7 @@
       {%- for link in site.data.socials -%}
         {%- if link.icon == "pgp" -%}
           <div class="pgp" data-pgp>
-            <button type="button" class="pgp-btn" aria-label="{{ link.name }}" title="{{ link.name }}" aria-haspopup="true" aria-expanded="false">
+            <button type="button" class="pgp-btn soc soc-pgp" aria-label="{{ link.name }}" title="{{ link.name }}" aria-haspopup="true" aria-expanded="false">
               {%- include icon.html name="pgp" -%}
             </button>
             <div class="pgp-menu" role="menu" hidden>
@@ -38,7 +38,7 @@
             </div>
           </div>
         {%- else -%}
-          <a href="{{ link.url }}" aria-label="{{ link.name }}" title="{{ link.name }}"{% unless link.icon == "email" %} rel="me noopener" target="_blank"{% endunless %}>
+          <a class="soc soc-{{ link.icon }}" href="{{ link.url }}" aria-label="{{ link.name }}" title="{{ link.name }}"{% unless link.icon == "email" %} rel="me noopener" target="_blank"{% endunless %}>
             {%- include icon.html name=link.icon -%}
           </a>
         {%- endif -%}

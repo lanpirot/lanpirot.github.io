@@ -195,6 +195,7 @@ p { margin: 0.5rem 0; }
 }
 .socials {
   display: flex;
+  align-items: center;
   gap: 1.1rem;
   margin-top: 0.9rem;
   flex-wrap: wrap;
@@ -206,7 +207,17 @@ p { margin: 0.5rem 0; }
   text-decoration: none;
 }
 .socials a:hover { color: var(--muted); }
-.socials svg { width: 1.5rem; height: 1.5rem; }
+.socials svg { width: 1.5rem; height: 1.5rem; display: block; }
+/* Per-icon sizes so the visible ink has roughly equal area: outline glyphs
+   (email, scholar, pgp) leave padding inside their viewBox, filled squares
+   (linkedin, dblp) fill it completely. */
+.socials .soc-email svg   { width: 1.8rem;  height: 1.8rem; }
+.socials .soc-scholar svg { width: 1.85rem; height: 1.85rem; }
+.socials .soc-pgp svg     { width: 1.65rem; height: 1.65rem; }
+.socials .soc-github svg,
+.socials .soc-orcid svg   { width: 1.5rem;  height: 1.5rem; }
+.socials .soc-linkedin svg,
+.socials .soc-dblp svg    { width: 1.3rem;  height: 1.3rem; }
 .socials .dblp-bg { transition: fill 0.15s; }
 .socials a:hover .dblp-bg { fill: var(--muted); }
 

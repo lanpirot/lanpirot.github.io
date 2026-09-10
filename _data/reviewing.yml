@@ -2,7 +2,7 @@
   venues:
     - {name: ASE, count: 2}
     - {name: EASE, count: 2}
-    - {name: ICSE, count: 1}
+    - {name: ICSE, count: 3}
     - {name: MODELS, count: 1}
     - {name: SoSyM, count: 1}
 
