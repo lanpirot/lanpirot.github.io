@@ -60,9 +60,10 @@
   year: 2026
   date: ""
   type: conference
-  status: accepted
+  status: released
   doi: "10.1145/3744916.3764537"
   pdf: "publications/Decades_of_GNU_Patch_and_Git_Cherry-Pick_Can_We_Do_Better.pdf"
+  bib: "publications/Decades_of_GNU_Patch_and_Git_Cherry-Pick_Can_We_Do_Better.bib"
   abstract: "Patching is a fundamental software maintenance and evolution task enabling the (semi-)automated propagation of changes across different software versions. Established and widely used language-agnostic patchers, such as GNU patch and Git cherry-pick, work on textual artifact representations (i.e., text files) and typically rely on line numbers and contexts (i.e., surrounding unchanged text fragments) to apply changes. This strategy often fails if source and target of a patch differ, provoking cumbersome manual effort. In this paper, we study the effectiveness of commonly-used patchers, and propose a novel technique that significantly increases patch automation. First, we curate and analyze a large dataset of more than 400,000 patch scenarios (i.e., cherry picks) from 5,000 GitHub projects. Next, we examine the effectiveness of established patchers on the gathered patch scenarios. Third, we develop a novel language-agnostic patch technique, mpatch, that utilizes a source-to-target matching to determine suitable change locations. By comparing mpatch to other patchers, we find that it can correctly apply 44 % more patches automatically than other language-agnostic patchers, while it also requires fewer manual fixes in cases that cannot be automated completely. Thus, mpatch considerably reduces the burden of manually fixing failed patches in practice, specifically in projects with frequent patch applications."
   links:
     code: "https://doi.org/10.5281/zenodo.18235133"
