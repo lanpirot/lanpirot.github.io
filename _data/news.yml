@@ -4,7 +4,7 @@
 # Avoid: "paper accepted at X" (the paper itself is the record).
 
 - date: 2026-09-02
-  text: "Published a security disclosure of a critical vulnerability in MATLAB/Simulink: concealed executable blocks."
+  text: "Published a security disclosure of a high-severity vulnerability in MATLAB/Simulink: concealed executable blocks."
   link: "/disclosures/simulink-vulnerability-concealed-blocks/"
 
 - date: 2026-09-01
