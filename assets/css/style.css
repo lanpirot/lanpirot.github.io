@@ -159,9 +159,12 @@ p { margin: 0.5rem 0; }
   color: var(--muted);
   text-decoration: none;
   border: 1px solid var(--rule);
+  /* Half-pixel halo in the border colour: a bare 1px border anti-aliases
+     thinner on the rounded ends than on the straight edges. */
+  box-shadow: 0 0 0 0.5px var(--rule);
   padding: 0.25rem 0.7rem;
   border-radius: 999px;
-  transition: color 0.15s, border-color 0.15s, gap 0.15s;
+  transition: color 0.15s, border-color 0.15s, box-shadow 0.15s, gap 0.15s;
 }
 .header .view-cv svg {
   width: 0.95rem;
@@ -172,6 +175,7 @@ p { margin: 0.5rem 0; }
 .header .view-cv:hover {
   color: var(--fg);
   border-color: var(--fg);
+  box-shadow: 0 0 0 0.5px var(--fg);
 }
 .header .view-cv:hover svg {
   transform: translateX(0.15rem);
@@ -583,6 +587,7 @@ footer {
   padding: 0.18rem 0.55rem;
   border: 1px solid var(--rule);
   border-radius: 999px;
+  box-shadow: 0 0 0 0.5px var(--rule); /* evens out the rounded ends, see .view-cv */
   color: var(--muted);
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -593,12 +598,14 @@ footer {
 .disc-badge.sev-high {
   color: var(--disc-danger);
   border-color: var(--disc-danger);
+  box-shadow: 0 0 0 0.5px var(--disc-danger);
   background: var(--disc-danger-bg);
   font-weight: 600;
 }
 .disc-badge.sev-medium {
   color: var(--disc-warn);
   border-color: var(--disc-warn);
+  box-shadow: 0 0 0 0.5px var(--disc-warn);
   background: var(--disc-warn-bg);
   font-weight: 600;
 }
