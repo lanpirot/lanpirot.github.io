@@ -1,6 +1,7 @@
 ---
 title: "DoS in the Tresorit Linux client"
 date: 2026-09-04
+severity: "Medium · CVSS 4.0: 5.7"
 cwe: "CWE-674 → CWE-400"
 product: "Tresorit Linux client"
 status: "Disputed · vendor: by design"
@@ -12,6 +13,20 @@ description: "Security note: self-referential symlinks make Tresorit leak memory
   <p class="lead">A symlink loop in a Tresorit-watched folder makes Tresorit allocate memory without bound until the machine runs out of RAM and freezes.</p>
   <p>The trigger is about eight bytes of symlink text. No exploit code, no privileges, no network. I hit it by simply cloning an open-source repository onto my machine. Tresorit 3.5.1281.4700.</p>
 </div>
+
+## Severity
+
+**CVSS 4.0: 5.7 (Medium)**, `CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N`
+
+| Metric | Value | Why |
+|---|---|---|
+| Attack Vector | Local | The symlinks have to end up in a Tresorit-watched folder on the victim's machine. Shared tresors don't carry symlinks, so there is no network route. |
+| Attack Complexity | Low | The trigger is two symlinks and works the same way every time. |
+| Attack Requirements | Present | The symlinks only take effect if the victim clones, extracts or mounts them inside a folder Tresorit syncs, which the attacker can't control. |
+| Privileges / User Interaction | None / Passive | The victim only performs an ordinary action like `git clone`; Tresorit picks up the loop on its own, with no further interaction. |
+| Confidentiality / Integrity | None / None | Nothing is read or modified. |
+| Availability | High | Memory grows without bound until the machine freezes, and the leak resumes after every restart until the symlinks are permanently deleted. |
+| Subsequent system | None | The effects stay on the victim's own workstation. |
 
 ## What happens
 

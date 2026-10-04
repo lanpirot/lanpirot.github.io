@@ -546,6 +546,8 @@ footer {
 :root {
   --disc-danger: #c62f37;
   --disc-danger-bg: rgba(198, 47, 55, 0.09);
+  --disc-warn: #a35a00;
+  --disc-warn-bg: rgba(214, 130, 20, 0.11);
   --disc-ok: #1a7f37;
   --disc-ok-bg: rgba(26, 127, 55, 0.09);
   --disc-code-bg: rgba(11, 18, 32, 0.05);
@@ -555,6 +557,8 @@ footer {
 [data-theme="dark"] {
   --disc-danger: #ff6b6f;
   --disc-danger-bg: rgba(255, 107, 111, 0.13);
+  --disc-warn: #f2a93b;
+  --disc-warn-bg: rgba(242, 169, 59, 0.13);
   --disc-ok: #4ac26b;
   --disc-ok-bg: rgba(74, 194, 107, 0.11);
   --disc-code-bg: rgba(244, 241, 232, 0.06);
@@ -585,10 +589,17 @@ footer {
   white-space: nowrap;
 }
 .disc-badge.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; text-transform: none; letter-spacing: 0; }
-.disc-badge.sev-crit {
+.disc-badge.sev-critical,
+.disc-badge.sev-high {
   color: var(--disc-danger);
   border-color: var(--disc-danger);
   background: var(--disc-danger-bg);
+  font-weight: 600;
+}
+.disc-badge.sev-medium {
+  color: var(--disc-warn);
+  border-color: var(--disc-warn);
+  background: var(--disc-warn-bg);
   font-weight: 600;
 }
 .disc-badge .dot { width: 0.45rem; height: 0.45rem; border-radius: 999px; background: currentColor; }

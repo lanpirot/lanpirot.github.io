@@ -5,6 +5,7 @@
     {%- for d in items -%}
       <li>
         <strong><a href="{{ d.url | relative_url }}">{{ d.title }}</a></strong>
+        {%- if d.severity %} <span class="disc-badge sev-{{ d.severity | split: " " | first | downcase }}"><span class="dot"></span>{{ d.severity }}</span>{% endif %}
         <div class="meta">{{ d.product }}{% if d.date %} &middot; {{ d.date | date: "%b %Y" }}{% endif %}{% if d.cve %} &middot; {{ d.cve }}{% endif %}</div>
       </li>
     {%- endfor -%}
