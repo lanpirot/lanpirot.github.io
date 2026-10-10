@@ -652,6 +652,7 @@ footer {
   padding: 0.2rem 0 0.2rem 1rem;
   border-left: 3px solid var(--rule);
   color: var(--muted);
+  overflow-wrap: anywhere; /* long unbroken strings must not widen the page */
 }
 .disc ul, .disc ol { padding-left: 1.3rem; }
 .disc li { margin: 0.3rem 0; }
