@@ -670,6 +670,8 @@ footer {
 }
 .disc th { color: var(--muted); font-weight: 600; text-transform: uppercase; font-size: 0.72rem; letter-spacing: 0.05em; }
 .disc td:first-child { white-space: nowrap; color: var(--muted); font-variant-numeric: tabular-nums; }
+/* Opt-out for tables whose first column is prose, not a date or short label */
+.disc table.wrap td:first-child { white-space: normal; width: 45%; }
 
 /* --- Figures --- */
 .disc-fig { margin: 2rem 0; }

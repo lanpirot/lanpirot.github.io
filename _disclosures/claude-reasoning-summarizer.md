@@ -24,6 +24,7 @@ description: "Security note: the summarizer behind the claude.ai reasoning panel
 | Summarizer output reaches the reasoning panel unchecked (raw dumps, error messages) | [CWE-1426](https://cwe.mitre.org/data/definitions/1426.html), Improper Validation of Generative AI Output |
 | Summarizer's error messages reach the panel and carry raw thinking | [CWE-209](https://cwe.mitre.org/data/definitions/209.html), Generation of Error Message Containing Sensitive Information |
 | The panel presents injected prose as Claude's first-person reasoning | [CWE-451](https://cwe.mitre.org/data/definitions/451.html), User Interface (UI) Misrepresentation of Critical Information |
+{: .wrap}
 
 I tested the claude.ai web UI with Opus 4.7, not the API, other models, the apps or Claude Code.
 
