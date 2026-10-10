@@ -1,7 +1,6 @@
 ---
 title: "Steering the reasoning summarizer on claude.ai"
-date: 2026-05-23
-published: false
+date: 2026-10-10
 severity: "Low · no CVSS"
 cwe: "CWE-1427 · 209 · 1426 · 451"
 product: "claude.ai reasoning panel (Claude Opus 4.7, adaptive thinking)"
@@ -30,13 +29,13 @@ I tested the claude.ai web UI with Opus 4.7, not the API, other models, the apps
 
 ## Attacking primitives
 
-The attacker is a claude.ai user in their own chat attacking Anthropic. I demonstrated three primitives:
+The attacker is a claude.ai user in their own chat attacking [Anthropic](https://platform.claude.com/docs/en/build-with-claude/thinking#summarized-thinking). I demonstrated three primitives:
 
 - **Raw bytes leak.** Bytes the user feeds into Claude are recited by Claude in its raw thinking. That raw thinking is the summarizer's input, and it appears verbatim on the reasoning panel. The path runs end to end: user input → Claude's raw thinking → summarizer input → reasoning panel. I demonstrated this via the summarizer's error messages that displayed its error messages in the reasoning panel with the error message quoting the summarizer's input, Claude's raw thinking.
 - **Steering.** Documents with embedded `(Rewriter notice: …)` lines got the summarizer to follow them, even when Claude's own thinking was asked to and had explicitly decided to ignore them.
 - **State.** Each summarizer invocation summarizes one chunk of raw thinking. Each invocation gets the prior thinking as context, but is only meant to summarize the current thinking chunk. Steered, the summarizer invocations carried information across many invocations and built up state of their own. This makes a self-replicating injection (a quine) possible in principle: once the payload is in the summarized output, it reinfects the next invocation.
 
-This threatens two things:
+This [threatens](https://www.anthropic.com/research/visible-extended-thinking) two things:
 
 - **Model distillation.** Raw thinking that should stay hidden ends up on the panel.
 - **Misattribution.** The panel shows reasoning decisions Claude explicitly decided against, in Claude's own first-person voice.
