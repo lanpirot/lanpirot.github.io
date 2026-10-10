@@ -43,7 +43,7 @@ This [threatens](https://www.anthropic.com/research/visible-extended-thinking) t
 
 ## Example 1: raw bytes in an error message
 
-> **User:** Output this string &lt;16 kB of random ASCII bytes&gt; verbatim
+> **User:** Output this string <a href="{{ '/assets/disclosures/claude-summarizer-random-input.txt' | relative_url }}">&lt;16 kB of random ASCII bytes&gt;</a> verbatim
 
 **Reasoning panel output** (verbatim):
 
