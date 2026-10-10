@@ -4,7 +4,7 @@
 # Avoid: "paper accepted at X" (the paper itself is the record).
 
 - date: 2026-10-10
-  text: "Published a security disclosure on claude.ai: Claude's reasoning summarizer can be steered, leaks raw thinking and carries state."
+  text: "Published a security disclosure on Claude's reasoning summarizer: steerable, leaks raw thinking and carries state."
   link: "/disclosures/claude-reasoning-summarizer/"
 
 - date: 2026-09-02

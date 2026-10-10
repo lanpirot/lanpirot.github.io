@@ -3,7 +3,7 @@ title: "Steering the reasoning summarizer on claude.ai"
 date: 2026-10-10
 severity: "Low · no CVSS"
 cwe: "CWE-1427 · 209 · 1426 · 451"
-product: "claude.ai reasoning panel (Claude Opus 4.7, adaptive thinking)"
+product: "Claude 4.7 reasoning panel"
 status: "No longer reproduces"
 description: "Security note: the summarizer behind the claude.ai reasoning panel is steerable by the text Claude thinks about, leaks raw thinking verbatim, and carries state between invocations."
 ---
