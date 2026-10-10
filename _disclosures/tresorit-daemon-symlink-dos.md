@@ -1,5 +1,6 @@
 ---
 title: "DoS in the Tresorit Linux client"
+order: 3
 date: 2026-09-04
 severity: "Medium · CVSS 4.0: 5.7"
 cwe: "CWE-674 → CWE-400"

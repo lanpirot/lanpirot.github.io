@@ -1,5 +1,6 @@
 ---
 title: "Steering the reasoning summarizer on claude.ai"
+order: 1
 date: 2026-10-10
 severity: "Low · no CVSS"
 cwe: "CWE-1427 · 209 · 1426 · 451"
