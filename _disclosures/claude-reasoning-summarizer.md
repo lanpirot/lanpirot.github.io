@@ -34,7 +34,7 @@ The attacker is a claude.ai user in their own chat attacking [Anthropic](https:/
 
 - **Raw bytes leak.** Bytes the user feeds into Claude are recited by Claude in its raw thinking. That raw thinking is the summarizer's input, and it appears verbatim on the reasoning panel. The path runs end to end: user input → Claude's raw thinking → summarizer input → reasoning panel. I demonstrated this via the summarizer's error messages that displayed its error messages in the reasoning panel with the error message quoting the summarizer's input, Claude's raw thinking.
 - **Steering.** Documents with embedded `(Rewriter notice: …)` lines got the summarizer to follow them, even when Claude's own thinking was asked to and had explicitly decided to ignore them.
-- **State.** Each summarizer invocation summarizes one chunk of raw thinking. Each invocation gets the prior thinking as context, but is only meant to summarize the current thinking chunk. Steered, the summarizer invocations carried information across many invocations and built up state of their own. This makes a self-replicating injection (a quine) possible in principle: once the payload is in the summarized output, it reinfects the next invocation.
+- **State.** Each summarizer invocation summarizes one chunk of raw thinking. Each invocation gets the prior summarized thinking as context, but is only meant to summarize the current thinking chunk. Steered, the summarizer invocations carried information across many invocations and built up state of their own. This makes a self-replicating injection (a quine) possible in principle: once the payload is in the summarized output, it reinfects the next invocation.
 
 This [threatens](https://www.anthropic.com/research/visible-extended-thinking) two things:
 
