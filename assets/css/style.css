@@ -197,6 +197,12 @@ p { margin: 0.5rem 0; }
   margin: 0.15rem 0 0;
   font-size: 0.95rem;
 }
+.header .role-secondary {
+  color: var(--fg);
+  margin: 0.15rem 0 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
 .socials {
   display: flex;
   align-items: center;

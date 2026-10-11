@@ -12,6 +12,7 @@
   <div>
     <h1>{{ s.name }}</h1>
     <p class="role">{{ s.role }} · <a href="{{ s.affiliation_url }}">{{ s.affiliation }}</a> · {{ s.location }}</p>
+    {%- if s.role_secondary %}<p class="role-secondary">{{ s.role_secondary }}</p>{%- endif %}
     <p class="pitch">{{ s.pitch }}</p>
     <div class="socials">
       {%- for link in site.data.socials -%}
