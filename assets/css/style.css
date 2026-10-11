@@ -196,14 +196,7 @@ p { margin: 0.5rem 0; }
   color: var(--muted);
   margin: 0.15rem 0 0;
   font-size: 0.95rem;
-}
-.header .role-secondary {
-  color: var(--fg);
-  margin: 0.15rem 0 0;
-  font-size: 0.95rem;
-  font-weight: 600;
-}
-.socials {
+}.socials {
   display: flex;
   align-items: center;
   gap: 1.1rem;
