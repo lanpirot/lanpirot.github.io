@@ -2,6 +2,30 @@
 # To add a paper: append an entry. Required: title, authors, venue, year, type.
 # Optional: abstract, pdf, doi, bib, award, status, links (map).
 
+- title: "CandyMerge: CI/CD as Oracle for Candidate-Driven Merge Conflict Resolution"
+  authors: "Alexander Boll, Manuel Ohrndorf, Timo Kehrer"
+  venue: "Preprint"
+  year: 2026
+  date: "2026-11-19"
+  type: other
+  status: preprint
+  pdf: "publications/CandyMerge_CICD_as_Oracle_for_Candidate-Driven_Merge_Conflict_Resolution.pdf"
+  bib: "publications/CandyMerge_CICD_as_Oracle_for_Candidate-Driven_Merge_Conflict_Resolution.bib"
+  abstract:
+    - "Automated merge conflict resolution approaches are typically evaluated against a single reference: the resolution a developer committed. In line with prior empirical findings, we argue that a merge resolution should be judged not by textual similarity to that reference, but by whether it builds and passes the project’s tests. We build our approach on this principle: rather than guess a single answer, use the project’s CI/CD pipeline as an oracle and let compilation and testing pick the best resolution from a set of likely candidates. We present CandyMerge, a candidate-driven merge conflict resolver that treats resolution as a guided search over whole-merge variants—candidate resolutions of the entire merge—built by combining conflict resolution patterns from recent empirical studies. Instead of resolving each chunk independently, it generates coherent variants that resolve all conflicts jointly, ranks them so the most promising are validated first, and returns the best one the oracle identifies."
+    - "We evaluate CandyMerge along three axes: search guidance, search efficiency, and resolution quality against the developers’ committed resolutions and competing approaches. We summarize our findings as follows: First, a learned predictor efficiently guides the search toward promising variants, locating the developer’s committed resolution within one or two attempts in the median. Second, contrary to our initial expectation, parallelization and caching do not help a good search order reach the best resolution sooner. Third, on 1,000 real-world merges from 268 Java/Maven projects, CandyMerge’s best validated variant is comparable to or better than the developer’s committed resolution on 90.6% of merges under our build-and-test oracle. CandyMerge trades time for quality: with a single build it matches the best merge tools, and with its full time budget it clearly outperforms every tool we could obtain and apply. Notably, the search sometimes identifies resolutions that build and test better than the developer’s committed resolution (5.6% of merges), highlighting CI/CD-validated, candidate-driven merge conflict resolution as a practical alternative to merely imitating human behavior in automated conflict resolution."
+
+- title: "Standing on the Shoulders of Decaying Giants"
+  authors: "Alexander Boll, Samuel Utzinger, Roman Bögli, Timo Kehrer"
+  venue: "Preprint"
+  year: 2026
+  date: "2026-10-24"
+  type: other
+  status: preprint
+  pdf: "publications/Standing_on_the_Shoulders_of_Decaying_Giants.pdf"
+  bib: "publications/Standing_on_the_Shoulders_of_Decaying_Giants.bib"
+  abstract: "Software engineering has improved reproducibility through replication packages that let others rerun tools and reproduce results. A replication package, however, is a snapshot, and its value as a baseline can diminish in three ways: the tool may stop working as intended, its approach may fit today’s world worse, or the evaluation setup may make comparing against it unsound. We unify these facets as tool decay. Left unchecked, tool decay means that outperforming an older tool need not demonstrate genuine progress. We study tool decay in merge conflict resolution, a long-established research area, as a first case study. We combine two complementary lines of evidence: (i) A citation analysis shows that comparisons increasingly copy published baseline numbers instead of rerunning tools, so decay goes unmeasured, and that chains of superiority claims often break. (ii) Two experiments demonstrate decay in five of eight merge tools and show that a simple method of undoing decay overshoots. Together, these findings suggest an erosion of comparability across studies: a systemic threat to the progress of software engineering research. To counter tool decay, we call for establishing shared practices to anticipate and document decay, to undo it systematically, and to sustain fair comparisons."
+
 - title: "SMOKE2.0 Whitebox Anonymization of Sensitive Information in Simulink with Structure Preservation"
   authors: "Alexander Boll, Manuel Ohrndorf, Timo Kehrer"
   venue: "SoSyM"
